@@ -1,0 +1,4 @@
+2023-03-11 11:08:35.520 [info] Starting worker process with pid 7416 (type: fileWatcher, window: 2).
+2023-03-11 11:08:40.064 [warning] No ptyHost heartbeat after 6 seconds
+2023-03-11 11:08:46.472 [info] Worker process with pid 7416 terminated normally (type: fileWatcher, window: 2).
+2023-03-11 11:08:47.814 [info] Starting worker process with pid 7660 (type: fileWatcher, window: 4).

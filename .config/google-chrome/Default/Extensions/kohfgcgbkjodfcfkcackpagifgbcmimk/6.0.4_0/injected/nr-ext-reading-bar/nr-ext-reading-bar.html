@@ -1,0 +1,1667 @@
+<div class="nr-ext" id="nr-ext" ext-theme="light" immersive="false" ext-settings="init">
+
+    <div class="nr-ext-container" id="nr-ext-container" ext-size="max" data-play="init" menu-status="init">
+        <div class="nr-ext-progress-container" id="nr-ext-progress-container">
+            <div class="nr-ext-progress-bar" id="nr-ext-progress-bar">
+                <input id="nr-ext-progress" class="js-range-slider" type="text" value="" />
+                <input type="text" class="js-range-slider irs-hidden-input" value="" tabindex="-1" readonly=""
+                    id="nr-ext-progress-value-sender" />
+                <input type="text" class="js-range-slider irs-hidden-input" value="" tabindex="-1" readonly=""
+                    id="nr-ext-progress-max-sender" />
+            </div>
+            <div class="nr-ext-progress-label" id="nr-ext-progress-label">
+                <span id="nr-ext-progress-time-curr">00:00</span><span> / </span><span
+                    id="nr-ext-progress-time-total">00:00</span>
+            </div>
+        </div>
+
+        <div class="nr-ext-main-container" id="nr-ext-main-container">
+            <div class="nr-ext-left-content">
+                <div class="nr-ext-left-top">
+                    <button class="ext-icon-button" id="nr-ext-btn-relocate">
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_location"></use>
+                        </svg>
+                    </button>
+                    <button class="ext-icon-button" id="nr-ext-max">
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_max"></use>
+                        </svg>
+                    </button>
+                </div>
+                <!-- <div class="nr-ext-left-bottom">
+                    <button class="ext-icon-button" id="nr-ext-btn-relocate">
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_location"></use>
+                        </svg>
+                    </button>
+                </div> -->
+            </div>
+            <div class="nr-ext-main-content">
+                <button class="ext-icon-button-md" id="nr-ext-btn-rewind">
+                    <svg class="ext-icon">
+                        <use xlink:href="#ext_icon_previous"></use>
+                    </svg>
+                </button>
+                <button class="ext-icon-button-lg" id="nr-ext-btn-read">
+                    <svg class="ext-icon icon-play">
+                        <use xlink:href="#ext_icon_play"></use>
+                    </svg>
+                    <svg class="ext-icon icon-pause">
+                        <use xlink:href="#ext_icon_pause"></use>
+                    </svg>
+                </button>
+                <button class="ext-icon-button-md" id="nr-ext-btn-forward">
+                    <svg class="ext-icon">
+                        <use xlink:href="#ext_icon_next"></use>
+                    </svg>
+                </button>
+                <!-- <button class="ext-icon-button" id="btn_stop">
+                    <svg class="ext-icon">
+                        <use xlink:href="#stop_circle"></use>
+                    </svg>
+                </button> -->
+            </div>
+            <div class="nr-ext-right-content">
+                <div class="nr-ext-right-top">
+                    <button class="ext-icon-button" id="nr-ext-exit">
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_exit"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="nr-ext-right-bottom">
+                    <button class="ext-icon-button nr-ext-menu-control" id="nr-ext-menu-open" data-toggle="collapse"
+                        data-target="#nr-ext-demo-voice" aria-expanded="false">
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_add"></use>
+                        </svg>
+                    </button>
+                    <button class="ext-icon-button nr-ext-menu-control" id="nr-ext-menu-close" data-toggle="collapse"
+                        data-target="#nr-ext-demo-voice" aria-expanded="true">
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_remove"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="nr-ext-menu" id="nr-ext-demo-menu">
+            <div class="nr-ext-menu-content">
+                <div class="collapse nr-ext-menu-voice" id="nr-ext-demo-voice" voice-status="init">
+                    <div class="nr-ext-voice-content">
+                        <div class="nr-ext-voice-header">
+                            <div class="nr-ext-progress-text">
+                                <div>Speed</div>
+                                <div><span id="nr-ext-speed-text">200</span> wpm</div>
+                            </div>
+                            <div class="nr-ext-progress-bar">
+                                <input id="nr-ext-speed" type="text" class="js-range-slider" value="" />
+                                <input type="text" class="js-range-slider irs-hidden-input" value="" tabindex="-1"
+                                    readonly="" id="nr-ext-speed-slider-value-sender" />
+                            </div>
+                        </div>
+                        <div class="nr-ext-voice-list" id="nr-ext-voice-list" voice-type="free">
+                            <div class="nr-ext-voice-list-header">
+                                <button class="ext-link-button" id="nr-ext-voice-free">free</button>
+                                <button class="ext-link-button" id="nr-ext-voice-prem">premium</button>
+                                <button class="ext-link-button" id="nr-ext-voice-plus">plus</button>
+                            </div>
+                            <div class="nr-ext-voice-list-content" id="nr-ext-free-voice-list">
+                                <div class="m-3 text-danger" id="nr-ext-no-free-voices">
+                                    Loading voices please wait ...
+                                </div>
+                                <button class="m-3 ext-primary-button" id="nr-ext-no-free-voices-reload-btn"
+                                    style="display:hidden">Restart Reader</button>
+                            </div>
+                            <select id="nr-ext-free-voice-list-mapper" class="nr-ext-voice-list-mapper">
+                            </select>
+                            <div class="nr-ext-voice-list-content" id="nr-ext-prem-voice-list">prem</div>
+                            <select id="nr-ext-prem-voice-list-mapper" class="nr-ext-voice-list-mapper">
+                            </select>
+                            <div class="nr-ext-voice-list-content" id="nr-ext-plus-voice-list">plus</div>
+                            <select id="nr-ext-plus-voice-list-mapper" class="nr-ext-voice-list-mapper">
+                            </select>
+                        </div>
+                        <div class="nr-ext-voice-footer">
+                            <div class="nr-ext-voice-footer-actions" id="nr-ext-sub-toggle">
+                                <button class="ext-icon-button" id="nr-ext-pdf" data-toggle="collapse"
+                                    data-target="#nr-ext-upload-menu" aria-expanded="false">
+                                    <svg class="ext-icon">
+                                        <use xlink:href="#ext_icon_pdf"></use>
+                                    </svg>
+                                </button>
+                                <button class="ext-icon-button" id="nr-ext-btn-convert">
+                                    <svg class="ext-icon">
+                                        <use xlink:href="#ext_icon_mp3"></use>
+                                    </svg>
+                                </button>
+                                <button class="ext-icon-button" id="nr-ext-mobile" data-toggle="collapse"
+                                    data-target="#nr-ext-mobile-menu" aria-expanded="false">
+                                    <svg class="ext-icon">
+                                        <use xlink:href="#ext_icon_phone"></use>
+                                    </svg>
+                                </button>
+                                <button class="ext-icon-button" id="nr-ext-immersive-toggle">
+                                    <svg class="ext-icon">
+                                        <use xlink:href="#ext_icon_immersive"></use>
+                                    </svg>
+                                </button>
+                                <button class="ext-icon-button" id="nr-ext-cc-toggle">
+                                    <svg class="ext-icon">
+                                        <use xlink:href="#ext_icon_cc"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button class="ext-link-button" id="nr-ext-settings-open">
+                                More Settings
+                            </button>
+                        </div>
+                        <div class="accordion nr-ext-sub-menu" id="nr-ext-sub-menu">
+                            <div class="collapse" id="nr-ext-fake-menu" data-parent="#nr-ext-sub-menu"></div>
+                            <div class="collapse nr-ext-upload-menu" id="nr-ext-upload-menu"
+                                data-parent="#nr-ext-sub-menu" upload-status="init">
+                                <div class="nr-ext-upload">
+                                    <div class="nr-ext-upload-box" draggable="true" id="nr-ext-upload-box">
+                                        <div>Drag and drop files to upload</div>
+                                        <label class="ext-primary-button" for="nr-ext-btn-upload-browse">BROWSE</label>
+                                        <input type="file" id="nr-ext-btn-upload-browse" style="display: none;">
+                                    </div>
+                                    <button class="ext-link-button" id="nr-ext-btn-input-texts">Or input your own text
+                                        in the Web Reader</button>
+                                </div>
+                                <div class="nr-ext-upload">
+                                    <div class="nr-ext-upload-box">
+                                        <svg class="ext-icon">
+                                            <use xlink:href="#ext_icon_loading"></use>
+                                        </svg>
+                                        <div>Uploading document... <span id="nr-ext-upload-progress"></span></div>
+                                    </div>
+                                </div>
+                                <div class="nr-ext-upload" draggable="true" id="nr-ext-drag-and-drop-finish">
+                                    <div class="nr-ext-upload-box">
+                                        <svg class="ext-icon">
+                                            <use xlink:href="#ext_icon_finish"></use>
+                                        </svg>
+                                        <div class="nr-ext-upload-title"><span id="nr-ext-upload-filename"></span>
+                                            uploaded</div>
+                                        <div>
+                                            <button class="ext-link-button" id="nr-ext-btn-upload-diff-file">Upload a
+                                                different file</button>
+                                            <button class="ext-primary-button" id="nr-ext-btn-open-file">Listen to
+                                                file</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nr-ext-upload" draggable="true" id="nr-ext-drag-and-drop-error">
+                                    <div class="nr-ext-upload-box">
+                                        <svg class="ext-icon">
+                                            <use xlink:href="#ext_icon_error"></use>
+                                        </svg>
+                                        <div class="nr-ext-upload-title" id="nr-ext-upload-error">error</div>
+                                        <button class="ext-primary-button" id="nr-ext-btn-upload-try-again">Retry
+                                            upload</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="collapse nr-ext-mobile-menu" id="nr-ext-mobile-menu"
+                                data-parent="#nr-ext-sub-menu" save-status="init">
+                                <div class="nr-ext-mobile">
+                                    <div class="nr-ext-mobile-auth" id="nr-ext-mobile-auth">
+                                        Please <button class="ext-link-button" id="nr-ext-mobile-login">login</button>
+                                        or <button class="ext-link-button" id="nr-ext-mobile-signup">sign up</button> to
+                                        save to mobile
+                                    </div>
+                                    <div class="nr-ext-mobile-tips" id="nr-ext-mobile-tips">
+                                        <div>Saved files will appear in your iOS or Android account</div>
+                                        <button class="ext-primary-button" id="nr-ext-btn-convert-to-pdf">Save to
+                                            mobile</button>
+                                    </div>
+                                    <div class="nr-ext-mobile-app">
+                                        <button class="ext-icon-button" id="nr-ext-download-android">
+                                            <svg class="ext-icon">
+                                                <use xlink:href="#ext_icon_android"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="ext-icon-button" id="nr-ext-download-ios">
+                                            <svg class="ext-icon">
+                                                <use xlink:href="#ext_icon_apple"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="nr-ext-mobile">
+                                    <div class="nr-ext-mobile-box">
+                                        <svg class="ext-icon">
+                                            <use xlink:href="#ext_icon_loading"></use>
+                                        </svg>
+                                        <div>Saving file ...</div>
+                                    </div>
+                                </div>
+                                <div class="nr-ext-mobile">
+                                    <div class="nr-ext-mobile-box">
+                                        <svg class="ext-icon">
+                                            <use xlink:href="#ext_icon_finish"></use>
+                                        </svg>
+                                        <div>File saved to mobile!</div>
+                                        <div class="nr-ext-mobile-again">
+                                            <button class="ext-primary-button" id="nr-ext-btn-convert-to-pdf-again">Save
+                                                Again</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nr-ext-mobile">
+                                    <div class="nr-ext-mobile-box">
+                                        <svg class="ext-icon">
+                                            <use xlink:href="#ext_icon_error"></use>
+                                        </svg>
+                                        <div id="nr-ext-mobile-error">Server error: display full message here</div>
+                                    </div>
+                                    <div class="nr-ext-mobile-retry">
+                                        <button class="ext-primary-button" id="nr-ext-btn-mobile-try-again">Retry
+                                            saving</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nr-ext-msg-bar" id="nr-ext-msg-bar" msg-type="signup">
+            <div class="ext-msg-bar">
+                <div class="ext-msg-label">
+                    <a class="msg-account-link" href="https://www.naturalreaders.com/login-service/signup/"
+                        target="view_window">
+                        Create a NaturalReader Account
+                    </a>
+                    <a class="msg-app-link" id="nr-ext-msg-download-mobile">
+                        Download Free Mobile App
+                    </a>
+                </div>
+
+                <button class="ext-icon-button-xs ext-msg-close nr-ext-msg-close">
+                    <svg class="ext-icon">
+                        <use xlink:href="#ext_icon_close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="nr-ext-msg-box" id="nr-ext-msg-box" msg-type="signup">
+            <div class="nr-ext-msg-card continue-card">
+                <div class="ext-msg-card-header">
+                    <div class="ext-msg-card-title">Continue Listening on the Go</div>
+                    <button class="ext-icon-button ext-msg-card-close nr-ext-msg-close">
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="ext-msg-card-content">
+                    <div class="msg-continue-qr"></div>
+                    <div class="msg-continue-app">
+                        <button class="ext-icon-button" id="nr-ext-msg-android">
+                            <svg class="ext-icon">
+                                <use xlink:href="#ext_icon_android"></use>
+                            </svg>
+                        </button>
+                        <button class="ext-icon-button" id="nr-ext-msg-ios">
+                            <svg class="ext-icon">
+                                <use xlink:href="#ext_icon_apple"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="msg-hide" id="ext-msg-hide">
+                        <label class="ext-msg-hide-label" for="ext-msg-hide">Don’t show again</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nr-ext-msg-card rate-card">
+                <div class="ext-msg-card-header">
+                    <div class="ext-msg-card-title">Do You Like NaturalReader?</div>
+                    <button class="ext-icon-button ext-msg-card-close nr-ext-msg-close">
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="ext-msg-card-content">
+
+                    <div class="ext-msg-rating">
+                        <div class="msg-rating-item" id="nr-ext-rate-yes">
+                            <svg class="ext-icon">
+                                <use xlink:href="#ext_thumb_up"></use>
+                            </svg>
+                            <div class="msg-rating-text">yes</div>
+                        </div>
+                        <div class="msg-rating-item" id="nr-ext-rate-no">
+                            <svg class="ext-icon">
+                                <use xlink:href="#ext_thumb_down"></use>
+                            </svg>
+                            <div class="msg-rating-text">no</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        Thank you for your feedback, it helps us grow!
+                    </div>
+                </div>
+            </div>
+
+            <div class="nr-ext-msg-card review-card">
+                <div class="ext-msg-card-header">
+                    <div class="ext-msg-card-title">Do You Mind Leaving a Review?</div>
+                    <button class="ext-icon-button ext-msg-card-close nr-ext-msg-close">
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="ext-msg-card-content">
+                    <div>
+                        It helps us improve our products to<br>better meet the needs of our users.
+                    </div>
+                    <button class="ext-primary-button" id="nr-ext-msg-leave-review">
+                        Leave a review
+                    </button>
+                </div>
+            </div>
+
+            <div class="nr-ext-msg-card thanks-card">
+                <div class="ext-msg-card-header">
+                    <div class="ext-msg-card-title">Thank You</div>
+                    <button class="ext-icon-button ext-msg-card-close nr-ext-msg-close">
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="ext-msg-card-content">
+                    <div>
+                        Thank you for leaving the<br>feedbacks for us.
+                    </div>
+                    <button class="ext-primary-button nr-ext-msg-close">
+                        Close
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="nr-ext-settings" id="nr-ext-settings">
+        <div class="nr-ext-settings-rows">
+            <div class="nr-ext-settings-nav">
+                <div class="nr-ext-settings-group">
+                    <div class="nr-ext-settings-header">
+                        User Settings
+                    </div>
+                    <div class="nr-ext-settings-cell" id="nr-ext-settings-account">
+                        Account
+                    </div>
+                </div>
+                <div class="nr-ext-settings-group">
+                    <div class="nr-ext-settings-header">
+                        Extension Settings
+                    </div>
+                    <div class="nr-ext-settings-cell" id="nr-ext-settings-reader">
+                        Reader
+                    </div>
+                    <div class="nr-ext-settings-cell" id="nr-ext-settings-appearance">
+                        Appearance
+                    </div>
+                    <div class="nr-ext-settings-cell" id="nr-ext-settings-voices">
+                        Voices &amp; Toggle
+                    </div>
+                    <div class="nr-ext-settings-cell" id="nr-ext-settings-hotkey">
+                        <div>Hotkey Shortcuts</div>
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_open"></use>
+                        </svg>
+                    </div>
+                    <div class="nr-ext-settings-cell" id="nr-ext-settings-pe">
+                        <div>Pronounciation Editor</div>
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_open"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="nr-ext-settings-group">
+                    <div class="nr-ext-settings-header">
+                        Other
+                    </div>
+                    <div class="nr-ext-settings-cell" id="nr-ext-settings-help" id="nr-ext-settings-help">
+                        <div>Help &amp; Documentation</div>
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_open"></use>
+                        </svg>
+                    </div>
+                    <div class="nr-ext-settings-cell" id="nr-ext-settings-restart">
+                        <div>Restart Reader</div>
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_replay"></use>
+                        </svg>
+                    </div>
+                    <div class="nr-ext-settings-cell" id="nr-ext-logout">
+                        Log Out
+                    </div>
+                </div>
+            </div>
+            <div class="nr-ext-settings-content">
+                <div class="nr-ext-account" id="nr-ext-account" ext-account="init">
+                    <div class="nr-ext-account-login" id="nr-ext-account-login" account-level="free">
+                        <div class="nr-ext-settings-content-header">Account</div>
+                        <div class="nr-ext-settings-card">
+                            <div class="nr-ext-settings-card-content">
+                                <div class="nr-ext-account-cell">
+                                    <div class="nr-ext-account-icon">
+                                        <svg class="ext-icon">
+                                            <use xlink:href="#ext_icon_account"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="nr-ext-account-cell">
+                                    <div class="nr-ext-account-info">
+                                        <div class="nr-ext-account-info-title">Email</div>
+                                        <div class="nr-ext-account-info-text" id="nr-ext-account-email">aaa@bbb.ccc
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nr-ext-account-cell">
+                                    <div class="nr-ext-account-info">
+                                        <div class="nr-ext-account-info-title">Plan</div>
+                                        <div class="nr-ext-account-info-text" id="nr-ext-account-plan">Free Plan</div>
+                                        <button class="ext-icon-button-sm" id="nr-ext-refresh-license-btn">
+                                            <svg class="ext-icon icon-grey" id="nr-ext-refresh-license-icon">
+                                                <use xlink:href="#ext_icon_replay"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="nr-ext-account-actions">
+                                        <button class="ext-primary-button" id="nr-ext-account-upgrade">
+                                            Upgrade
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nr-ext-account-signup">
+                        <div class="nr-ext-signup-card">
+                            <div class="nr-ext-signup-title">To continue, please log in or create an account</div>
+                            <button class="ext-primary-button" id="nr-ext-signup">Sign up</button>
+                            <div class="nr-ext-signup-tips">
+                                <span>Already have an account?</span>
+                                <button class="ext-link-button" id="nr-ext-login">Log in</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="nr-ext-account-edit" id="nr-ext-account-edit">
+                        <div class="nr-ext-edit-card">
+                            <div class="nr-ext-edit-card-header">
+                                <div class="nr-ext-edit-card-title">Change email</div>
+                                <button class="ext-icon-button" id="nr-ext-edit-close">
+                                    <svg class="ext-icon">
+                                        <use xlink:href="#ext_icon_close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="nr-ext-edit-card-body">
+                                <p>Enter a new email and current password to edit</p>
+                                <div class="nr-ext-edit-field">
+                                    <div class="nr-ext-edit-label">Email</div>
+                                    <input type="email" name="nr-ext-edit-email" id="nr-ext-edit-email">
+                                </div>
+                                <div class="nr-ext-edit-field">
+                                    <div class="nr-ext-edit-label">Current Password</div>
+                                    <input type="password" name="nr-ext-edit-password" id="nr-ext-edit-password">
+                                </div>
+                            </div>
+                            <div class="nr-ext-edit-card-footer">
+                                <button class="ext-link-button" id="nr-ext-edit-cancel">Cancel</button>
+                                <button class="ext-primary-button">Confirm</button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="nr-ext-appearance">
+                    <div class="nr-ext-settings-content-header">Appearance</div>
+                    <div class="nr-ext-settings-card-header">Theme</div>
+                    <div class="nr-ext-settings-card">
+                        <div class="nr-ext-radio-cell">
+                            <input class="nr-ext-input-radio" type="radio" name="nr-ext-theme" value="nr-ext-theme-dark"
+                                id="nr-ext-theme-dark">
+                            <label class="nr-ext-radio-label" for="nr-ext-theme-dark">
+                                Dark theme
+                            </label>
+                        </div>
+                        <div class="nr-ext-radio-cell">
+                            <input class="nr-ext-input-radio" type="radio" name="nr-ext-theme"
+                                value="nr-ext-theme-light" id="nr-ext-theme-light" checked="">
+                            <label class="nr-ext-radio-label" for="nr-ext-theme-light">
+                                Light theme
+                            </label>
+                        </div>
+                        <div class="nr-ext-radio-cell">
+                            <input class="nr-ext-input-radio" type="radio" name="nr-ext-theme"
+                                value="nr-ext-theme-system" id="nr-ext-theme-system">
+                            <label class="nr-ext-radio-label" for="nr-ext-theme-system">
+                                System default
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="nr-ext-settings-card-header">Highlight</div>
+                    <div class="nr-ext-settings-card">
+                        <div class="nr-ext-dropdown-cell">
+                            <div class="nr-ext-dropdown-label">Text on highlight</div>
+                            <div class="dropdown nr-ext-dropdown">
+                                <button class="dropdown-toggle ext-button" id="nr-ext-highlight-type" type="button"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    <div id="nr-ext-highlight-type-text">Sentence &amp; word</div>
+                                    <svg class="ext-icon">
+                                        <use xlink:href="#arrow_drop_down"></use>
+                                    </svg>
+                                </button>
+                                <div class="dropdown-menu nr-ext-highlight-type-list"
+                                    aria-labelledby="nr-ext-highlight-type" id="nr-ext-highlight-type-list"
+                                    value="both">
+                                    <div class="dropdown-item" value="both">Sentence &amp; Word</div>
+                                    <div class="dropdown-item" value="sentence">Sentence Only</div>
+                                    <div class="dropdown-item" value="word">Word Only</div>
+                                    <div class="dropdown-item" value="none">None</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nr-ext-highlight" id="nr-ext-highlight">
+                            <div class="nr-ext-cell-group">
+                                <div class="nr-ext-cell-group-header">Highlight color</div>
+                                <div class="nr-ext-cell-group-list" id="nr-ext-highlight-color-list" value="light">
+                                    <div class="nr-ext-radio-cell">
+                                        <input class="nr-ext-input-radio" type="radio" name="nr-ext-highlight-color"
+                                            id="nr-ext-highlight-light" value="light" checked="">
+                                        <label class="nr-ext-radio-label" for="nr-ext-highlight-light">
+                                            Light
+                                        </label>
+                                    </div>
+                                    <div class="nr-ext-radio-cell">
+                                        <input class="nr-ext-input-radio" type="radio" name="nr-ext-highlight-color"
+                                            id="nr-ext-highlight-dark" value="dark">
+                                        <label class="nr-ext-radio-label" for="nr-ext-highlight-dark">
+                                            Dark
+                                        </label>
+                                    </div>
+                                    <div class="nr-ext-radio-cell">
+                                        <input class="nr-ext-input-radio" type="radio" name="nr-ext-highlight-color"
+                                            id="nr-ext-highlight-ice" value="ice">
+                                        <label class="nr-ext-radio-label" for="nr-ext-highlight-ice">
+                                            Ice
+                                        </label>
+                                    </div>
+                                    <div class="nr-ext-radio-cell">
+                                        <input class="nr-ext-input-radio" type="radio" name="nr-ext-highlight-color"
+                                            id="nr-ext-highlight-warm" value="warm">
+                                        <label class="nr-ext-radio-label" for="nr-ext-highlight-warm">
+                                            Warm
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nr-ext-highlight-preview" id="nr-ext-highlight-preview">
+                                <div class="nr-ext-sentence nr-sentence-highlight-light">
+                                    This is a <span class="nr-ext-word nr-word-highlight-light">preview</span> to show
+                                    highlighted text
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="nr-ext-voices">
+                    <div class="nr-ext-settings-content-header">Voices &amp; Toggle</div>
+                    <div class="nr-ext-settings-card-header">Voices</div>
+                    <div class="nr-ext-settings-card">
+                        <div class="nr-ext-voice-list" id="nr-ext-settings-voice-list" voice-type="free">
+                            <div class="nr-ext-voice-list-header">
+                                <button class="ext-link-button" id="nr-ext-settings-voice-free">free</button>
+                                <button class="ext-link-button" id="nr-ext-settings-voice-prem">premium</button>
+                                <button class="ext-link-button" id="nr-ext-settings-voice-plus">plus</button>
+                            </div>
+                            <div class="nr-ext-voice-list-content" id="nr-ext-settings-free-voice-list">
+                                <div class="m-3 text-danger" id="nr-ext-settings-no-free-voices">
+                                    Loading voices please wait ...
+                                </div>
+                                <button class="m-3 ext-primary-button" id="nr-ext-settings-no-free-voices-reload-btn"
+                                    style="display:hidden">Restart Reader</button>
+                            </div>
+                            <select id="nr-ext-settings-free-voice-list-mapper" class="nr-ext-voice-list-mapper">
+                            </select>
+                            <div class="nr-ext-voice-list-content" id="nr-ext-settings-prem-voice-list">prem</div>
+                            <select id="nr-ext-settings-prem-voice-list-mapper" class="nr-ext-voice-list-mapper">
+                            </select>
+                            <div class="nr-ext-voice-list-content" id="nr-ext-settings-plus-voice-list">plus</div>
+                            <select id="nr-ext-settings-plus-voice-list-mapper" class="nr-ext-voice-list-mapper">
+                            </select>
+                        </div>
+                        <div class="nr-ext-slider-cell">
+                            <div class="nr-ext-slider-label">
+                                Speed
+                            </div>
+                            <div class="nr-ext-slider-body">
+                                <div class="nr-ext-progress-text"><span
+                                        id="nr-ext-settings-speed-multiplication-factor">1.0</span>x (<span
+                                        id="nr-ext-settings-speed-text"></span> WPM)</div>
+                                <div class="nr-ext-progress-bar">
+                                    <input id="nr-ext-settings-speed" type="text" class="js-range-slider" value="" />
+                                    <input type="text" class="js-range-slider irs-hidden-input" value="" tabindex="-1"
+                                        readonly="" id="nr-ext-settings-speed-slider-value-sender" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nr-ext-slider-cell">
+                            <div class="nr-ext-slider-label">
+                                Volume
+                            </div>
+                            <div class="nr-ext-slider-body">
+                                <div class="nr-ext-progress-text" id="nr-ext-volume-text">16%</div>
+                                <div class="nr-ext-progress-bar">
+                                    <input type="text" class="js-range-slider" value="" id="nr-ext-volume" />
+                                    <input type="text" class="js-range-slider irs-hidden-input" value="" tabindex="-1"
+                                        readonly="" id="nr-ext-volume-slider-value-sender" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nr-ext-settings-card-header">Voice Toggling</div>
+                    <div class="nr-ext-settings-card">
+                        <div class="nr-ext-text-cell">
+                            <svg class="ext-icon">
+                                <use xlink:href="#ext_icon_lightbulb"></use>
+                            </svg>
+                            <div class="nr-ext-text-body">
+                                When reader is playing, you can toggle between 2 selected voices using hotkey shortcut:
+                                <b>Alt + S</b>
+                            </div>
+                        </div>
+                        <div class="nr-ext-dropdown-cell">
+                            <div class="nr-ext-dropdown-label">Toggle between:</div>
+                            <div class="nr-ext-dropdown-body">
+                                <div class="dropdown nr-ext-dropdown">
+                                    <button class="ext-button dropdown-toggle dropup" id="nr-ext-preset1-voice"
+                                        type="button" data-toggle="dropdown" aria-expanded="false">
+                                        <div class="nr-ext-voice" id="nr-ext-preset1-voice-flag"></div>
+                                        <div class="nr-ext-voice-toggle-text" id="nr-ext-preset1-voice-text">Voice 1
+                                        </div>
+                                        <svg class="ext-icon">
+                                            <use xlink:href="#arrow_drop_down"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="nr-ext-preset1-voice"
+                                        id="nr-ext-preset1-voice-list">
+                                    </div>
+                                    <select id="nr-ext-preset1-voice-list-mapper" class="nr-ext-voice-list-mapper">
+                                    </select>
+                                </div>
+                                <svg class="ext-icon">
+                                    <use xlink:href="#ext_icon_swap_horiz"></use>
+                                </svg>
+                                <div class="dropdown nr-ext-dropdown">
+                                    <button class="ext-button dropdown-toggle dropup" id="nr-ext-preset2-voice"
+                                        type="button" data-toggle="dropdown" aria-expanded="false">
+                                        <div class="nr-ext-voice" id="nr-ext-preset2-voice-flag"></div>
+                                        <div class="nr-ext-voice-toggle-text" id="nr-ext-preset2-voice-text">Voice 2
+                                        </div>
+                                        <svg class="ext-icon">
+                                            <use xlink:href="#arrow_drop_down"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="nr-ext-preset2-voice"
+                                        id="nr-ext-preset2-voice-list">
+                                    </div>
+                                    <select id="nr-ext-preset2-voice-list-mapper" class="nr-ext-voice-list-mapper">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nr-ext-reader-settings">
+                    <div class="nr-ext-settings-content-header">Reader Settings</div>
+                    <div class="nr-ext-settings-card-header">Default</div>
+                    <div class="nr-ext-settings-card">
+                        <div class="nr-ext-switch-cell">
+                            <label class="nr-ext-radio-label" for="nr-ext-autoscroll-toggle">
+                                Auto-scroll
+                            </label>
+                            <button class="ext-icon-button-lg nr-ext-toggle" toggle-status="on"
+                                id="nr-ext-autoscroll-toggle">
+                                <svg class="ext-icon icon-toggle-on">
+                                    <use xlink:href="#ext_icon_toggle_on"></use>
+                                </svg>
+                                <svg class="ext-icon icon-toggle-off">
+                                    <use xlink:href="#ext_icon_toggle_off"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="nr-ext-switch-cell">
+                            <label class="nr-ext-radio-label" for="nr-ext-auto-select-voice">
+                                Auto-detect voice by language
+                                <!-- <button class="ext-icon-button-sm" id="nr-ext-tooltip-auto-select-voice">
+                                    <svg class="ext-icon icon-grey">
+                                        <use xlink:href="#ext_icon_info"></use>
+                                    </svg>
+                                </button> -->
+                            </label>
+                            <button class="ext-icon-button-lg nr-ext-toggle" toggle-status="on"
+                                id="nr-ext-auto-select-voice">
+                                <svg class="ext-icon icon-toggle-on">
+                                    <use xlink:href="#ext_icon_toggle_on"></use>
+                                </svg>
+                                <svg class="ext-icon icon-toggle-off">
+                                    <use xlink:href="#ext_icon_toggle_off"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="nr-ext-switch-cell">
+                            <label class="nr-ext-radio-label" for="nr-ext-click-to-read-toggle">
+                                Click to Read
+                            </label>
+                            <button class="ext-icon-button-lg nr-ext-toggle" toggle-status="off"
+                                id="nr-ext-click-to-read-toggle">
+                                <svg class="ext-icon icon-toggle-on">
+                                    <use xlink:href="#ext_icon_toggle_on"></use>
+                                </svg>
+                                <svg class="ext-icon icon-toggle-off">
+                                    <use xlink:href="#ext_icon_toggle_off"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- <div class="nr-ext-switch-cell">
+                            <label class="nr-ext-radio-label" for="nr-ext-auto-minimize-toggle">
+                                Auto-minimize the Reading Bar
+                            </label>
+                            <button class="ext-icon-button-lg nr-ext-toggle" toggle-status="on"
+                                id="nr-ext-auto-minimize-toggle">
+                                <svg class="ext-icon icon-toggle-on">
+                                    <use xlink:href="#ext_icon_toggle_on"></use>
+                                </svg>
+                                <svg class="ext-icon icon-toggle-off">
+                                    <use xlink:href="#ext_icon_toggle_off"></use>
+                                </svg>
+                            </button>
+                        </div> -->
+                    </div>
+
+                    <div class="nr-ext-settings-card-header">On Startup</div>
+                    <div class="nr-ext-settings-card">
+                        <div class="nr-ext-cell-group">
+                            <div class="nr-ext-switch-cell">
+                                <label class="nr-ext-radio-label" for="nr-ext-toggle-quick-start">
+                                    Display quick start widget
+                                </label>
+                                <button class="ext-icon-button-lg nr-ext-toggle" toggle-status="off"
+                                    id="nr-ext-toggle-quick-start" data-toggle="collapse"
+                                    data-target="#nr-ext-quick-start-group">
+                                    <svg class="ext-icon icon-toggle-on">
+                                        <use xlink:href="#ext_icon_toggle_on"></use>
+                                    </svg>
+                                    <svg class="ext-icon icon-toggle-off">
+                                        <use xlink:href="#ext_icon_toggle_off"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="nr-ext-cell-group-list collapse show" id="nr-ext-quick-start-group">
+                                <div class="nr-ext-checkbox-cell">
+                                    <input class="nr-ext-input-checkbox" type="checkbox" name="nr-ext-quick-start"
+                                        id="nr-ext-quick-start-webpage">
+                                    <label class="nr-ext-checkbox-label" for="nr-ext-quick-start-webpages">
+                                        All webpages
+                                    </label>
+                                </div>
+                                <div class="nr-ext-checkbox-cell">
+                                    <input class="nr-ext-input-checkbox" type="checkbox" name="nr-ext-quick-start"
+                                        id="nr-ext-quick-start-googledocs">
+                                    <label class="nr-ext-checkbox-label" for="nr-ext-quick-start-googledocs">
+                                        Google Docs
+                                    </label>
+                                </div>
+                                <div class="nr-ext-checkbox-cell">
+                                    <input class="nr-ext-input-checkbox" type="checkbox" name="nr-ext-quick-start"
+                                        id="nr-ext-quick-start-email">
+                                    <label class="nr-ext-checkbox-label" for="nr-ext-quick-start-email">
+                                        Email
+                                    </label>
+                                </div>
+                                <div class="nr-ext-checkbox-cell">
+                                    <input class="nr-ext-input-checkbox" type="checkbox" name="nr-ext-quick-start"
+                                        id="nr-ext-quick-start-pdf">
+                                    <label class="nr-ext-checkbox-label" for="nr-ext-quick-start-pdf">
+                                        Online PDF
+                                    </label>
+                                </div>
+                                <div class="nr-ext-checkbox-cell">
+                                    <input class="nr-ext-input-checkbox" type="checkbox" name="nr-ext-quick-start"
+                                        id="nr-ext-quick-start-website">
+                                    <label class="nr-ext-checkbox-label" for="nr-ext-quick-start-website">
+                                        This website
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nr-ext-settings-card-header">Read Selection</div>
+                    <div class="nr-ext-settings-card">
+                        <div class="nr-ext-switch-cell">
+                            <label class="nr-ext-radio-label" for="nr-ext-read-icon">
+                                Show Reader Icon
+                            </label>
+                            <button class="ext-icon-button-lg nr-ext-toggle" toggle-status="off" id="nr-ext-read-icon">
+                                <svg class="ext-icon icon-toggle-on">
+                                    <use xlink:href="#ext_icon_toggle_on"></use>
+                                </svg>
+                                <svg class="ext-icon icon-toggle-off">
+                                    <use xlink:href="#ext_icon_toggle_off"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="nr-ext-dropdown-cell">
+                            <div class="nr-ext-dropdown-label">Show icon only when text goes over:</div>
+                            <div class="dropdown nr-ext-dropdown">
+                                <button class="ext-button dropdown-toggle" id="nr-ext-read-selection" type="button"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    <div id="nr-ext-read-selection-text">500 characters</div>
+                                    <svg class="ext-icon">
+                                        <use xlink:href="#arrow_drop_down"></use>
+                                    </svg>
+                                </button>
+                                <div class="dropdown-menu" id="nr-ext-rs-char-limit"
+                                    aria-labelledby="nr-ext-read-selection">
+                                    <div class="dropdown-item nr-ext-selectable" value="1">1 characters</div>
+                                    <div class="dropdown-item nr-ext-selectable" value="10">10 characters</div>
+                                    <div class="dropdown-item nr-ext-selectable" value="15">15 characters</div>
+                                    <div class="dropdown-item nr-ext-selectable" value="20">20 characters</div>
+                                    <div class="dropdown-item nr-ext-selectable" value="30">30 characters</div>
+                                    <div class="dropdown-item nr-ext-selectable" value="50">50 characters</div>
+                                    <div class="dropdown-item nr-ext-selectable" value="100">100 characters</div>
+                                    <div class="dropdown-item nr-ext-selectable" value="200">200 characters</div>
+                                    <div class="dropdown-item nr-ext-selectable" value="300">300 characters</div>
+                                    <div class="dropdown-item nr-ext-selectable" value="400">400 characters</div>
+                                    <div class="dropdown-item nr-ext-selectable" value="500">500 characters</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="nr-ext-settings-card-header">Closed Captions</div>
+                    <div class="nr-ext-settings-card">
+                        <div class="nr-ext-switch-cell">
+                            <label class="nr-ext-radio-label" for="nr-ext-show-cc">
+                                Show text captions
+                            </label>
+                            <button class="ext-icon-button-lg nr-ext-toggle" toggle-status="on" id="nr-ext-show-cc">
+                                <svg class="ext-icon icon-toggle-on">
+                                    <use xlink:href="#ext_icon_toggle_on"></use>
+                                </svg>
+                                <svg class="ext-icon icon-toggle-off">
+                                    <use xlink:href="#ext_icon_toggle_off"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="nr-ext-switch-cell">
+                            <label class="nr-ext-radio-label" for="nr-ext-dyslexic">
+                                Dyslexic font
+                            </label>
+                            <button class="ext-icon-button-lg nr-ext-toggle" toggle-status="off" id="nr-ext-dyslexic">
+                                <svg class="ext-icon icon-toggle-on">
+                                    <use xlink:href="#ext_icon_toggle_on"></use>
+                                </svg>
+                                <svg class="ext-icon icon-toggle-off">
+                                    <use xlink:href="#ext_icon_toggle_off"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="nr-ext-settings-actions">
+                <button class="ext-icon-button-md" id="nr-ext-settings-close">
+                    <svg class="ext-icon">
+                        <use xlink:href="#ext_icon_close"></use>
+                    </svg>
+                </button>
+                <button class="ext-primary-button nr-ext-feedback" id="nr-ext-feedback">
+                    <svg class="ext-icon">
+                        <use xlink:href="#ext_icon_chat"></use>
+                    </svg>
+                    <span>Send Feedback</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="nr-immersive-reader" id="nr-ext-immersive-reader" menu-status="close">
+        <div class="nr-immersive-reader-text" text-scale="1" id="nr-ext-immersive-text">
+            <div class="container" id="nr-ext-immersive-text-container">
+            </div>
+        </div>
+        <div class="nr-immersive-reader-pages" id="nr-ext-immersive-reader-pages">
+            <button class="ext-link-button" id="nr-ext-immersive-prev-page">
+                <svg class="ext-icon">
+                    <use xlink:href="#chevron_left"></use>
+                </svg>
+                <span>Previous</span>
+            </button>
+            <div class="nr-immersive-reader-pages-inputs">
+                <div class="nr-immersive-reader-pages-input">
+                    <input type="number" min="1" id="nr-ext-immersive-current-page">
+                </div>
+                <div class="nr-immersive-reader-pages-middle">of</div>
+                <div class="nr-immersive-reader-pages-text" id="nr-ext-immersive-all-page">
+
+                </div>
+            </div>
+            <button class="ext-link-button" id="nr-ext-immersive-next-page">
+                <span>Next</span>
+                <svg class="ext-icon">
+                    <use xlink:href="#chevron_right"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="nr-immersive-reader-bar">
+            <button class="ext-icon-button" id="nr-ext-immersive-close">
+                <svg class="ext-icon">
+                    <use xlink:href="#ext_icon_close"></use>
+                </svg>
+            </button>
+            <button class="ext-icon-button-md" id="nr-ext-immersive-trigger">
+                <svg class="ext-icon">
+                    <use xlink:href="#ext_icon_text_fields"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="nr-immersive-reader-menu" id="nr-ext-immersive-menu">
+            <div class="immersive-reader-menu-header">Text Preferences</div>
+            <div class="immersive-reader-content">
+                <div class="nr-immersive-cell">
+                    <div>Text Size</div>
+                    <div class="nr-immersive-cell-detail nr-progress">
+                        <svg class="ext-icon-sm">
+                            <use xlink:href="#ext_icon_text_format"></use>
+                        </svg>
+                        <div class="nr-ext-progress-bar">
+                            <input type="text" class="js-range-slider" value="" id="nr-ext-immersive-textsize" />
+                            <input type="text" id="nr-ext-immersive-textsize-value-sender" value=""
+                                style="display: none;" />
+                        </div>
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_text_format"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="nr-immersive-cell">
+                    <div>Text Spacing</div>
+                    <button class="ext-icon-button-lg nr-ext-toggle" toggle-status="off"
+                        id="nr-ext-immersive-toggle-text-spacing">
+                        <svg class="ext-icon icon-toggle-on">
+                            <use xlink:href="#ext_icon_toggle_on"></use>
+                        </svg>
+                        <svg class="ext-icon icon-toggle-off">
+                            <use xlink:href="#ext_icon_toggle_off"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="nr-immersive-cell">
+                    <div>Dyslexia Font</div>
+                    <button class="ext-icon-button-lg nr-ext-toggle" toggle-status="off"
+                        id="nr-ext-immersive-toggle-dyslexia">
+                        <svg class="ext-icon icon-toggle-on">
+                            <use xlink:href="#ext_icon_toggle_on"></use>
+                        </svg>
+                        <svg class="ext-icon icon-toggle-off">
+                            <use xlink:href="#ext_icon_toggle_off"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nr-ext-onboard" id="nr-ext-onboard" onboard-step="1">
+        <div class="nr-ext-onboard-card onboard-theme">
+            <!-- <div class="nr-ext-onboard-close">
+                <button class="ext-icon-button-md nr-ext-onboard-close">
+                    <svg class="ext-icon">
+                        <use xlink:href="#ext_icon_close"></use>
+                    </svg>
+                </button>
+            </div> -->
+
+            <div class="nr-ext-onboard-header">
+                <div class="nr-ext-onboard-title">Welcome to NaturalReader</div>
+                <div class="nr-ext-onboard-subheading">
+                    SELECT YOUR PREFERRED VIEWING MODE
+                </div>
+            </div>
+
+            <div class="nr-ext-onboard-body">
+                <button class="ext-link-button nr-ext-onboard-light" id="nr-ext-onboard-light">
+                    <svg class="ext-icon-sm">
+                        <use xlink:href="#ext_icon_light"></use>
+                    </svg>
+                    <div>Light</div>
+                    <svg class="ext-icon-theme">
+                        <use xlink:href="#ext_demo_light"></use>
+                    </svg>
+                    <svg class="ext-icon-sm ext-icon-selected">
+                        <use xlink:href="#ext_icon_done"></use>
+                    </svg>
+                </button>
+                <button class="ext-link-button nr-ext-onboard-dark" id="nr-ext-onboard-dark">
+                    <svg class="ext-icon-sm">
+                        <use xlink:href="#ext_icon_dark"></use>
+                    </svg>
+                    <div>Dark</div>
+                    <svg class="ext-icon-theme">
+                        <use xlink:href="#ext_demo_dark"></use>
+                    </svg>
+                    <svg class="ext-icon-sm ext-icon-selected">
+                        <use xlink:href="#ext_icon_done"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nr-ext-onboard-footer">
+                <button class="ext-outline-button nr-ext-onboard-skip" id="nr-ext-onboard-skip">Skip</button>
+                <div class="nr-ext-onboard-step">
+                    <div>1</div>
+                    <div>&nbsp;/ 5</div>
+                </div>
+                <button class="ext-primary-button nr-ext-onboard-next" id="nr-ext-onboard-next">Next</button>
+            </div>
+        </div>
+
+        <div class="nr-ext-onboard-card onboard-voice">
+            <!-- <div class="nr-ext-onboard-close">
+                <button class="ext-icon-button-md nr-ext-onboard-close">
+                    <svg class="ext-icon">
+                        <use xlink:href="#ext_icon_close"></use>
+                    </svg>
+                </button>
+            </div> -->
+
+            <div class="nr-ext-onboard-header">
+                <div class="nr-ext-onboard-title">Welcome to NaturalReader</div>
+                <div class="nr-ext-onboard-subheading">
+                    <div>SELECT A LANGUAGE AND READING VOICE</div>
+                    <div class="dropdown nr-ext-dropdown">
+                        <button class="ext-button dropdown-toggle" id="nr-ext-language" type="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            <div id="nr-ext-voice-language">English (US)</div>
+                            <svg class="ext-icon">
+                                <use xlink:href="#arrow_drop_down"></use>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu" id="nr-ext-language-list" aria-labelledby="nr-ext-language">
+                            <div class="dropdown-item active" value="en-US">English (US)</div>
+                            <div class="dropdown-item" value="en-GB">English (UK)</div>
+                            <div class="dropdown-item" value="en-AU">English (Australia)</div>
+                            <div class="dropdown-item" value="en-IN">English (India)</div>
+                            <div class="dropdown-item" value="en-CY">English (Wales)</div>
+                            <div class="dropdown-item" value="es-ES">Spanish (Spain)</div>
+                            <div class="dropdown-item" value="es-US">Spanish (US)</div>
+                            <div class="dropdown-item" value="fr-FR">French</div>
+                            <div class="dropdown-item" value="fr-CA">French (Canada)</div>
+                            <div class="dropdown-item" value="pt-PT">Portuguese (Portugal)</div>
+                            <div class="dropdown-item" value="pt-BR">Portuguese (Brazil)</div>
+                            <div class="dropdown-item" value="de-DE">German</div>
+                            <div class="dropdown-item" value="it-IT">Italian</div>
+                            <div class="dropdown-item" value="nl-NL">Dutch</div>
+                            <div class="dropdown-item" value="sv-SE">Swedish</div>
+                            <div class="dropdown-item" value="da-DK">Danish</div>
+                            <div class="dropdown-item" value="is-IS">Icelandic</div>
+                            <div class="dropdown-item" value="no-NO">Norwegian</div>
+                            <div class="dropdown-item" value="pl-PL">Polish</div>
+                            <div class="dropdown-item" value="ro-RO">Romanian</div>
+                            <div class="dropdown-item" value="ru-RU">Russian</div>
+                            <div class="dropdown-item" value="tr-TR">Turkish</div>
+                            <div class="dropdown-item" value="cy-GB">Welsh</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nr-ext-onboard-body">
+                <div class="nr-ext-onboard-voices">
+                    <!-- <button class="ext-icon-button-lg" id="nr-ext-voices-prev" disabled="disabled">
+                        <svg class="ext-icon">
+                            <use xlink:href="#chevron_left"></use>
+                        </svg>
+                    </button> -->
+                    <div class="nr-ext-voices-list" id="nr-ext-onboard-voice-list">
+                    </div>
+                    <!-- <button class="ext-icon-button-lg" id="nr-ext-voices-next">
+                        <svg class="ext-icon">
+                            <use xlink:href="#chevron_right"></use>
+                        </svg>
+                    </button> -->
+                </div>
+            </div>
+
+            <div class="nr-ext-onboard-footer">
+                <button class="ext-outline-button nr-ext-onboard-skip">Skip</button>
+                <div class="nr-ext-onboard-step">
+                    <div>2</div>
+                    <div>&nbsp;/ 5</div>
+                </div>
+                <button class="ext-primary-button nr-ext-onboard-next">Next</button>
+            </div>
+        </div>
+
+        <div class="nr-ext-onboard-card onboard-speed">
+            <!-- <div class="nr-ext-onboard-close">
+                <button class="ext-icon-button-md nr-ext-onboard-close">
+                    <svg class="ext-icon">
+                        <use xlink:href="#ext_icon_close"></use>
+                    </svg>
+                </button>
+            </div> -->
+
+            <div class="nr-ext-onboard-header">
+                <div class="nr-ext-onboard-title">Welcome to NaturalReader</div>
+                <div class="nr-ext-onboard-subheading">
+                    <div>SELECT THE LISTENING SPEED</div>
+                    <button class="ext-icon-button" id="nr-ext-onboard-speed-preivew">
+                        <svg class="ext-icon">
+                            <use xlink:href="#ext_icon_play"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nr-ext-onboard-body">
+                <div class="nr-onboard-card-speed">
+                    <div class="nr-ext-progress-text">Speed</div>
+                    <div class="nr-ext-progress-bar">
+                        <input id="nr-ext-onboard-speed" type="text" class="js-range-slider" value="" />
+                        <input type="text" class="js-range-slider irs-hidden-input" value="" tabindex="-1" readonly=""
+                            id="nr-ext-onboard-speed-slider-value-sender">
+                    </div>
+                    <div class="nr-ext-progress-text"><span id="nr-ext-onboard-speed-text">200</span> wpm</div>
+                </div>
+            </div>
+
+            <div class="nr-ext-onboard-footer">
+                <button class="ext-outline-button nr-ext-onboard-skip">Skip</button>
+                <div class="nr-ext-onboard-step">
+                    <div>3</div>
+                    <div>&nbsp;/ 5</div>
+                </div>
+                <button class="ext-primary-button nr-ext-onboard-next">Next</button>
+            </div>
+        </div>
+
+        <div class="nr-ext-onboard-card onboard-pin">
+            <!-- <div class="nr-ext-onboard-close">
+                <button class="ext-icon-button-md nr-ext-onboard-close">
+                    <svg class="ext-icon">
+                        <use xlink:href="#ext_icon_close"></use>
+                    </svg>
+                </button>
+            </div> -->
+
+            <div class="nr-ext-onboard-header">
+                <div class="nr-ext-onboard-title">Welcome to NaturalReader</div>
+                <div class="nr-ext-onboard-subheading">PIN TO CHROME</div>
+            </div>
+
+            <div class="nr-ext-onboard-body">
+                <div class="nr-onboard-pin">
+                    <div class="nr-onboard-pin-img">
+                        <img alt="NaturalReader Extension">
+                    </div>
+                </div>
+            </div>
+
+            <div class="nr-ext-onboard-footer">
+                <button class="ext-outline-button nr-ext-onboard-skip">Skip</button>
+                <div class="nr-ext-onboard-step">
+                    <div>4</div>
+                    <div>&nbsp;/ 5</div>
+                </div>
+                <button class="ext-primary-button nr-ext-onboard-next">Next</button>
+            </div>
+        </div>
+
+        <div class="nr-ext-onboard-card onboard-access">
+            <!-- <div class="nr-ext-onboard-close">
+                <button class="ext-icon-button-md nr-ext-onboard-close">
+                    <svg class="ext-icon">
+                        <use xlink:href="#ext_icon_close"></use>
+                    </svg>
+                </button>
+            </div> -->
+
+            <div class="nr-ext-onboard-header">
+                <div class="nr-ext-onboard-title">Welcome to NaturalReader</div>
+                <div class="nr-ext-onboard-subheading">REGISTER WITH US FOR MORE ACCESS</div>
+            </div>
+
+            <div class="nr-ext-onboard-body">
+                After registering you can read PDF files, Kindle Ebooks and access more secured services.
+            </div>
+            <div class="nr-ext-onboard-footer">
+                <button class="ext-outline-button nr-ext-onboard-skip">Skip</button>
+                <div class="nr-ext-onboard-step">
+                    <div>5</div>
+                    <div>&nbsp;/ 5</div>
+                </div>
+                <div>
+                    <button class="ext-outline-button nr-ext-onboard-next" id="nr-ext-onboard-login">Log In</button>
+                    <button class="ext-primary-button nr-ext-onboard-next" id="nr-ext-onboard-signup">Register</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<svg width="0" height="0" class="hidden">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_done">
+        <path d="M0 0h24v24H0V0z" fill="none" color="transparent"></path>
+        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 32" id="ext_icon_previous">
+        <path
+            d="M4.18085 27.0482C4.18085 28.2027 3.24492 29.1387 2.09039 29.1387C0.935863 29.1387 -6.58857e-05 28.2027 -6.59871e-05 27.0482L-6.80456e-05 3.60423C-6.8147e-05 2.4497 0.935861 1.51378 2.09039 1.51378C3.24492 1.51377 4.18084 2.44971 4.18084 3.60423L4.18085 27.0482Z">
+        </path>
+        <path
+            d="M6.29702 17.4904C5.23642 16.6902 5.23643 15.0974 6.29702 14.2972L19.2203 4.54712C20.538 3.55293 22.4248 4.49298 22.4248 6.1437L22.4248 25.6439C22.4248 27.2947 20.538 28.2347 19.2203 27.2405L6.29702 17.4904Z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115" id="ext_icon_play">
+        <path
+            d="M113.885 57.5C113.885 88.7678 88.5371 114.115 57.2693 114.115C26.0014 114.115 0.65387 88.7678 0.65387 57.5C0.65387 26.2322 26.0014 0.884644 57.2693 0.884644C88.5371 0.884644 113.885 26.2322 113.885 57.5Z"
+            fill="#134DCD" color="#134DCD"></path>
+        <path
+            d="M82.2544 54.642C84.3666 56.2426 84.3666 59.4176 82.2544 61.0181L50.4158 85.1445C47.7814 87.1408 44 85.2618 44 81.9564L44 33.7037C44 30.3984 47.7814 28.5194 50.4158 30.5156L82.2544 54.642Z"
+            fill="white" color="white"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118" id="ext_icon_pause">
+        <path
+            d="M117.529 58.726C117.529 91.0958 91.288 117.337 58.9183 117.337C26.5485 117.337 0.307617 91.0958 0.307617 58.726C0.307617 26.3562 26.5485 0.115356 58.9183 0.115356C91.288 0.115356 117.529 26.3562 117.529 58.726Z"
+            fill="#134DCD" color="#134DCD"></path>
+        <path
+            d="M67.8344 34.0949C67.8344 31.8858 69.6252 30.0949 71.8343 30.0949H73.9081C76.1172 30.0949 77.9081 31.8858 77.9081 34.0949V83.7898C77.9081 85.9989 76.1172 87.7898 73.9081 87.7898H71.8344C69.6252 87.7898 67.8344 85.9989 67.8344 83.7898V34.0949Z"
+            fill="white" color="white"></path>
+        <rect x="40.3607" y="30.0949" width="10.0737" height="57.6948" rx="4" fill="white" color="white"></rect>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 32" id="ext_icon_next">
+        <path
+            d="M24.3252 4.73938C24.3252 3.58486 25.2611 2.64893 26.4157 2.64893C27.5702 2.64893 28.5061 3.58486 28.5061 4.73938V28.1834C28.5061 29.3379 27.5702 30.2738 26.4157 30.2738C25.2611 30.2738 24.3252 29.3379 24.3252 28.1834V4.73938Z">
+        </path>
+        <path
+            d="M22.209 14.2972C23.2696 15.0974 23.2696 16.6902 22.209 17.4903L9.28576 27.2405C7.96802 28.2347 6.08121 27.2946 6.08121 25.6439L6.08121 6.14366C6.08121 4.49294 7.96802 3.55289 9.28577 4.54708L22.209 14.2972Z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 22" id="ext_icon_mp3">
+        <path
+            d="M9.18379 13.1656H8.27789V14.5167H9.18379C9.5475 14.5167 9.83521 14.1964 9.83521 13.8598C9.83521 13.4805 9.5475 13.1656 9.18379 13.1656Z">
+        </path>
+        <path
+            d="M15.6071 10.1786H0.678571C0.305357 10.1786 0 10.4839 0 10.8571V17.6429C0 18.0161 0.305357 18.3214 0.678571 18.3214H15.6071C15.981 18.3214 16.2857 18.0161 16.2857 17.6429V10.8571C16.2857 10.4839 15.981 10.1786 15.6071 10.1786ZM6.61404 15.9111C6.61404 16.1507 6.46136 16.2857 6.28832 16.2857C6.09357 16.2857 5.94089 16.1507 5.94089 15.9111V13.9039L5.04043 15.0433C4.84568 15.2828 4.60139 15.2828 4.42225 15.0433L3.61339 13.9039V15.9111C3.61339 16.1507 3.41864 16.2857 3.22254 16.2857C3.04882 16.2857 2.8975 16.1507 2.8975 15.9111V12.8569C2.8975 12.5746 3.13636 12.4816 3.22254 12.4816C3.37996 12.4816 3.47225 12.5746 3.56454 12.6778L4.75882 14.2887L5.99518 12.6174C6.175 12.3955 6.61404 12.4816 6.61404 12.8569V15.9111ZM9.18379 15.1953H8.27789V15.9118C8.27789 16.1514 8.12589 16.2864 7.93046 16.2864C7.75132 16.2864 7.56132 16.1514 7.56132 15.9118V12.8576C7.56132 12.6784 7.70246 12.4823 7.93046 12.4823H9.18379C9.8895 12.4823 10.5246 12.9546 10.5246 13.8605C10.5246 14.7175 9.8895 15.1953 9.18379 15.1953ZM12.0908 16.2857C11.6558 16.2857 11.2283 16.1066 10.9786 15.7157C10.7174 15.331 11.2765 14.9618 11.5696 15.3418C11.7101 15.5257 11.9381 15.618 12.1817 15.618C12.5129 15.618 12.8392 15.4769 12.8392 15.048C12.8392 14.4841 12.1498 14.571 11.7753 14.609C11.3193 14.6958 11.1842 14.2018 11.4502 13.9962L12.3011 13.2098H11.3735C10.9189 13.2098 10.9454 12.5312 11.3735 12.5312H13.034C13.3651 12.5312 13.5165 12.9119 13.2729 13.1555L12.3731 13.9962C13.0347 13.9474 13.5551 14.4407 13.5551 15.0487C13.5558 15.7157 13.0835 16.2857 12.0908 16.2857Z">
+        </path>
+        <path
+            d="M18.3214 5.14764L13.8524 0.678571C13.4602 0.285 12.7707 0 12.2143 0H4.75001C3.62765 0 2.71429 0.913357 2.71429 2.03571V8.82143C2.71429 9.19668 3.01762 9.5 3.39287 9.5C3.76812 9.5 4.07144 9.19668 4.07144 8.82143V2.03571C4.07144 1.66182 4.37544 1.35714 4.75001 1.35714H10.8572C11.607 1.35714 12.2143 1.96514 12.2143 2.71429V5.25893C12.2143 6.099 12.9024 6.78571 13.7411 6.78571H16.2857C17.0355 6.78571 17.6429 7.39371 17.6429 8.14286V19.6786C17.6429 20.0525 17.3395 20.3571 16.9643 20.3571H4.75001C4.37544 20.3571 4.07144 20.0525 4.07144 19.6786C4.07144 19.3033 3.76812 19 3.39287 19C3.01762 19 2.71429 19.3033 2.71429 19.6786C2.71429 20.8009 3.62765 21.7143 4.75001 21.7143H16.9643C18.0867 21.7143 19 20.8009 19 19.6786V6.78571C19 6.22996 18.715 5.54054 18.3214 5.14764Z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="ext_icon_immersive">
+        <path
+            d="M9.34363 4.22751C9.3497 4.18389 9.34297 4.13944 9.32425 4.09958C9.30552 4.05971 9.27562 4.02615 9.23818 4.00296C8.09091 3.28751 5.48454 2.15933 0.460909 2.09387C0.400684 2.09303 0.340892 2.10416 0.285007 2.12663C0.229123 2.14909 0.17826 2.18244 0.135375 2.22473C0.0924905 2.26703 0.0584387 2.31742 0.0351987 2.37299C0.0119588 2.42855 -5.90075e-06 2.48819 2.18599e-09 2.54842V16.8802C-1.17053e-05 16.9997 0.0470032 17.1144 0.130876 17.1994C0.214748 17.2845 0.328735 17.3331 0.448182 17.3348C5.13091 17.3948 7.71545 18.3802 8.98 19.0911C9.01424 19.111 9.05313 19.1215 9.09273 19.1215C9.13232 19.1215 9.17121 19.111 9.20545 19.0911C9.23977 19.0711 9.26823 19.0425 9.28801 19.008C9.30779 18.9735 9.31819 18.9345 9.31818 18.8948V4.51114C9.32081 4.41616 9.32931 4.32144 9.34363 4.22751Z">
+        </path>
+        <path
+            d="M16.5909 14.5111C16.5906 14.672 16.5336 14.8276 16.4298 14.9505C16.326 15.0734 16.1822 15.1558 16.0236 15.183C14.5498 15.4697 13.1929 16.1835 12.1218 17.2357C11.7638 17.6331 11.4507 18.0688 11.1881 18.5348C11.1647 18.577 11.1554 18.6257 11.1615 18.6736C11.1676 18.7215 11.1888 18.7662 11.222 18.8013C11.2552 18.8364 11.2988 18.8599 11.3463 18.8685C11.3938 18.8772 11.4429 18.8705 11.4863 18.8493C14.0332 17.7656 16.7853 17.2488 19.5518 17.3348C19.6712 17.3331 19.7852 17.2845 19.8691 17.1994C19.953 17.1144 20 16.9997 20 16.8802V2.54842C20 2.48819 19.988 2.42855 19.9648 2.37299C19.9415 2.31742 19.9075 2.26703 19.8646 2.22473C19.8217 2.18244 19.7708 2.14909 19.715 2.12663C19.6591 2.10416 19.5993 2.09303 19.5391 2.09387C18.5263 2.1066 17.6172 2.16569 16.7936 2.25387C16.7378 2.25993 16.6863 2.2864 16.6488 2.32819C16.6114 2.36998 16.5908 2.42414 16.5909 2.48023V14.5111Z">
+        </path>
+        <path
+            d="M15.0618 14.0148C15.1094 14.0012 15.1513 13.9724 15.1812 13.9329C15.211 13.8934 15.2272 13.8452 15.2273 13.7957V0.227507C15.2273 0.19091 15.2185 0.154845 15.2016 0.122379C15.1847 0.0899135 15.1603 0.0620066 15.1303 0.0410317C15.1003 0.0200567 15.0657 0.00663415 15.0294 0.00190534C14.9931 -0.00282348 14.9562 0.00128125 14.9218 0.0138706C13.8602 0.370154 12.8998 0.976611 12.1218 1.78205C11.3618 2.51835 10.8572 3.47847 10.6818 4.52205V16.2057C10.6818 16.2519 10.6959 16.2971 10.7221 16.3351C10.7484 16.3731 10.7857 16.4023 10.829 16.4186C10.8722 16.4349 10.9195 16.4376 10.9643 16.4263C11.0092 16.4151 11.0495 16.3905 11.08 16.3557L11.1009 16.3321C12.183 15.2101 13.5535 14.4082 15.0618 14.0148Z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_max">
+        <path
+            d="M21 8.59V4C21 3.45 20.55 3 20 3H15.41C14.52 3 14.07 4.08 14.7 4.71L16.29 6.3L6.29 16.3L4.7 14.71C4.08 14.08 3 14.52 3 15.41V20C3 20.55 3.45 21 4 21H8.59C9.48 21 9.93 19.92 9.3 19.29L7.71 17.7L17.71 7.7L19.3 9.29C19.92 9.92 21 9.48 21 8.59Z"
+            stroke="1.5"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 24" id="ext_icon_pdf">
+        <path
+            d="M18.3333 2H7.33334C6.32501 2 5.50001 2.9 5.50001 4V16C5.50001 17.1 6.32501 18 7.33334 18H18.3333C19.3417 18 20.1667 17.1 20.1667 16V4C20.1667 2.9 19.3417 2 18.3333 2ZM10.5417 9.5C10.5417 10.33 9.92751 11 9.16668 11H8.25001V12.25C8.25001 12.66 7.93834 13 7.56251 13C7.18668 13 6.87501 12.66 6.87501 12.25V8C6.87501 7.45 7.28751 7 7.79168 7H9.16668C9.92751 7 10.5417 7.67 10.5417 8.5V9.5ZM15.125 11.5C15.125 12.33 14.5108 13 13.75 13H11.9167C11.66 13 11.4583 12.78 11.4583 12.5V7.5C11.4583 7.22 11.66 7 11.9167 7H13.75C14.5108 7 15.125 7.67 15.125 8.5V11.5ZM18.7917 7.75C18.7917 8.16 18.48 8.5 18.1042 8.5H17.4167V9.5H18.1042C18.48 9.5 18.7917 9.84 18.7917 10.25C18.7917 10.66 18.48 11 18.1042 11H17.4167V12.25C17.4167 12.66 17.105 13 16.7292 13C16.3533 13 16.0417 12.66 16.0417 12.25V8C16.0417 7.45 16.4542 7 16.9583 7H18.1042C18.48 7 18.7917 7.34 18.7917 7.75ZM8.25001 9.5H9.16668V8.5H8.25001V9.5ZM2.75001 6C2.24584 6 1.83334 6.45 1.83334 7V20C1.83334 21.1 2.65834 22 3.66668 22H15.5833C16.0875 22 16.5 21.55 16.5 21C16.5 20.45 16.0875 20 15.5833 20H4.58334C4.07918 20 3.66668 19.55 3.66668 19V7C3.66668 6.45 3.25418 6 2.75001 6ZM12.8333 11.5H13.75V8.5H12.8333V11.5Z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_phone">
+        <path
+            d="M15.5 1H7.5C6.12 1 5 2.12 5 3.5V20.5C5 21.88 6.12 23 7.5 23H15.5C16.88 23 18 21.88 18 20.5V3.5C18 2.12 16.88 1 15.5 1ZM11.5 22C10.67 22 10 21.33 10 20.5C10 19.67 10.67 19 11.5 19C12.33 19 13 19.67 13 20.5C13 21.33 12.33 22 11.5 22ZM16 18H7V4H16V18Z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_open">
+        <path d="M0 0h24v24H0z" fill="none" color="transparent"></path>
+        <path
+            d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="ext_icon_chat">
+        <g>
+            <rect fill="none" color="transparent" height="24" width="24"></rect>
+        </g>
+        <g>
+            <g enable-background="new">
+                <path
+                    d="M20,4v12H5.17L4,17.17V4H20 M20,2H4C2.9,2,2,2.9,2,4v15.59c0,0.89,1.08,1.34,1.71,0.71L6,18h14c1.1,0,2-0.9,2-2V4 C22,2.9,21.1,2,20,2L20,2z">
+                </path>
+            </g>
+        </g>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 20" id="ext_icon_flag">
+        <path
+            d="M13.4892 0H2.99788C2.20289 0 1.44046 0.315387 0.878318 0.876779C0.316175 1.43817 0.000366211 2.19958 0.000366211 2.99351L0.000366211 10.4773H13.4892V0Z"
+            fill="#3C3B6E" color="#3C3B6E"></path>
+        <path
+            d="M26.5621 1.49675C26.0428 0.605437 25.0873 0 23.9805 0H13.4892V1.49675H26.5621ZM0.000366211 14.9675H26.978V16.4643H0.000366211V14.9675ZM13.4892 8.98053H26.978V10.4773H13.4892V8.98053ZM13.4892 5.98702H26.978V7.48377H13.4892V5.98702ZM0.000366211 11.974H26.978V13.4708H0.000366211V11.974ZM2.99788 19.4578H23.9805C25.0873 19.4578 26.0428 18.8524 26.5621 17.9611H0.416271C0.935591 18.8524 1.89105 19.4578 2.99788 19.4578ZM13.4892 2.99351H26.978V4.49026H13.4892V2.99351Z"
+            fill="#B22334" color="#B22334"></path>
+        <path
+            d="M0.0509577 16.9725C0.0636972 17.0421 0.0779354 17.1117 0.0951711 17.1798C0.114655 17.2554 0.138635 17.328 0.164114 17.4013C0.230809 17.5952 0.311741 17.7823 0.413657 17.9574L0.415905 17.9611H26.5617L26.5632 17.9581C26.6638 17.7817 26.7471 17.596 26.812 17.4036C26.8614 17.2631 26.8995 17.119 26.9259 16.9725C26.9566 16.8079 26.9776 16.6387 26.9776 16.4644H0C0 16.6387 0.0209826 16.8071 0.0509577 16.9725ZM0 13.4709H26.9776V14.9676H0V13.4709ZM0 10.4774V11.9741H26.9776V10.4774H13.4888H0ZM13.4888 7.48385H26.9776V8.9806H13.4888V7.48385ZM13.4888 4.49034H26.9776V5.98709H13.4888V4.49034ZM0.415905 1.49683L0.413657 1.50057L0.415905 1.49683ZM0.0959204 2.27813C0.114655 2.2018 0.140883 2.12921 0.164863 2.05586C0.13884 2.12898 0.115839 2.20313 0.0959204 2.27813V2.27813ZM13.4888 2.99358H26.9776C26.9776 2.81921 26.9566 2.65008 26.9259 2.48468C26.8997 2.33808 26.8613 2.1939 26.8113 2.05362C26.7463 1.8604 26.6627 1.67393 26.5617 1.49683H13.4888V2.99358Z"
+            fill="#EEEEEE" color="#EEEEEE"></path>
+        <path
+            d="M1.49915 2.04015L1.96226 2.37617L1.78541 2.91874L2.24777 2.58347L2.71089 2.91874L2.53404 2.37617L2.99715 2.04015H2.42463L2.24777 1.49683L2.07167 2.04015H1.49915ZM2.9979 3.5369L3.46102 3.87292L3.28417 4.4155L3.74653 4.08022L4.20965 4.4155L4.03279 3.87292L4.49591 3.5369H3.92339L3.74653 2.99358L3.57043 3.5369H2.9979ZM5.99542 3.5369L6.45853 3.87292L6.28168 4.4155L6.74405 4.08022L7.20716 4.4155L7.03031 3.87292L7.49342 3.5369H6.9209L6.74405 2.99358L6.56794 3.5369H5.99542ZM8.99293 3.5369L9.45605 3.87292L9.27919 4.4155L9.74156 4.08022L10.2047 4.4155L10.0278 3.87292L10.4909 3.5369H9.91841L9.74156 2.99358L9.56546 3.5369H8.99293ZM2.9979 6.53041L3.46102 6.86643L3.28417 7.40901L3.74653 7.07373L4.20965 7.40901L4.03279 6.86643L4.49591 6.53041H3.92339L3.74653 5.98709L3.57043 6.53041H2.9979ZM5.99542 6.53041L6.45853 6.86643L6.28168 7.40901L6.74405 7.07373L7.20716 7.40901L7.03031 6.86643L7.49342 6.53041H6.9209L6.74405 5.98709L6.56794 6.53041H5.99542ZM8.99293 6.53041L9.45605 6.86643L9.27919 7.40901L9.74156 7.07373L10.2047 7.40901L10.0278 6.86643L10.4909 6.53041H9.91841L9.74156 5.98709L9.56546 6.53041H8.99293ZM4.49666 2.04015L4.95978 2.37617L4.78292 2.91874L5.24529 2.58347L5.7084 2.91874L5.53155 2.37617L5.99467 2.04015H5.42214L5.24529 1.49683L5.06918 2.04015H4.49666ZM7.49417 2.04015L7.95729 2.37617L7.78044 2.91874L8.2428 2.58347L8.70592 2.91874L8.52907 2.37617L8.99218 2.04015H8.41966L8.2428 1.49683L8.0667 2.04015H7.49417ZM10.4917 2.04015L10.9548 2.37617L10.778 2.91874L11.2403 2.58347L11.7034 2.91874L11.5266 2.37617L11.9897 2.04015H11.4172L11.2403 1.49683L11.0642 2.04015H10.4917ZM1.49915 5.03366L1.96226 5.36968L1.78541 5.91225L2.24777 5.57698L2.71089 5.91225L2.53404 5.36968L2.99715 5.03366H2.42463L2.24777 4.49034L2.07167 5.03366H1.49915ZM4.78292 5.91225L5.24529 5.57698L5.7084 5.91225L5.53155 5.36968L5.99467 5.03366H5.42214L5.24529 4.49034L5.06918 5.03366H4.49666L4.95978 5.36968L4.78292 5.91225ZM7.49417 5.03366L7.95729 5.36968L7.78044 5.91225L8.2428 5.57698L8.70592 5.91225L8.52907 5.36968L8.99218 5.03366H8.41966L8.2428 4.49034L8.0667 5.03366H7.49417ZM10.4917 5.03366L10.9548 5.36968L10.778 5.91225L11.2403 5.57698L11.7034 5.91225L11.5266 5.36968L11.9897 5.03366H11.4172L11.2403 4.49034L11.0642 5.03366H10.4917ZM1.49915 8.02717L1.96226 8.36319L1.78541 8.90576L2.24777 8.57049L2.71089 8.90576L2.53404 8.36319L2.99715 8.02717H2.42463L2.24777 7.48385L2.07167 8.02717H1.49915ZM4.78292 8.90576L5.24529 8.57049L5.7084 8.90576L5.53155 8.36319L5.99467 8.02717H5.42214L5.24529 7.48385L5.06918 8.02717H4.49666L4.95978 8.36319L4.78292 8.90576ZM7.49417 8.02717L7.95729 8.36319L7.78044 8.90576L8.2428 8.57049L8.70592 8.90576L8.52907 8.36319L8.99218 8.02717H8.41966L8.2428 7.48385L8.0667 8.02717H7.49417ZM10.4917 8.02717L10.9548 8.36319L10.778 8.90576L11.2403 8.57049L11.7034 8.90576L11.5266 8.36319L11.9897 8.02717H11.4172L11.2403 7.48385L11.0642 8.02717H10.4917Z"
+            fill="white" color="white"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_text_fields">
+        <path
+            d="M2.5 5.5C2.5 6.33 3.17 7 4 7h3.5v10.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V7H14c.83 0 1.5-.67 1.5-1.5S14.83 4 14 4H4c-.83 0-1.5.67-1.5 1.5zM20 9h-6c-.83 0-1.5.67-1.5 1.5S13.17 12 14 12h1.5v5.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V12H20c.83 0 1.5-.67 1.5-1.5S20.83 9 20 9z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_text_format">
+        <path
+            d="M5 18c0 .55.45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1H6c-.55 0-1 .45-1 1zm4.5-5.2h5l.66 1.6c.15.36.5.6.89.6.69 0 1.15-.71.88-1.34l-3.88-8.97C12.87 4.27 12.46 4 12 4c-.46 0-.87.27-1.05.69l-3.88 8.97c-.27.63.2 1.34.89 1.34.39 0 .74-.24.89-.6l.65-1.6zM12 5.98L13.87 11h-3.74L12 5.98z">
+        </path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 28" id="ext_icon_toggle_off">
+        <rect x="4" y="5" width="36" height="16" rx="8" fill="#E9EAEA" color="#E9EAEA"></rect>
+        <g filter="url(#filter0_dd_264:600)">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14 23C19.5228 23 24 18.5228 24 13C24 7.47715 19.5228 3 14 3C8.47715 3 4 7.47715 4 13C4 18.5228 8.47715 23 14 23Z"
+                fill="white" color="white"></path>
+        </g>
+        <defs>
+            <filter id="filter0_dd_264:600" x="0" y="0" width="28" height="28" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"></feColorMatrix>
+                <feOffset dy="1"></feOffset>
+                <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"></feColorMatrix>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_264:600"></feBlend>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"></feColorMatrix>
+                <feOffset dy="2"></feOffset>
+                <feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"></feColorMatrix>
+                <feBlend mode="normal" in2="effect1_dropShadow_264:600" result="effect2_dropShadow_264:600">
+                </feBlend>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_264:600" result="shape"></feBlend>
+            </filter>
+        </defs>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 28" id="ext_icon_toggle_on">
+        <rect y="5" width="36" height="16" rx="8" fill="#B9CEF3" color="#B9CEF3"></rect>
+        <g filter="url(#filter0_dd_264:601)">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M26 23C31.5228 23 36 18.5228 36 13C36 7.47715 31.5228 3 26 3C20.4772 3 16 7.47715 16 13C16 18.5228 20.4772 23 26 23Z"
+                fill="#175DD6" color="#175DD6"></path>
+        </g>
+        <defs>
+            <filter id="filter0_dd_264:601" x="12" y="0" width="28" height="28" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"></feColorMatrix>
+                <feOffset dy="1"></feOffset>
+                <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"></feColorMatrix>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_264:601"></feBlend>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"></feColorMatrix>
+                <feOffset dy="2"></feOffset>
+                <feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"></feColorMatrix>
+                <feBlend mode="normal" in2="effect1_dropShadow_264:601" result="effect2_dropShadow_264:601">
+                </feBlend>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_264:601" result="shape"></feBlend>
+            </filter>
+        </defs>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_min">
+        <path
+            d="M21.29 4.12L16.7 8.71l1.59 1.59c.63.63.18 1.71-.71 1.71H13c-.55 0-1-.45-1-1v-4.6c0-.89 1.08-1.34 1.71-.71l1.59 1.59 4.59-4.59a.996.996 0 011.41 0c.38.4.38 1.03-.01 1.42zM4.12 21.29l4.59-4.59 1.59 1.59c.63.63 1.71.18 1.71-.71V13c0-.55-.45-1-1-1h-4.6c-.89 0-1.34 1.08-.71 1.71l1.59 1.59-4.59 4.59a.996.996 0 000 1.41c.4.38 1.03.38 1.42-.01z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_close">
+        <path
+            d="M18.3 5.71a.996.996 0 00-1.41 0L12 10.59 7.11 5.7A.996.996 0 105.7 7.11L10.59 12 5.7 16.89a.996.996 0 101.41 1.41L12 13.41l4.89 4.89a.996.996 0 101.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="ext_icon_info">
+        <path
+            d="M6.417 4.083h1.166V5.25H6.416V4.083zM7 9.917c.32 0 .583-.263.583-.584V7A.585.585 0 007 6.417.585.585 0 006.417 7v2.333c0 .321.262.584.583.584zm0-8.75A5.835 5.835 0 001.167 7 5.835 5.835 0 007 12.833 5.835 5.835 0 0012.833 7 5.836 5.836 0 007 1.167zm0 10.5A4.673 4.673 0 012.333 7 4.673 4.673 0 017 2.333 4.673 4.673 0 0111.666 7 4.673 4.673 0 017 11.667z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_exit">
+        <path
+            d="M12 3c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1s1-.45 1-1V4c0-.55-.45-1-1-1zm5.14 2.86a.99.99 0 00-.01 1.39c1.13 1.2 1.83 2.8 1.87 4.57.09 3.83-3.08 7.13-6.91 7.17A6.981 6.981 0 015 12c0-1.84.71-3.51 1.87-4.76.37-.39.37-1-.01-1.38a.993.993 0 00-1.43.02A8.92 8.92 0 003 11.74c-.14 4.88 3.83 9.1 8.71 9.25 5.1.16 9.29-3.93 9.29-9 0-2.37-.92-4.51-2.42-6.11-.38-.41-1.04-.42-1.44-.02z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_add">
+        <path d="M0 0h24v24H0V0z" fill="none" color="transparent"></path>
+        <path
+            d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_remove">
+        <path d="M0 0h24v24H0V0z" fill="none" color="transparent"></path>
+        <path d="M18 13H6c-.55 0-1-.45-1-1s.45-1 1-1h12c.55 0 1 .45 1 1s-.45 1-1 1z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_account">
+        <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2a7.2 7.2 0 01-6-3.22c.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08a7.2 7.2 0 01-6 3.22z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="arrow_drop_down">
+        <path
+            d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z">
+        </path>
+    </symbol>
+
+
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" id="ext_icon_dark">
+        <path
+            d="M25.1941 4.12416C13.4545 3.71583 4.08325 13.1075 4.08325 24.5C4.08325 35.77 13.2299 44.9167 24.4999 44.9167C32.0745 44.9167 38.6487 40.7925 42.1808 34.6675C26.8478 34.1571 17.497 17.4562 25.1941 4.12416Z"
+            fill="#134DCD" color="#134DCD"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" id="ext_icon_light">
+        <path
+            d="M40.8333 31.2579L47.5912 24.5L40.8333 17.7421V8.16667H31.2579L24.4999 1.40875L17.742 8.16667H8.16661V17.7421L1.40869 24.5L8.16661 31.2579V40.8333H17.742L24.4999 47.5912L31.2579 40.8333H40.8333V31.2579ZM24.4999 36.75C17.742 36.75 12.2499 31.2579 12.2499 24.5C12.2499 17.7421 17.742 12.25 24.4999 12.25C31.2579 12.25 36.7499 17.7421 36.7499 24.5C36.7499 31.2579 31.2579 36.75 24.4999 36.75Z"
+            fill="#134DCD" color="#134DCD"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297 94" id="ext_demo_light">
+        <g filter="url(#filter0_b_995_622)">
+            <rect width="297" height="94" rx="10" fill="white" color="white" fill-opacity="0.7"></rect>
+            <rect x="0.5" y="0.5" width="296" height="93" rx="9.5" stroke="#BCC1CC" stroke-opacity="0.5"></rect>
+        </g>
+        <line x1="46.5" y1="26.5" x2="250.5" y2="26.5" stroke="#134DCD" stroke-width="3" stroke-linecap="round"></line>
+        <line x1="46.5" y1="39.5" x2="250.5" y2="39.5" stroke="#6178B2" stroke-width="3" stroke-linecap="round"></line>
+        <path d="M47 53H251" stroke="#3D5AA1" stroke-width="3" stroke-linecap="round"></path>
+        <path d="M46.5 66.5H250.5" stroke="#5D7CC9" stroke-width="3" stroke-linecap="round"></path>
+        <defs>
+            <filter id="filter0_b_995_622" x="-80" y="-80" width="457" height="254" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                <feGaussianBlur in="BackgroundImage" stdDeviation="40"></feGaussianBlur>
+                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_995_622"></feComposite>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_995_622" result="shape"></feBlend>
+            </filter>
+        </defs>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297 94" id="ext_demo_dark">
+        <g filter="url(#filter0_b_995_623)">
+            <g filter="url(#filter1_b_995_623)">
+                <rect width="297" height="94" rx="10" fill="#35363A" color="#35363A" fill-opacity="0.75"></rect>
+                <rect x="1" y="1" width="295" height="92" rx="9" stroke="#6E727A" stroke-opacity="0.5" stroke-width="2">
+                </rect>
+            </g>
+        </g>
+        <line x1="46.5" y1="24.5" x2="250.5" y2="24.5" stroke="#134DCD" stroke-width="3" stroke-linecap="round"></line>
+        <line x1="46.5" y1="37.5" x2="250.5" y2="37.5" stroke="#E0E6EF" stroke-width="3" stroke-linecap="round"></line>
+        <path d="M46.5 50.875H250.5" stroke="#9CCFFE" stroke-width="3" stroke-linecap="round"></path>
+        <line x1="46.5" y1="64.5" x2="250.5" y2="64.5" stroke="#E0E6EF" stroke-width="3" stroke-linecap="round"></line>
+        <defs>
+            <filter id="filter0_b_995_623" x="-60" y="-60" width="417" height="214" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                <feGaussianBlur in="BackgroundImage" stdDeviation="30"></feGaussianBlur>
+                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_995_623"></feComposite>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_995_623" result="shape"></feBlend>
+            </filter>
+            <filter id="filter1_b_995_623" x="-80" y="-80" width="457" height="254" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                <feGaussianBlur in="BackgroundImage" stdDeviation="40"></feGaussianBlur>
+                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_995_623"></feComposite>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_995_623" result="shape"></feBlend>
+            </filter>
+        </defs>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_replay">
+        <path
+            d="M12 5V1L7 6L12 11V7C15.31 7 18 9.69 18 13C18 16.31 15.31 19 12 19C8.69 19 6 16.31 6 13H4C4 17.42 7.58 21 12 21C16.42 21 20 17.42 20 13C20 8.58 16.42 5 12 5Z"
+            fill="#939495" color="#939495"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_android">
+        <g clip-path="url(#clip0)">
+            <path
+                d="M6 18c0 .55.45 1 1 1h1v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h2v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8C2.67 8 2 8.67 2 9.5v7c0 .83.67 1.5 1.5 1.5S5 17.33 5 16.5v-7C5 8.67 4.33 8 3.5 8zm17 0c-.83 0-1.5.67-1.5 1.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7c0-.83-.67-1.5-1.5-1.5zm-4.97-5.84l1.3-1.3c.2-.2.2-.51 0-.71-.2-.2-.51-.2-.71 0l-1.48 1.48A5.84 5.84 0 0012 1c-.96 0-1.86.23-2.66.63L7.85.15c-.2-.2-.51-.2-.71 0-.2.2-.2.51 0 .71l1.31 1.31A5.983 5.983 0 006 7h12c0-1.99-.97-3.75-2.47-4.84zM10 5H9V4h1v1zm5 0h-1V4h1v1z">
+            </path>
+        </g>
+        <defs>
+            <clipPath id="clip0">
+                <path fill="#fff" color="#ffffff" d="M0 0h24v24H0z"></path>
+            </clipPath>
+        </defs>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_apple">
+        <path
+            d="M18.74 23.016c-1.3 1.262-2.736 1.066-4.104.47-1.454-.607-2.784-.645-4.32 0-1.913.826-2.928.586-4.08-.47C-.268 16.32.692 6.12 8.084 5.736c1.793.096 3.048.991 4.104 1.066 1.57-.32 3.072-1.234 4.752-1.114 2.018.163 3.528.96 4.536 2.393-4.152 2.496-3.168 7.968.646 9.504-.764 2.004-1.743 3.984-3.384 5.448l.002-.017zM12.044 5.664C11.85 2.688 14.262.24 17.036 0c.382 3.432-3.12 6-4.992 5.664z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_extension">
+        <path
+            d="M20.5 11H19V7C19 5.9 18.1 5 17 5H13V3.5C13 2.12 11.88 1 10.5 1C9.12 1 8 2.12 8 3.5V5H4C2.9 5 2.01 5.9 2.01 7V10.8H3.5C4.99 10.8 6.2 12.01 6.2 13.5C6.2 14.99 4.99 16.2 3.5 16.2H2V20C2 21.1 2.9 22 4 22H7.8V20.5C7.8 19.01 9.01 17.8 10.5 17.8C11.99 17.8 13.2 19.01 13.2 20.5V22H17C18.1 22 19 21.1 19 20V16H20.5C21.88 16 23 14.88 23 13.5C23 12.12 21.88 11 20.5 11Z">
+        </path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="ext_icon_swap_horiz">
+        <path
+            d="M9.32 14.6666L4 20L9.32 25.3333V21.3333H18.6667V18.6666H9.32V14.6666ZM28 12L22.68 6.66663V10.6666H13.3333V13.3333H22.68V17.3333L28 12Z"
+            fill="#939495" color="#939495"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="chevron_left">
+        <path
+            d="M14.71 6.71a.996.996 0 00-1.41 0L8.71 11.3a.996.996 0 000 1.41l4.59 4.59a.996.996 0 101.41-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z">
+        </path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="chevron_right">
+        <path
+            d="M9.29 6.71a.996.996 0 000 1.41L13.17 12l-3.88 3.88a.996.996 0 101.41 1.41l4.59-4.59a.996.996 0 000-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z">
+        </path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_lightbulb">
+        <path
+            d="M9.00002 22H15V20H9.00002V22ZM10.54 2.15003C7.79002 2.71003 5.60002 4.96003 5.11002 7.73003C4.60002 10.62 5.87002 13.25 8.00002 14.74V18H16V14.74C17.81 13.47 19 11.38 19 9.00003C19 4.66003 15.03 1.23003 10.54 2.15003ZM14.85 13.1L14 13.7V16H10V13.7L9.15002 13.1C7.80002 12.16 7.00002 10.63 7.00002 9.00003C7.00002 6.24003 9.24002 4.00003 12 4.00003C14.76 4.00003 17 6.24003 17 9.00003C17 10.63 16.2 12.16 14.85 13.1Z"
+            fill="#939495" color="#939495"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_location">
+        <path
+            d="M12 2C8.13 2 5 5.13 5 9C5 10.74 5.5 12.37 6.41 13.84C7.36 15.38 8.61 16.7 9.57 18.24C10.04 18.99 10.38 19.69 10.74 20.5C11 21.05 11.21 22 12 22C12.79 22 13 21.05 13.25 20.5C13.62 19.69 13.95 18.99 14.42 18.24C15.38 16.71 16.63 15.39 17.58 13.84C18.5 12.37 19 10.74 19 9C19 5.13 15.87 2 12 2ZM12 11.75C10.62 11.75 9.5 10.63 9.5 9.25C9.5 7.87 10.62 6.75 12 6.75C13.38 6.75 14.5 7.87 14.5 9.25C14.5 10.63 13.38 11.75 12 11.75Z">
+        </path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" id="ext_icon_loading">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M22 44C34.1503 44 44 34.1503 44 22C44 9.84974 34.1503 0 22 0V4C31.9411 4 40 12.0589 40 22C40 31.9411 31.9411 40 22 40C12.0589 40 4 31.9411 4 22H0C0 34.1503 9.84974 44 22 44Z"
+            fill="#1A7BF9" color="#1A7BF9"></path>
+        <mask id="mask0_0_1272" maskUnits="userSpaceOnUse" x="0" y="0" width="44" height="44">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22 44C34.1503 44 44 34.1503 44 22C44 9.84974 34.1503 0 22 0V4C31.9411 4 40 12.0589 40 22C40 31.9411 31.9411 40 22 40C12.0589 40 4 31.9411 4 22H0C0 34.1503 9.84974 44 22 44Z"
+                fill="white" color="white"></path>
+        </mask>
+        <g mask="url(#mask0_0_1272)"></g>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 49" id="ext_icon_finish">
+        <path
+            d="M24 4.5C12.96 4.5 4 13.46 4 24.5C4 35.54 12.96 44.5 24 44.5C35.04 44.5 44 35.54 44 24.5C44 13.46 35.04 4.5 24 4.5ZM18.58 33.08L11.4 25.9C10.62 25.12 10.62 23.86 11.4 23.08C12.18 22.3 13.44 22.3 14.22 23.08L20 28.84L33.76 15.08C34.54 14.3 35.8 14.3 36.58 15.08C37.36 15.86 37.36 17.12 36.58 17.9L21.4 33.08C20.64 33.86 19.36 33.86 18.58 33.08Z"
+            fill="#70CD13" color="#70CD13"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="ext_icon_error">
+        <path
+            d="M10.0003 1.66666C5.40033 1.66666 1.66699 5.39999 1.66699 9.99999C1.66699 14.6 5.40033 18.3333 10.0003 18.3333C14.6003 18.3333 18.3337 14.6 18.3337 9.99999C18.3337 5.39999 14.6003 1.66666 10.0003 1.66666ZM10.0003 10.8333C9.54199 10.8333 9.16699 10.4583 9.16699 9.99999V6.66666C9.16699 6.20832 9.54199 5.83332 10.0003 5.83332C10.4587 5.83332 10.8337 6.20832 10.8337 6.66666V9.99999C10.8337 10.4583 10.4587 10.8333 10.0003 10.8333ZM10.8337 14.1667H9.16699V12.5H10.8337V14.1667Z"
+            fill="#EF6262" color="#EF6262"></path>
+    </symbol>
+    <symbol fill="#499DF5" color="#499DF5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05" data-name="Layer 1"
+        id="nr-ext-wave">
+        <path id="nr-ext-Line-1" d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91Z" />
+        <path id="nr-ext-Line-2" d="M6.91,9L6.78,9A1,1,0,0,0,6,10V28a1,1,0,1,0,2,0s0,0,0,0V10A1,1,0,0,0,7,9H6.91Z" />
+        <path id="nr-ext-Line-3" d="M12.91,0L12.78,0A1,1,0,0,0,12,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H12.91Z" />
+        <path id="nr-ext-Line-4"
+            d="M18.91,10l-0.12,0A1,1,0,0,0,18,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H18.91Z" />
+        <path id="nr-ext-Line-5"
+            d="M24.91,15l-0.12,0A1,1,0,0,0,24,16v6a1,1,0,0,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H24.91Z" />
+        <path id="nr-ext-Line-6"
+            d="M30.91,10l-0.12,0A1,1,0,0,0,30,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H30.91Z" />
+        <path id="nr-ext-Line-7" d="M36.91,0L36.78,0A1,1,0,0,0,36,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H36.91Z" />
+        <path id="nr-ext-Line-8"
+            d="M42.91,9L42.78,9A1,1,0,0,0,42,10V28a1,1,0,1,0,2,0s0,0,0,0V10a1,1,0,0,0-1-1H42.91Z" />
+        <path id="nr-ext-Line-9"
+            d="M48.91,15l-0.12,0A1,1,0,0,0,48,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H48.91Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_cc">
+        <path d="M0 0h24v24H0V0z" fill="none" color="transparent" />
+        <path
+            d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H5V6h14v12zM7 15h3c.55 0 1-.45 1-1v-1H9.5v.5h-2v-3h2v.5H11v-1c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1zm7 0h3c.55 0 1-.45 1-1v-1h-1.5v.5h-2v-3h2v.5H18v-1c0-.55-.45-1-1-1h-3c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_voice_login">
+        <path
+            d="M6 8C6 5.79 7.79 4 10 4S14 5.79 14 8 12.21 12 10 12 6 10.21 6 8M12 18.2C12 17.24 12.5 16.34 13.2 15.74V14.5C13.2 14.45 13.22 14.39 13.22 14.34C12.23 14.12 11.15 14 10 14C5.58 14 2 15.79 2 18V20H12V18.2M22 18.3V21.8C22 22.4 21.4 23 20.7 23H15.2C14.6 23 14 22.4 14 21.7V18.2C14 17.6 14.6 17 15.2 17V14.5C15.2 13.1 16.6 12 18 12S20.8 13.1 20.8 14.5V15H19.5V14.5C19.5 13.7 18.8 13.2 18 13.2S16.5 13.7 16.5 14.5V17H20.8C21.4 17 22 17.6 22 18.3Z" />
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 60" id="ext_thumb_down">
+        <path
+            d="M28.1709 54.8501L41.9959 41.0001C42.9209 40.0751 43.4459 38.8001 43.4459 37.4751V12.5001C43.4459 9.75012 41.1959 7.50012 38.4459 7.50012H15.9709C13.9709 7.50012 12.1709 8.70012 11.3959 10.5251L3.24594 29.5501C1.12094 34.5001 4.74594 40.0001 10.1209 40.0001H24.2459L21.8709 51.4501C21.6209 52.7001 21.9959 53.9751 22.8959 54.8751C24.3709 56.3251 26.7209 56.3251 28.1709 54.8501V54.8501ZM53.4709 7.50012C50.7209 7.50012 48.4709 9.75012 48.4709 12.5001V32.5001C48.4709 35.2501 50.7209 37.5001 53.4709 37.5001C56.2209 37.5001 58.4709 35.2501 58.4709 32.5001V12.5001C58.4709 9.75012 56.2209 7.50012 53.4709 7.50012Z"
+            fill="#1A7DF9"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" id="ext_thumb_up">
+        <path
+            d="M32.8 5.15014L18.95 19.0001C18.025 19.9251 17.5 21.2001 17.5 22.5251V47.5001C17.5 50.2501 19.75 52.5001 22.5 52.5001H45C47 52.5001 48.8 51.3001 49.6 49.4751L57.75 30.4501C59.85 25.5001 56.225 20.0001 50.85 20.0001H36.725L39.1 8.55014C39.35 7.30014 38.975 6.02514 38.075 5.12514C36.6 3.67514 34.25 3.67514 32.8 5.15014V5.15014ZM7.5 52.5001C10.25 52.5001 12.5 50.2501 12.5 47.5001V27.5001C12.5 24.7501 10.25 22.5001 7.5 22.5001C4.75 22.5001 2.5 24.7501 2.5 27.5001V47.5001C2.5 50.2501 4.75 52.5001 7.5 52.5001Z"
+            fill="#1A7DF9"></path>
+    </symbol>
+</svg>

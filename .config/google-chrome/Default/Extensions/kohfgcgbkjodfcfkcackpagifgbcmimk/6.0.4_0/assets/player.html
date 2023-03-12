@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NaturalReader</title>
+  <script src="../background/audio-player.js"></script>
+  <style>
+    /* CSS */
+    *,
+    *::before,
+    *::after {
+      box-sizing:border-box;
+    }
+    body {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    div {
+      display: block;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    .button-9 {
+      appearance: button;
+      backface-visibility: hidden;
+      background-color: #0078D4;
+      border-radius: 6px;
+      border-width: 0;
+      box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      height: 44px;
+      margin: 12px 0 0;
+      padding: 0 10px;
+      outline: none;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      text-transform: none;
+      transform: translateZ(0);
+      transition: all .2s, box-shadow .08s ease-in;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: fit-content;
+      text-align: center;
+      display: block;
+    }
+
+    .button-9:disabled {
+      cursor: default;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="margin-top:50px;margin-left:50px;">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="nr_logo"
+        style="width: 32px;height: 32px; fill:#0078d4;">
+        <rect width="2.31884" height="32" rx="1.15942"></rect>
+        <rect x="3.70996" width="2.31884" height="32" rx="1.15942"></rect>
+        <rect x="7.41992" width="2.31884" height="32" rx="1.15942"></rect>
+        <rect x="11.1309" y="4.85318" width="2.31884" height="15.0142" rx="1.15942"></rect>
+        <path
+          d="M14.8408 10.5404C14.8408 9.91223 15.3599 9.40298 16.0002 9.40298C16.6406 9.40298 17.1597 9.91223 17.1597 10.5404V22.9764C17.1597 23.6046 16.6406 24.1139 16.0002 24.1139C15.3599 24.1139 14.8408 23.6046 14.8408 22.9764V10.5404Z">
+        </path>
+        <rect x="18.5508" y="13.346" width="2.31884" height="15.1659" rx="1.15942"></rect>
+        <rect x="22.2607" width="2.31884" height="32" rx="1.15942"></rect>
+        <rect x="25.9707" width="2.31884" height="32" rx="1.15942"></rect>
+        <rect x="29.6816" width="2.31884" height="32" rx="1.15942"></rect>
+      </svg>
+      <span style="letter-spacing: -0.015em;color: #0078d4;font-size: 24px;">aturalReader Audio
+        Player</span>
+    </div>
+    <div>The website you are trying to
+      read doesn't allow external media to play from their page. The audio will play from this tab instead. You may
+      switch
+      back to the tab you're reading, but to allow the audio to continue playing, please do not close this tab.</div>
+    <div><button class="button-9" id="nr-ext-go-back-btn">Go Back To The Original Tab</button></div>
+  </div>
+</body>
+
+</html>

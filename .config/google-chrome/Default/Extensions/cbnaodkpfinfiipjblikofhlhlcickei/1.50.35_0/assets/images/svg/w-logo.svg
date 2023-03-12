@@ -1,0 +1,26 @@
+<svg width="484px" height="359px" viewBox="0 0 484 359" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <polyline id="path-1" points="101.518388 0 0 0 90.2448058 359 191.763194 359"></polyline>
+    <polygon id="path-3" points="101.518388 0 0 0 90.2448058 359 191.763194 359"></polygon>
+  </defs>
+  <g id="Testing-with-sidebar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="W-Logo">
+      <g id="Rectangle-16-+-Rectangle-16-+-Rectangle-16-+-Rectangle-16-+-Rectangle-16-+-Rectangle-16-+-Rectangle-16-Mask">
+        <mask id="mask-2" fill="white">
+          <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#FEE94E" xlink:href="#path-1"></use>
+        <polygon id="Rectangle-16" fill-opacity="0.5" fill="#FF27A1" points="381.886263 0 483.404651 0 393.159845 359 291.641457 359"></polygon>
+        <polygon id="Rectangle-16" fill-opacity="0.5" fill="#FF27A1" points="381.886263 0 483.404651 0 393.159845 359 291.641457 359"></polygon>
+        <polygon id="Rectangle-16" fill-opacity="0.5" fill="#FF27A1" points="381.886263 0 483.404651 0 393.159845 359 291.641457 359"></polygon>
+        <g id="Rectangle-16">
+          <use fill="#FEE94E" fill-rule="evenodd" xlink:href="#path-3"></use>
+          <path stroke="#FFD300" stroke-width="8" d="M98.3994552,4 L186.633235,355 L93.3637389,355 L5.12995939,4 L98.3994552,4 Z"></path>
+        </g>
+        <polyline id="Rectangle-16" fill="#FF4F95" points="303.345412 90.2831683 201.827024 90.2831683 292.07183 359 393.590218 359"></polyline>
+        <polygon id="Rectangle-16" fill-opacity="0.636973505" fill="#FF8700" points="180.059239 90.2831683 281.577627 90.2831683 191.332821 359 89.814433 359"></polygon>
+        <polygon id="Rectangle-16" fill-opacity="0.636973505" fill="#FF8700" points="180.059239 90.2831683 281.577627 90.2831683 191.332821 359 89.814433 359"></polygon>
+      </g>
+    </g>
+  </g>
+</svg>

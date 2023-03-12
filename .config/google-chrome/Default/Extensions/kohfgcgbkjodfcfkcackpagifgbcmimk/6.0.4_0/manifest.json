@@ -1,0 +1,79 @@
+{
+   "action": {
+   },
+   "background": {
+      "service_worker": "main.js"
+   },
+   "commands": {
+      "forward": {
+         "description": "Next",
+         "suggested_key": {
+            "default": "Alt+Down"
+         }
+      },
+      "goToTabBeingRead": {
+         "description": "Go to Tab Being Read"
+      },
+      "play": {
+         "description": "Read/Pause",
+         "suggested_key": {
+            "default": "Alt+R"
+         }
+      },
+      "readSelection": {
+         "description": "Read Selection"
+      },
+      "rewind": {
+         "description": "Previous",
+         "suggested_key": {
+            "default": "Alt+Up"
+         }
+      },
+      "speaker": {
+         "description": "Speaker",
+         "suggested_key": {
+            "default": "Alt+S"
+         }
+      },
+      "stop": {
+         "description": "Stop"
+      },
+      "toggleShowReadIcon": {
+         "description": "Toggle Show Read Selection Icon"
+      }
+   },
+   "content_scripts": [ {
+      "css": [ "injected/nr-ext-dom/nr-ext-dom.css" ],
+      "matches": [ "\u003Call_urls>" ]
+   }, {
+      "all_frames": true,
+      "js": [ "injected/nr-ext-auth.js" ],
+      "matches": [ "*://*.naturalreaders.com/login-service/*" ]
+   } ],
+   "content_security_policy": {
+      "object-src": "self",
+      "script-src": "self"
+   },
+   "description": "Listen to any email, webpage, google doc, PDF and kindle book! AI powered smart voice reader, with natural voices.",
+   "externally_connectable": {
+      "matches": [ "*://*.naturalreaders.com/*" ]
+   },
+   "homepage_url": "https://www.naturalreaders.com/online/",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "assets/img/128N.png",
+      "32": "assets/img/32N.png",
+      "48": "assets/img/48N.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0VSnxQANdbYG4gKnF81Kq6Ty4bH3NOjiD+QN1VW6o21q4vTmUBca59w37vQbsduE3sMHzIjMSQP6Tft7Z4Is7wgDTMZBA5daiKgSgEthDTAWLL5TuJfI1BpLRPAITGHbsfxRjvHV/kU3OB9HvuPn0qMFyefhTs3tJnSAmsyej8IoDCeL+RH0xVWCmQ+piqnzlmZhyuoTwvnMQU/798+3MYEnOb+9aHT4M3ROX6BehKwplm0pp5rAAGr3zuL+fsUgq5eG2S0HM4t7iRX3TZFxByctCpJxnHVueQ12VMs/dQYTsRyHEtmu3bU5is04rn19JP8SGGthlsRUm7YrZpM7JwIDAQAB",
+   "manifest_version": 3,
+   "name": "Natural Reader Text to Speech",
+   "permissions": [ "scripting", "activeTab", "contextMenus", "storage", "tts", "ttsEngine", "webNavigation", "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "6.0.4",
+   "web_accessible_resources": [ {
+      "extension_ids": [  ],
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "assets/*", "injected/*", "download/*" ]
+   } ]
+}

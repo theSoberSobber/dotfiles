@@ -1,0 +1,51 @@
+2023/03/11-14:56:51.789 3ec Reusing MANIFEST /home/cp/.config/google-chrome/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn/MANIFEST-000001
+2023/03/11-14:56:51.790 3ec Recovering log #192
+2023/03/11-14:56:52.248 3ec Reusing old log /home/cp/.config/google-chrome/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn/000192.log 
+2023/03/11-14:58:18.856 3dd Level-0 table #197: started
+2023/03/11-14:58:18.969 3dd Level-0 table #197: 2160243 bytes OK
+2023/03/11-14:58:19.026 3dd Delete type=0 #192
+2023/03/11-14:59:57.762 694 Level-0 table #199: started
+2023/03/11-14:59:57.859 694 Level-0 table #199: 2158547 bytes OK
+2023/03/11-14:59:57.924 694 Delete type=0 #196
+2023/03/11-15:10:17.707 3dc Level-0 table #201: started
+2023/03/11-15:10:17.805 3dc Level-0 table #201: 2159017 bytes OK
+2023/03/11-15:10:17.901 3dc Delete type=0 #198
+2023/03/11-15:30:39.485 3dc Level-0 table #203: started
+2023/03/11-15:30:39.583 3dc Level-0 table #203: 2159242 bytes OK
+2023/03/11-15:30:39.640 3dc Delete type=0 #200
+2023/03/11-15:30:39.641 3dc Compacting 4@0 + 1@1 files
+2023/03/11-15:30:39.702 3dc Generated table #204@0: 1 keys, 539860 bytes
+2023/03/11-15:30:39.702 3dc Compacted 4@0 + 1@1 files => 539860 bytes
+2023/03/11-15:30:39.757 3dc compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/03/11-15:30:39.758 3dc Delete type=2 #199
+2023/03/11-15:30:39.758 3dc Delete type=2 #194
+2023/03/11-15:30:39.758 3dc Delete type=2 #201
+2023/03/11-15:30:39.758 3dc Delete type=2 #197
+2023/03/11-15:30:39.758 3dc Delete type=2 #203
+2023/03/11-15:56:19.853 3dd Level-0 table #206: started
+2023/03/11-15:56:20.027 3dd Level-0 table #206: 2159649 bytes OK
+2023/03/11-15:56:20.084 3dd Delete type=0 #202
+2023/03/11-15:56:30.970 3dd Level-0 table #208: started
+2023/03/11-15:56:31.064 3dd Level-0 table #208: 2159676 bytes OK
+2023/03/11-15:56:31.121 3dd Delete type=0 #205
+2023/03/11-17:47:00.960 5ad7 Level-0 table #210: started
+2023/03/11-17:47:01.127 5ad7 Level-0 table #210: 2159590 bytes OK
+2023/03/11-17:47:01.204 5ad7 Delete type=0 #207
+2023/03/11-17:55:25.033 54b7 Level-0 table #212: started
+2023/03/11-17:55:25.243 54b7 Level-0 table #212: 2159750 bytes OK
+2023/03/11-17:55:25.300 54b7 Delete type=0 #209
+2023/03/11-17:55:25.302 54b7 Compacting 4@0 + 1@1 files
+2023/03/11-17:55:25.419 54b7 Generated table #213@0: 1 keys, 540054 bytes
+2023/03/11-17:55:25.419 54b7 Compacted 4@0 + 1@1 files => 540054 bytes
+2023/03/11-17:55:25.475 54b7 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/03/11-17:55:25.476 54b7 Delete type=2 #204
+2023/03/11-17:55:25.476 54b7 Delete type=2 #212
+2023/03/11-17:55:25.476 54b7 Delete type=2 #206
+2023/03/11-17:55:25.476 54b7 Delete type=2 #208
+2023/03/11-17:55:25.476 54b7 Delete type=2 #210
+2023/03/11-17:58:10.048 54b7 Level-0 table #215: started
+2023/03/11-17:58:10.215 54b7 Level-0 table #215: 2160289 bytes OK
+2023/03/11-17:58:10.272 54b7 Delete type=0 #211
+2023/03/11-18:36:43.499 69c5 Level-0 table #217: started
+2023/03/11-18:36:43.629 69c5 Level-0 table #217: 2160646 bytes OK
+2023/03/11-18:36:43.711 69c5 Delete type=0 #214

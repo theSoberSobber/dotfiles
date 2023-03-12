@@ -1,0 +1,10 @@
+2023-03-11 18:44:00.666 [info] Using settings sync service https://vscode-sync.trafficmanager.net/
+2023-03-11 18:44:00.666 [info] Auto Sync is enabled.
+2023-03-11 18:44:00.666 [info] Auto Sync: Suspended until auth token is available.
+2023-03-11 18:44:03.655 [info] Deleting non existing profile from backup /home/cp/.config/Code/User/sync/extensions
+2023-03-11 18:44:03.863 [info] Deleting non existing profile from backup /home/cp/.config/Code/User/sync/globalState
+2023-03-11 18:44:03.867 [info] Deleting non existing profile from backup /home/cp/.config/Code/User/sync/keybindings
+2023-03-11 18:44:03.871 [info] Deleting non existing profile from backup /home/cp/.config/Code/User/sync/profiles
+2023-03-11 18:44:03.874 [info] Deleting non existing profile from backup /home/cp/.config/Code/User/sync/settings
+2023-03-11 18:44:03.878 [info] Deleting non existing profile from backup /home/cp/.config/Code/User/sync/snippets
+2023-03-11 18:44:03.881 [info] Deleting non existing profile from backup /home/cp/.config/Code/User/sync/tasks

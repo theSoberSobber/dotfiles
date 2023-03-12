@@ -1,0 +1,54 @@
+{
+   "background": {
+      "persistence": false,
+      "scripts": [ "./background.js" ]
+   },
+   "browser_action": {
+      "default_popup": "popup.html",
+      "default_title": "Docsumo Free OCR"
+   },
+   "commands": {
+      "cancel_screenshot": {
+         "description": "Captures the screenshot of a webpage with the area fit to the size of the screen",
+         "suggested_key": {
+            "default": "Ctrl+Shift+X",
+            "mac": "Command+Shift+X"
+         }
+      },
+      "capture-cropped-screen": {
+         "description": "Captures the screenshot of a webpage with the area fit to the size of the screen",
+         "suggested_key": {
+            "default": "Ctrl+Shift+S",
+            "mac": "Command+Shift+S"
+         }
+      },
+      "capture-visible-screen": {
+         "description": "Captures the screenshot of a webpage with the area fit to the size of the screen",
+         "suggested_key": {
+            "default": "Ctrl+Shift+V",
+            "mac": "Command+Shift+V"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "css": [ "index.css" ],
+      "js": [ "jquery.js", "vue.js", "index.js" ],
+      "matches": [ "*://*/*" ]
+   } ],
+   "content_security_policy": "img-src 'self' script-src 'self' 'unsafe-inline' 'sha256-oDXd+fUNCbaUNLYPFKefO+HvkXCQMTLGm1sKuiHgxyk=' 'unsafe-eval'",
+   "description": "Screenshot any webpage or a portion of a webpage and immediately convert it into editable text.",
+   "icons": {
+      "128": "./Docsumo-logo-128x128.png",
+      "16": "./Docsumo-logo-128x128.png",
+      "32": "./Docsumo-logo-128x128.png",
+      "48": "./Docsumo-logo-128x128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiCmRA5sOB9rNNm6KLxg4htmsowel4yfLJaHxUwlUPgzdODkzWocrkoIA1MHYyp5naVbuQFzjVYQ6EbvDRMAl73z+NU0wJEeMdOc9JxaFLYnOSBaRDFwg8rzDf+jsQXtG3aYbPVWuHqyA0KPcWwCx9gqCKthFg4lU61BxWsCv9Jv4zlivZwJFuferjXlh3BxLG4OlxPnxBMIdhdzF0U3aCcxKgxuoPDkY9gvUJDENnNOmRQm4pJV0zRQxDlEeOpGSs5bAbcrcVTtnuSJAcAmIQVX0/QIeCQW+dStQTLiJ8xbvtJYtGjmQNM3x2/NyZmm9fzJdXIwJwmIibRp7HUB6xQIDAQAB",
+   "manifest_version": 2,
+   "name": "Docsumo Free OCR Software",
+   "offline_enabled": true,
+   "permissions": [ "storage", "*://*/*", "activeTab", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.2.0",
+   "web_accessible_resources": [ "*://*/*", "images/*.svg", "images/*.SVG", "index.html", "newpage.html", "indexhelper.js", "ProximaNova-Regular.otf", "analytics.js", "base64.js" ]
+}

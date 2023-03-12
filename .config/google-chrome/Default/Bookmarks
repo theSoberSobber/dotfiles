@@ -1,0 +1,319 @@
+{
+   "checksum": "a4f6a38cc77e638fda84a897693c92d8",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13322739305344072",
+            "date_last_used": "0",
+            "guid": "27bb2a1c-5538-4d5d-a054-3600075abdaf",
+            "id": "28",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Codeforces",
+            "type": "url",
+            "url": "https://codeforces.com/"
+         }, {
+            "date_added": "13322739326627727",
+            "date_last_used": "13322739333264020",
+            "guid": "41734e4d-18fb-413d-8953-27ddead62552",
+            "id": "29",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Codechef",
+            "type": "url",
+            "url": "https://www.codechef.com/contests?itm_medium=navmenu&itm_campaign=allcontests"
+         }, {
+            "date_added": "13323075868926982",
+            "date_last_used": "0",
+            "guid": "b60fe0d2-738d-402f-ab21-41f2ca21a018",
+            "id": "39",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Gmail",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/"
+         }, {
+            "date_added": "13322739369406680",
+            "date_last_used": "0",
+            "guid": "a91e3f82-0e43-4302-bba9-18c08020ec90",
+            "id": "30",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "TheJobOverflow | Trilogy Innovations(CodeNation) Coding Round, 5th March",
+            "type": "url",
+            "url": "https://thejoboverflow.com/p/p1162/#p1166"
+         }, {
+            "date_added": "13322739433502835",
+            "date_last_used": "0",
+            "guid": "4dfc6a71-49f3-4981-9cce-cf51e9aad6b1",
+            "id": "32",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Spotify – Web Player",
+            "type": "url",
+            "url": "https://open.spotify.com/"
+         }, {
+            "date_added": "13239940256983197",
+            "date_last_used": "13322750537536888",
+            "guid": "6ca7ab9a-a6ad-47fc-bcf2-297840c0a6bb",
+            "id": "33",
+            "name": "Whatsapp Web",
+            "type": "url",
+            "url": "https://web.whatsapp.com/"
+         }, {
+            "children": [ {
+               "date_added": "13241045204161817",
+               "date_last_used": "0",
+               "guid": "4062de57-daa1-4ed8-8e69-016a3e92dac8",
+               "id": "35",
+               "name": "volume up!",
+               "type": "url",
+               "url": "javascript:(function(){var videoElement = document.querySelector(\"video\");var audioCtx = new AudioContext();var source = audioCtx.createMediaElementSource(videoElement);var gainNode = audioCtx.createGain();gainNode.gain.value = 3; /* triple the volume */ source.connect(gainNode);gainNode.connect(audioCtx.destination);})();"
+            } ],
+            "date_added": "13322739587598219",
+            "date_last_used": "0",
+            "date_modified": "13322739587598219",
+            "guid": "6be87737-df1a-470c-a381-db7d2300f02b",
+            "id": "34",
+            "name": "bookmarklets",
+            "type": "folder"
+         }, {
+            "children": [  ],
+            "date_added": "13322739587598867",
+            "date_last_used": "0",
+            "date_modified": "13322739587598867",
+            "guid": "36dca676-7825-44d5-aee1-644e8715dd1f",
+            "id": "36",
+            "name": "Blackbox",
+            "type": "folder"
+         }, {
+            "children": [  ],
+            "date_added": "13322739587599229",
+            "date_last_used": "0",
+            "date_modified": "13322739587599229",
+            "guid": "9706e9b5-2475-4772-ba14-147fb4ee45ac",
+            "id": "37",
+            "name": "Todo",
+            "type": "folder"
+         } ],
+         "date_added": "13322740392554147",
+         "date_last_used": "0",
+         "date_modified": "13323075868926982",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13322740392554150",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [ {
+            "date_added": "13202510159805852",
+            "date_last_used": "0",
+            "guid": "df883067-c086-4f41-9213-b33d22a4529c",
+            "id": "5",
+            "name": "if the roots of x 2 bx c 0 are two consecutive integers then b 2 4c is xyxm0boo -Mathematics - TopperLearning.com",
+            "type": "url",
+            "url": "https://www.topperlearning.com/doubts-solutions/if-the-roots-of-x-2-bx-c-0-are-two-consecutive-integers-then-b-2-4c-is-xyxm0boo"
+         }, {
+            "date_added": "13204313477792323",
+            "date_last_used": "0",
+            "guid": "50c9c897-e517-4a20-80dd-77f4107f94a6",
+            "id": "6",
+            "name": "Simple 1D Noise in JavaScript // Michael Bromley: Web Developer",
+            "type": "url",
+            "url": "https://www.michaelbromley.co.uk/blog/simple-1d-noise-in-javascript/"
+         }, {
+            "date_added": "13208042910578528",
+            "date_last_used": "0",
+            "guid": "9a30c2d7-c048-457d-bdf6-46630906121b",
+            "id": "7",
+            "name": "Ramanujan Machine, [EXPLAINED] The Ramanujan Machine has been named in honour of the Indian maths genius. But what does it do? | Tech News",
+            "type": "url",
+            "url": "https://www.timesnownews.com/amp/technology-science/article/explained-the-ramanujan-machine-has-been-named-in-honour-of-the-indian-maths-genius-but-what-does-it-do/455915"
+         }, {
+            "date_added": "13208290839598973",
+            "date_last_used": "0",
+            "guid": "570ae0dc-8879-4270-a71e-b8da554899a2",
+            "id": "8",
+            "name": "Hello tensorflow – Monica Dinculescu",
+            "type": "url",
+            "url": "https://meowni.ca/posts/hello-tensorflow/"
+         }, {
+            "date_added": "13232356724826024",
+            "date_last_used": "0",
+            "guid": "34349ab0-4c9f-4cf3-a1da-539e38bcceb5",
+            "id": "9",
+            "name": "Find the range of f(x)=cos^(-1)((sqrt(1+2x^2))/(1+x^2))",
+            "type": "url",
+            "url": "https://doubtnut.com/question-answer/find-the-range-of-fxcos-1sqrt1-2x2-1-x2-27613"
+         }, {
+            "date_added": "13232533512950679",
+            "date_last_used": "0",
+            "guid": "b5964b23-e4ee-4c28-ba11-aa83be521210",
+            "id": "10",
+            "name": "Navbar Inspiration forbootstrap",
+            "type": "url",
+            "url": "https://www.windowscentral.com/windows-10-touchpad-gestures"
+         }, {
+            "date_added": "13232699731089001",
+            "date_last_used": "0",
+            "guid": "c2a11703-c31d-4695-9618-83aa93b97bf6",
+            "id": "11",
+            "name": "(26) ALLEN JEE-Enthus Maths Online - YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/playlist?list=PLm2dJ7IdnVZ6Lh0u0GbUNPG5FOVDG2tdX"
+         }, {
+            "date_added": "13232841734653684",
+            "date_last_used": "0",
+            "guid": "d99830d5-2daf-409a-abf5-b6d7a8ec8622",
+            "id": "12",
+            "name": "(2) Twinkle Jain - YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/channel/UCUvdftEGi3qpTmMvLQwfvcQ"
+         }, {
+            "date_added": "13232853187437539",
+            "date_last_used": "0",
+            "guid": "01ee1b22-2c41-4d38-85a3-b5918945a619",
+            "id": "13",
+            "name": "STRML: Projects and Work",
+            "type": "url",
+            "url": "https://www.strml.net/"
+         }, {
+            "date_added": "13232853235023118",
+            "date_last_used": "0",
+            "guid": "69098ac6-471a-402f-ae9b-83fb632e67e9",
+            "id": "14",
+            "name": "Samuel Reed - Most Loved Website Award",
+            "type": "url",
+            "url": "https://onepagelove.com/samuel-reed"
+         }, {
+            "date_added": "13232853239771887",
+            "date_last_used": "0",
+            "guid": "ec0b339a-53d3-4bd8-90f2-15b1fc2b447b",
+            "id": "15",
+            "name": "Command Prompt One Page Websites",
+            "type": "url",
+            "url": "https://onepagelove.com/tag/command-prompt"
+         }, {
+            "date_added": "13232854166618974",
+            "date_last_used": "0",
+            "guid": "2e29cfd4-304c-4c87-a6e5-fa888c436fa4",
+            "id": "16",
+            "name": "Terminal Wedding - ruby gem for Prerita and Jai's marriage",
+            "type": "url",
+            "url": "http://wedding.jai.im/"
+         }, {
+            "date_added": "13233444809100069",
+            "date_last_used": "0",
+            "guid": "1a1d0d4e-4054-45fc-ae93-945136b2909a",
+            "id": "17",
+            "name": "The Art of Songwriting eBook - How to Write Songs | The Song Foundry",
+            "type": "url",
+            "url": "https://thesongfoundry.com/ebook/"
+         }, {
+            "date_added": "13233464056692251",
+            "date_last_used": "0",
+            "guid": "8a2802ab-018e-49b7-99a6-2799954ddb5e",
+            "id": "18",
+            "name": "107 Song Prompts for When You’re Really Stuck | The Song Foundry",
+            "type": "url",
+            "url": "https://thesongfoundry.com/song-prompts/"
+         }, {
+            "date_added": "13233974946961469",
+            "date_last_used": "0",
+            "guid": "455fc10b-5b21-4163-8023-229608688944",
+            "id": "19",
+            "name": "CodePen - Explore",
+            "type": "url",
+            "url": "https://codepen.io/theseventh/details/LYVqMYb"
+         }, {
+            "date_added": "13234225704384352",
+            "date_last_used": "0",
+            "guid": "351ea7ca-c9ea-40c2-9552-91910017440c",
+            "id": "20",
+            "name": "How I made my own YouTube Downloader using JavaScript and Node.js",
+            "type": "url",
+            "url": "https://blog.usejournal.com/how-i-made-my-own-youtube-downloader-using-javascript-and-node-js-160b172f6e10"
+         }, {
+            "date_added": "13234313706045295",
+            "date_last_used": "0",
+            "guid": "0c85572a-6e67-4428-a371-d785a77f95a6",
+            "id": "21",
+            "name": "CHALLENGE - inventing solid angle – GeoGebra",
+            "type": "url",
+            "url": "https://www.geogebra.org/m/NPBuwjcG"
+         }, {
+            "date_added": "13234732198925414",
+            "date_last_used": "0",
+            "guid": "70fd54f2-0a6a-4124-9b44-c54a1573592f",
+            "id": "22",
+            "name": "subconjunctivival dose of cefaoline in bacterial corneal ulcer is - Google Search",
+            "type": "url",
+            "url": "https://www.google.com/search?ei=oMnIXqvAOorvz7sPzY650AI&q=subconjunctivival+dose+of+cefaoline+in+bacterial+corneal+ulcer+is&oq=subconjunctivival+dose+of+cefaoline+in+bacterial+corneal+ulcer+is&gs_lcp=CgZwc3ktYWIQAzoECAAQR1DhGlilaGCXc2gAcAF4AIAB2AGIAaUckgEGMC42LjEymAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab&ved=0ahUKEwirkPG0tMnpAhWK93MBHU1HDioQ4dUDCAw&uact=5"
+         }, {
+            "date_added": "13240305058653300",
+            "date_last_used": "0",
+            "guid": "fa0480b6-04b9-4ced-81a3-0d903a25ab39",
+            "id": "23",
+            "name": "Images Formed By Spherical Mirrors Questions and Answers | Toppr",
+            "type": "url",
+            "url": "https://www.toppr.com/ask/topic-questions/3461368/#hard"
+         }, {
+            "date_added": "13240973868106404",
+            "date_last_used": "0",
+            "guid": "4c406f57-8a6c-4842-8354-e301d7e96c5e",
+            "id": "24",
+            "name": "How do all of these \"Save video from YouTube\" services work? - Super User",
+            "type": "url",
+            "url": "https://superuser.com/questions/773719/how-do-all-of-these-save-video-from-youtube-services-work"
+         }, {
+            "date_added": "13301008589332705",
+            "date_last_used": "0",
+            "guid": "70363c75-e7d2-41b1-934b-74e498344728",
+            "id": "25",
+            "name": "Forum Group WhatsApp Bot - Rikka Blog",
+            "type": "url",
+            "url": "https://www.rikkablog.tk/p/forum-group-whatsapp-bot/15/amp/"
+         }, {
+            "date_added": "13301561897865920",
+            "date_last_used": "0",
+            "guid": "c4f76e32-cb15-4802-9bf6-68e6df2077bc",
+            "id": "26",
+            "name": "chat.whatsapp.com/CSqakw6x2wRIOWTPL5a6a9 - Google Search",
+            "type": "url",
+            "url": "https://www.google.com/search?q=chat.whatsapp.com%2FCSqakw6x2wRIOWTPL5a6a9&client=ms-android-oneplus-rvo3&sxsrf=ALiCzsZhUzKnWmve1TYF53VRX_nmgyUStA%3A1657088277362&ei=FSnFYvvbFf7y4-EPh-qv8AE&oq=chat.whatsapp.com%2FCSqakw6x2wRIOWTPL5a6a9&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAM6CAgAELADEKIEOgUIABCiBDoHCCMQ6gIQJ0oECEEYAVC5GViuXWC1X2gQcAB4EYABqASIAaA0kgENMi4xMC4xMy40LjAuMZgBAKABAbABD8gBAcABAQ&sclient=mobile-gws-wiz-serp#sbfbu=1&pi=chat.whatsapp.com/CSqakw6x2wRIOWTPL5a6a9"
+         }, {
+            "date_added": "13309775688737900",
+            "date_last_used": "0",
+            "guid": "077b7f26-70d6-452d-9075-a773f5995150",
+            "id": "27",
+            "name": "Semester MID Term.jpg (743×1033)",
+            "type": "url",
+            "url": "http://www.manit.ac.in/sites/default/files/Semester%20MID%20Term.jpg"
+         } ],
+         "date_added": "13322740392554152",
+         "date_last_used": "0",
+         "date_modified": "13309775688737900",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CrgCCpcCCIiBAhKQAhJSCAISTgoGCgJibRABEDMaEgmAIpaqtvYFACGAIpaqtvYFACIUCZkcZbm29gUAEAEZfWPxCEcQOhgyGAoWCAIRhjaKu7b2BQAYACEAAAAAAAAAACAAkgGxAQpoCg5jaHJvbWVfc3luY19ibRIFNTEhYm0aEglSk4q7tvYFABFSk4q7tvYFACIyCZgcZbm29gUAEAEZgXwcwb3f9G4gASoaNTEhYm06MTEyNjI5NjkyNDk0ODU1NTE5MDgpU5OKu7b2BQAKRQoWYW5ub3RhdGlvbl9jaHJvbWVfc3luYxIFNTEhYmQaEgmAt1C1tvYFABGAt1C1tvYFACmWeoq7tvYFADCA78Kq69b9AroBAggBEgAgASoYTXpEZ2V0U3d6MUxRbWtSMEtuSmRYUT09EsMBCAMSvgEKHG5qZ0R1ODhlQ3J2WHA4NnBEN2ZIR2NxRnA4OD0SZlo6QURxdEFaemp5WS9MRkIwaXl6OXRZU2E1QUtmOFpJbHRRNTgzcU53RWhhcWIrSXQzbTh6UC84UlM0UUlveHZwRTl1emlibEt3SlVSM3BMUG13V0NocjQzRWlmQ3pnZWxzQXc9PRgAIAAoADDnqLiW/8v9AjgAQABKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAEq4CCAYSqQIKHDhjZjBPRTFkS01aL2MwUFBvNUZ2Y08veGNobz0SpgFaOkFEcXRBWng0bE9GZkE0RC9qYnh5VzJMbVlFeWRNTmlnQktpVW1CVkdRTXllVkFuSTB0TjRUQjIxTnBaZ2Vpd0FNK2xscStoS0ZqUHU3U3NYNmh3ZkoxdGZWRlVOWlRoMyt6MnM4NU54OXFta1FDTEhIa3hSTE00eFBiQWwvZ2lGTEZTb3RaR2ZqNnJKa0d0d3NneXhOQWU5N0NGazU0N0prZz09GAAgACgAMMeM6czPlPQCOKPVzu2yLUCj1c7tsi1KHHc3VzlybDkwdkd6djRkNnFweTVLaDc3Z3pmVT1aICIe/9I5MlY3WkxPSHFRV3kyMXpNTFc5VytweWd4NTQ9ZQAAAAASrgIIBRKpAgocZVZNb3VWZHVYNXB5RTJDUG56bXpLQWhuQTdjPRKmAVo6QURxdEFaeDRsT0ZmQTREL2pieHlXMkxtWUV5ZE1OaWdCS2lVbUJWR1FNeWVWQW5JMG1aRkZrWi9Sb2ZQN0MwWUhiTkVvT05hT1BtYXVpdEYwV0JuUmo2WHlPR3ZJZ00vMEtiTDI4aExKaXJqZjZTRGdUSUxNSmwyRkdvMUlaSXlhTFlxZk4rUDRxaXlYM2M5OU5OdFNYQVR3UFdhUDE4ZFF3PT0YACAAKAAw79ap0c+U9AI4xe/ckawtQMXv3JGsLUocWENGeVBqZTJlUFE1Y2VyUGswb2VQWjRJTWpRPVogIh7/pUY0d0w5dkRHbnJ6SlVtRk5nUENZMGZBNUtqST1l1MKwUxKuAggJEqkCChwxNDJuYVorZHpLVEhkMlBWa3oyeFdwZ3E1SEk9EqYBWjpBRHF0QVp4NGxPRmZBNEQvamJ4eVcyTG1ZRXlkT1dWVmdKNmlIcCt1QnRlU3lLdTB2bWplaFhyOUl5QWR1WXhtckpmN2NCbGY4ZTRoYXNZQThuRHBNekloZ3VncW9IMW1ndEJJZ29YZnkvZmFHV1h3cTllN2IxbFp2N0Q2cS9RN3dGd2k4ZGRPMjN3TXpFMHl1b3pvcTdyNk53MWROc1ZJNEE9PRgAIAAoADDHjOnMz5T0Ajja0Napmy5A2tDWqZsuShxmM3MzdWRpVzZJNTBUZ1J0aEYzZWlYKzRFTWc9WiAiHv/6czQ5cVo4WFFIMnVJYUlUdXZtZnRZenB2OWdjPWWNdYMOEq4CCAsSqQIKHGpzME82aVF2WU1VUHJ6ZjFocjUrZkdiSmVDWT0SpgFaOkFEcXRBWng0bE9GZkE0RC9qYnh5VzJMbVlFeWRPV1ZWZ0o2aUhwK3VCdGVTeUt1MHZuNnlFZW9HR1ZYeU1SR0M2bmxNVkI3M3lBdFZENHBVcVYxU1NEK1p0SlY1cWxzWHdXZHlMb3F0QWE0d2JhN3RuN1VQM1FpbTBJcERhK1RsUXEwZ1NvUW9iTjFwQ0lwZFk4L243L1hlUWhwSUV3L1YxZz09GAAgACgAMOq4r83PlPQCOJGJns2cLkCRiZ7NnC5KHG0xWEc4K3UxR3NIYm1pR2s0Y2E0TEF4K2RyRT1aICIe//43bzAyZE5JZk50anFTSlEzRmgyQVJTRkdzZTA9ZTj9dtsS9AEIJRLvAQocWFBtOUhHQ3QyTU5EOXRSS0dCaVI4bEI0YTdvPRJmWjpBRHF0QVp4cEo0bXkyYVRRT051cy9NSzU3dDZadStNNjRmZHNzanVMM2g5NThsMnJCZjVEWUFlR05mUFhNTjcrWmpiZnltM1JoMXJvaERWYXlKMVBpU3JKTjdxb0RIdGU4UT09GAAgACgAMJmDxoH8y/0COI/kyoPsMECP5MqD7DBKHFlPTlR0VzlqeFAvUkJuTGpCcjltVy9YY1MrOD1aJyIl/////wAAADX9cFQwbDMyTFRhVmZmQWFHeFhsTUtIVGVxZU8wPWUAAAAAEq4CCA0SqQIKHHBXM05pQ3prWkF2YlRRWEpKVzZ6Q0x3dGI5cz0SpgFaOkFEcXRBWng0bE9GZkE0RC9qYnh5VzJMbVlFeWRPV1ZWZ0o2aUhwK3VCdGVTeUt1MHZuejZIUVk3YWE0Sk1jaEU2UEtlYmwvVmhQWlh0TWhnMUljc0MybHkzZjduQ2ZKOE9EaXdWR2VteFJVY0YwMVBneDdRWGZlZEgxTDFPMW11Sm9YZUVxWTFMdEJqVnd3QjRGZkhmeTEvQnBhd0g0THNDZz09GAAgACgAMO/WqdHPlPQCOO2mtJadLkDtprSWnS5KHGN5ZHk3dnhWOHN3TUtMU2VmdWp2TTF1UUtIOD1aICIe//9WUW1HQ0twc0twNkMxMnZ3MHp0MkFNaUxVNm89Za2NDXQS7wEIGRLqAQocYUxtN09XN0hEYTVaVENEMW53YWNxR0QvRzhzPRJmWjpBRHF0QVp4cEo0bXkyYVRRT051cy9NSzU3dDZacHBnRjlmNEtkTmljTHVIOGdWRDBiUzlyRWFPM1JVb3AzUUdtcnFXUzBTcVAxM3kydzNyZkhLaHlHUktVOFVwR1A0bEhldz09GAAgACgAMJP+quSxrPkCOKT8yLmmMECk/Mi5pjBKHGFnb0JoRkoyYlhBWUpJMmlCY0FMRG5xdHFuQT1aIiIg////vWpzcm0wS0xncm4yY25uTzltS1ExVzdtRVd1az1lAAAAABKuAggOEqkCChxXM01XMXJSaTR4OXlYaVhGV2pUSStzaVIvNUU9EqYBWjpBRHF0QVp4NGxPRmZBNEQvamJ4eVcyTG1ZRXlkT1dWVmdKNmlIcCt1QnRlU3lLdTB2bmFCeDM3c1Q3L080aHZFbGloMFg5YXRvVi9CZG00VkNnNHV2TlF0RFViTGI2bnAwVzNEY3JDaTVLWTc0OHpqc25TK3YyTG5YYTVVY3dTOS9WZjlRaER0OC9vRmZzekNUWDFLbENFMnFSTkJmbWwwYnc9PRgAIAAoADDHjOnMz5T0AjjPmreWnS5Az5q3lp0uShxSdHlSYnMwZ1BreTZFNlgyU2R5aFFKMzVyTnc9WiAiHv//WFRRMUJ2MHVUQk1GWFBGMXloaVRqa3VBYXlZPWX3C4kiEq4CCAcSqQIKHFd6M3JhLytDN2FFckdNQkh2aVphU0o1WjZuYz0SpgFaOkFEcXRBWng0bE9GZkE0RC9qYnh5VzJMbVlFeWRNTmlnQktpVW1CVkdRTXllVkFuSTBxUVJXYXdOcWxFUmFtVkpiam9idzJQTjJ2SGxMcHNPVDFRb0xuU09VNjkwdEkvSDJyZUd2TjMrekNWZUJRMXdtMS8zaW1MTWtTbFd1YmhmWng4SWpoaFZrL1hQcFVkOTFXd09jZ3NBUXkzV1g4VTE2dz09GAAgACgAMMeM6czPlPQCOPSW+d/ALUD0lvnfwC1KHExnWkxkYWtGbzNMTjI0dThpNGVXbU5DUDJLTT1aICIe/+lDK0hNN0ZQMDNMUU1kRFlja2xRN2FxT1pTQ0U9ZZSFy60SrgIIDBKpAgocSXlLT2pibStYMTE3WVlBbWZjQ0dPNkhDTkdNPRKmAVo6QURxdEFaeDRsT0ZmQTREL2pieHlXMkxtWUV5ZE9XVlZnSjZpSHArdUJ0ZVN5S3UwdnZvQngxQmpGUTVLblVVRlRVNFFxYnNPUTk2QmR5ODJvcnllZWFieG1XUzhlNzNrQ1NUV25tSG1YL0piNit3ajN1c2NzSUQvVk03dzQ4NlVtK2lNSndrenZ1dUwyYkVMTjcrbWV2M3g5VzJyTCtoZEhRPT0YACAAKAAwx4zpzM+U9AI4/qP5kJ0uQP6j+ZCdLkocRFdBcUludG43Z1dOeHJzdEF1MGZLRDFqUFBvPVogIh7//1UyMXN2aVhJQVBlQXdwbXpLTGlSNE9yVTI2MD1lOP122xKvAggPEqoCChxzek9FSEdwdU5YZFJzTkFUNzc1VFJ4Q0Z6SGc9EqYBWjpBRHF0QVp4NGxPRmZBNEQvamJ4eVcyTG1ZRXlkT1dWVmdKNmlIcCt1QnRlU3lLdTB2aGE5aktubzJMMFRDK0M2eFNWeTFIczZWNis0c0JWei94RXZlWUxzZHBuS3pxQTFzb1lXMkFQNFB0eENDeURsa0hadjlJSVFQUVBIazdMeHd4cUFIblJiZ2FJdHVxVXFpckpaU0hWK01GOFo5WnJ3aHc9PRgAIAAoADDHjOnMz5T0Ajjcv7eWnS5A3L+3lp0uShxxTzd6WHkxTUlMdDBZMkRNYTlka1N3bUpXNFk9WiEiH///rFNFL3g2eXFqQVRrZmJmN3dQMHF4VSsvTUZPaz1l9wuJIhKvAggREqoCChxQaDAzdEpEWnBqQXlmTmt6Q2c3MUNRQWxtQzA9EqYBWjpBRHF0QVp4NGxPRmZBNEQvamJ4eVcyTG1ZRXlkT1dWVmdKNmlIcCt1QnRlU3lLdTB2a0RvT0VxN2JabDFWbWF5ZjhSZ0dOaCtJUjQyd3VNSzZNNjUzbWQvd2pVcnRQcmRXY1pUcDdiTWd6YUJ2ZVloSUtkekc2ekg1d1FMbG1zVks5YkdiaHpzKzFCUVlkWE1lbFZXTmVkTlpmdlhFNDhtRnc9PRgAIAAoADDv1qnRz5T0AjiMg8Kwny5AjIPCsJ8uShxFU3NXaVBERzl6VzhnSTNHcmdRdC9qemFRc0U9WiEiH///63hlS0FFRUNXNVlPLzBBSUplNkR2bGRMUlJJMD1lyGBExBL0AQgkEu8BChxoUTUwUWdqZDJOMHhOakd4YmI0SlgxaG84dTg9EmZaOkFEcXRBWnhwSjRteTJhVFFPTnVzL01LNTd0Nlp5Um5ZSWVlZk4yTTdDR0VFOC9MTDN6eDBLV1IzWFhOaTN2N284N2VhM0dDazgvSFJOQVJMSXZjaDQrTklhV1hvRXlGUGFRPT0YACAAKAAwmYPGgfzL/QI4j+TKg+wwQI/kyoPsMEocOUpvY2tSQmtEbzBNWlg5YjlVdXRyR1Q1dElBPVonIiX/////AAAANfpQckJMVlRSd1ozRWRyc3RXNERHNlNoZVA1eW89ZQAAAAASrwIIFBKqAgocdndTSHRWUlBCbEZtNERUMmloKzRNOFlYaFowPRKmAVo6QURxdEFaeDRsT0ZmQTREL2pieHlXMkxtWUV5ZE9XVlZnSjZpSHArdUJ0ZVN5S3UwdnNtVnZML21Dc2R2QTdwT203QVNzNzZWNXBPSkFXVWw2NmVINVJIcTBPMkhPYkFpU2hmaFVYdFVZM3UwVHFSdktKdnhsMkhHaXEzVy9KSWl3K0FMYTd4OFhmY2d4NzF4RVZianJML3gvYTdnOGUvNDFBPT0YACAAKAAwx4zpzM+U9AI4wIvwpKIuQMCL8KSiLkocQlMveU1SZzhRV1gzUTUrYlBFc1BNWWcyVUhVPVohIh////1rUUNPeVpzRUhnUUpwR0FVS1BWMnJhdnYvQjA9ZUMG60US9AEIIBLvAQocc1VQS2pIUGlFVWpyUHpsVE5kVTdxa1NhWWpRPRJmWjpBRHF0QVp4cEo0bXkyYVRRT051cy9NSzU3dDZaSzFqZzRCdHRDRnFWd3VqNDQ2Mmh4TnBRT05kOHh3bzRpOThaYkFYVHNZa2VaMUtCQlJKWlpIakpmMXRadXdzVHkybytTdz09GAAgAigCMOKK3J//y/0COKCwwYPsMEDL2f+D7DBKHFFZelpQdXZXZGhGbjUxQUtYSXJHYVFFZGsxcz1aJyIl/////wAAADXVRlRKaEJZaXoyVEE0bkk4TVdmK0RhU0s4dlNZPWUUHH3qEq8CCBUSqgIKHE5IeXZOd2VOUjNaenRIRU9FVm53ZjdkempoVT0SpgFaOkFEcXRBWng0bE9GZkE0RC9qYnh5VzJMbVlFeWRPV1ZWZ0o2aUhwK3VCdGVTeUt1MHZrN0VJOVp5Y3BpZitaWlc0WXJ3ekpXSVpzKy82T3dCZzJYbTAra0Y5RlNMRUVEQlYyQ3dWMkRoMFhWakxjbmxtaTdUUlkzbkI2RS9iai9MWmk3NXdXNU05Q1Jhc0ZhNncwc25HcXdUV1cvL3FaRU5SQT09GAAgACgAMMeM6czPlPQCOO6k686iLkDupOvOoi5KHDhtSkpJUGRyeWFwQ2Y3aHFDaS9MMzV0bkRhbz1aISIf///+UUgxMzlpVXg4NERyQTBaL1pKTzlrN2dWbGh3PWXoAqzOEusBCBwS5gEKHGF2QXB6QitMZ1F5YnJObDNxSzBHTSsxL3ZqST0SZlo6QURxdEFaeHBKNG15MmFUUU9OdXMvTUs1N3Q2WnBSOW1jRDkrekFaUVQ0QmtXSFQ5b1g4QzNCcFRKM1lYSGh6Sk9qQzdVOVlmdVlIVVpaZ3o1ODRpeGExalgwYUJOVVZFUEE9PRgAIAUoBTDFtvmR8tP9AjiAx7mD7DBAsaWyhe0wShxHNzdzQzgxaENMbGQ3ZnVWSWlSdUNneUNrRnc9Wh4iHDczTUR2YnJRUlBxUHpRR1VsYlJJcVRIYnVPND1lI/thaBKuAggIEqkCChxZMmVFQXNQTXdHRkhYc3FSOEp5UERVKzZJQ3M9EqYBWjpBRHF0QVp4NGxPRmZBNEQvamJ4eVcyTG1ZRXlkTU5pZ0JLaVVtQlZHUU15ZVZBbkkwbkthQkxUTmxaSHVEVitGVlYyMDUrdVN4SnIrV0ZlWm5xY0dQZWJXTFZYWGw0Y2k0M1JpanY2TUUvTWV4UUMyQXVYa0phckR4SE12RjVQVmpWamxRZnpya1Jrb29Ta0ZoSVJyaTlVMTd4VUJSenpQL0E9PRgAIAAoADDquK/Nz5T0Aji4yJXWwS1AuMiV1sEtShxlYmhwRmgyZHpHYlh1SkJwVXJEeFZtSWxxTHc9WiAiHv/0NDhHODEzNHgrSXc1b3dyNW9YRHd2UXdSU25RPWWFoegkEq8CCBYSqgIKHE94UExBelpXR3EvdCtlZ1U5aWcrV212WHc5MD0SpgFaOkFEcXRBWng0bE9GZkE0RC9qYnh5VzJMbVlFeWRPV1ZWZ0o2aUhwK3VCdGVTeUt1MHZuL29vQUg2bWJ2Mjh1MFdNSGc2aHVnZEdvSlZYMmJ2MlJGeUNUU3lvMjJqcDVyN0MrSkNSRnROdEFqNDBNT0dhK3VQWFhLcmQ0OUZ3VnBPaTQzTm1MYWNLQUI3Q2hIQ0t4YlRZL0g2WkI2a2h6dzZiQT09GAAgACgAMOq4r83PlPQCOI2IspakLkCNiLKWpC5KHHRBUmVMdDhLWXppSFJKRzZHTFYxMHVMeWFOOD1aISIf////NUhhVVhyelZsNFMrY3pxNW5xQ1VyZHRqY1ZvPWUQMP/kEq8CCBMSqgIKHDQ5WUp6enNzZFgzTlVqVXFIOTc0QWhGMys3ND0SpgFaOkFEcXRBWng0bE9GZkE0RC9qYnh5VzJMbVlFeWRPV1ZWZ0o2aUhwK3VCdGVTeUt1MHZ1Ymt6VEVDZm5QdHJxb3lMeHFwZFNTRmZMRlkrc2hLL093ZXdVVU56d1Q0MEtNNVJsNjY0ZmtsajdSOUhkYmtGSzRzWDJFNExGYXdOQXNoOFFTY0J5Um1NaEkvRVJyd1FLV1BTUnVQdm16VU9oc3l6Zz09GAAgACgAMI2pnczPlPQCOJGJp62hLkCRiaetoS5KHEZHVUpGUlRCSmkyOElMVTFEZE1PWGYrNERPST1aISIf///6N1o1UkdWYk5jQVB3U3MzN0hCNFJYbC90bk8wPWUAY5OfEq8CCBcSqgIKHHlJdjg3c1cxVWlZakdlbjFobGliOTRMRGRjWT0SpgFaOkFEcXRBWng0bE9GZkE0RC9qYnh5VzJMbVlFeWRPV1ZWZ0o2aUhwK3VCdGVTeUt1MHZoanFYcjVkNFlzenBnQndpeGUzYkovSmxVSHpDKzYwTWF3WUhFUlo3RnFiTWtPTVV3OTVuV0pvVXA1SUZXNkNyeGNMYlVNa0ZnWXk4NllKTTREY0NoSlM4S21JYjl5dUpQTnlnQmlESGlEc1RnYzlPdz09GAAgACgAMI2pnczPlPQCON223ve4LkDdtt73uC5KHHhnYVhFdUw1YmFVYVpUWUJraGZpOWtDRmdYdz1aISIf////SklPY3FDNHJoL3N1NmdnblVpMHl2bmtQSFpZPWU5/370Eu8BCBoS6gEKHHlIS3FVM1F2VUhmTHdQejNFNktXR01HMWcrMD0SZlo6QURxdEFaeHBKNG15MmFUUU9OdXMvTUs1N3Q2WmF5Q2ZZSlhEQXVMaXhlQTJLK1JVOXY1OUIzcmMxQit0bVJZU1VCd1R5RjFDd3ppNmFBRVYxaisyNERUYnM4ZFF2YWtaWUE9PRgAIAAoADCT/qrksaz5Ajik/Mi5pjBApPzIuaYwShxHVzFnWFJyV3dHMWpRdGlXTE80cmE0clc2L3c9WiIiIP///955bDQ1Vmt5LzF5dVltR2cvOHMyM3lPNmJlOHc9ZbVhQ40SrAIIIxKnAgocaE51QU5QSUh6Mmx3VVJVUVFoNTZCNk4yelMwPRKmAVo6QURxdEFaeDRsT0ZmQTREL2pieHlXMkxtWUV5ZE9XVlZnSjZpSHArdUJ0ZVN5S3UwdmdpVlJnb0Roclg3N1l1NGJHU1FBL2VnTkJKTzlqMkNGY1V0VlpnY0FjOXJTb2pRTXRpZHlEQmdha0Qwa01DNFB5ZGV3Ly9VMHM0TUFqV0laR0swMzM5NzVJeGNkTUs2RjFzdmFLVHJBNUhITGNzK2l3PT0YACAAKAAwmYPGgfzL/QI4w6nV2LsuQMOp1di7LkocRlVRWjFkTUJReC96RGQ3UWQ4WUZjS3QxYU04PVoeIhxkMHNQdDdobnFYYS9vUjVkbUhJcGJmbUlZb1E9ZQAAAAAS7wEIGxLqAQocbDBRbzJVT1JHUjh3YUFkaFdIcllzM0RPTDNZPRJmWjpBRHF0QVp4cEo0bXkyYVRRT051cy9NSzU3dDZaclB6azRPc2FZOTQzQ2V4Y3RYM2l1dkxNRk1qdHNURTM5VHREelc4eVdwNHErZkIrb0o4SnpNSFhSUjhXS3FSdXlYK3dLdz09GAAgACgAMNbCld3V0voCOKOY9d27MECjmPXduzBKHCtqMUVaYmR5eXc1Ky9EcnpoMWpOVEEyOHFHUT1aIiIg////70FWTk5mTjZxU3JXNlRRUUtwSEloNjNyZmZ5VT1lAAAAABK1AgghErACChxGWVJOVnRtNThSTjk4MU51VGFoQy9LMHczNDQ9EqYBWjpBRHF0QVp4NGxPRmZBNEQvamJ4eVcyTG1ZRXlkT1dWVmdKNmlIcCt1QnRlU3lLdTB2a2F5aXh2Y2lVbEdMT2FCdzVqdnpJTnJ6K0ZlaXFrbVRaMjN3ZHcvU3RjNDkyKzFEWXFXczlEaHhmVnN3T2ZzOGYzaFRwd1VoaUtEM2NENHlDNWJFUDc0K3g5VGJEZjI2L2pWdW9WQU96Q0tJdEw4R0E9PRgAIE4oTjDsqZqZ0Nb9AjjX2eTJty5AxuCZsu0wShxHVEc0dFNkL3dML3duZjBUbkdnd2pzQ0FVV2s9WiciJf////8AAAA16lFLQVdoWS9xdnA5TSt4K0N0WVlIYzNIdVRwWT1l/dYgchKvAggQEqoCChxvT0lGRDAyc2Mxa2ZiN1J5TW9memN5MHlTZUU9EqYBWjpBRHF0QVp4NGxPRmZBNEQvamJ4eVcyTG1ZRXlkT1dWVmdKNmlIcCt1QnRlU3lLdTB2a0k2TDJlRGRlNktobHVHVWJScnpFWGozTXRsNFNURU00bVNpbXp0MWZES29OZ1JLZTg1bm5KdHgxZHl3UFV4N05tS3dzemYzTFpsREk3MU5KZklyV2ZtNGJ1QzJyRGJHdnhqOXVRMVc0Z1c4MlpWNUE9PRgAIAAoADDquK/Nz5T0AjjbiPCWnS5A24jwlp0uShwrT0luUUdXeWdONXFjSHYrZVQyUUpkRW9hSEU9WiEiH///1mR3VnBEZGtVakpaL3Ezd2xpZzh1c1VwU2RIaz1l9uTtzhKvAggSEqoCChxXQnY5QjJsY3ZvSldnazd1d3FXVXo2S2NuSUU9EqYBWjpBRHF0QVp4NGxPRmZBNEQvamJ4eVcyTG1ZRXlkT1dWVmdKNmlIcCt1QnRlU3lLdTB2bWtTLzBMVXNLWk9uc3Q5RlIyTTFBQVBrU1VQNHF6Q2ttSEcyaWtPUGpqU2dCSFRTK2c0ZHdaVUtBaDN1eFV0d2htMnZFZ1V6TktFMUFaanFjbWNQeklMV0t1REluUG16MktadERpRVVxanpFZVNvNlE9PRgAIAAoADCNqZ3Mz5T0Ajj05ti5ny5A9ObYuZ8uShx5U3dFck56eDZmQkFTcDEwdFoyRmR6QjFoOFk9WiEiH///9VZUNzYrQXNxU2phMGg5dnpVems5T0xQTGdWZz1lyGBExBKvAggYEqoCChxpbGtRV0xGbFI4WThzQUtzYjd4OTAxUG1Ub1k9EqYBWjpBRHF0QVp4NGxPRmZBNEQvamJ4eVcyTG1ZRXlkT1dWVmdKNmlIcCt1QnRlU3lLdTB2aXRDSDNhVE9tVWRCM202ZzVHc2tBYk82am1KcTBnYlczaFlrUko5aU5IZllMZCtwakxVQTY5TXhKbmxtaUNRaUNXdmg2Z0xKMDJyRXE5UThMR0YzK05WemEzbzB6UG5MNEtIMjVnclZMOTc5MVVFZ2c9PRgAIAAoADCNqZ3Mz5T0AjjKqNO2uy5AyqjTtrsuShx3M3VYTjIwWGVFd0hKM09hRmppMEc1WGZLdEk9WiEiH////3p5SFN1NXZMQkIyQXpkZ3JRUGExQ3hqZ3Z1OD1luS3SCRKuAggKEqkCChwxT2IxOEU4LzF1L1dSckF2UDU0NzFIT2t5RTA9EqYBWjpBRHF0QVp4NGxPRmZBNEQvamJ4eVcyTG1ZRXlkT1dWVmdKNmlIcCt1QnRlU3lLdTB2ZzZUL1EzQnVaM040aE9JMzRCMUF5MFZza1NvalZoTVZ3VjNGS0N5MDBicTRMemNDY0lEb2ttYVQzK3RTakVDTHFMVm10THlEYUpPSjZldUhGanNnSllhdlE0VWZRZnM2d0NZL3pod2VTSi8zWU1mNFE9PRgAIAAoADDHjOnMz5T0Ajj39fz9my5A9/X8/ZsuShwyQ2tkdjhReUREUzdib29sVVY0YjVFZEN1ZEU9WiAiHv/9VStwMk9LS2NzL2QxajdqcWtvMmMwVXdaSUV3PWVE/QKBEusBCB0S5gEKHE1JVmoyNEJkZjN4NWtpZWdudDlHdHRjcGRpaz0SZlo6QURxdEFaeHBKNG15MmFUUU9OdXMvTUs1N3Q2WnhPaTNONlhoTkVVdklvNXQ5ZXR1amgvV20zemV2MnpKNUY5WFdLaG53aTBZdlB2Vm5uWUNlYXBkVlE3aVI0UWViYkE0UHc9PRgAIAIoAjDiityf/8v9Ajij7bqD7DBAytn/g+wwShxTZ3JQR21nUzJVQm9Bc2pOVkVwdnZmUHNZWGM9Wh4iHGZHSUhuaUVFT0RxeFk4UXFkTElscWdlUjJ5MD1lT1LSsxLsAQgnEucBChxKZGk3SUZRM1pIK2JHV09iL01sMjd2c0lPNGc9EmZaOkFEcXRBWnhwSjRteTJhVFFPTnVzL01LNTd0NlpQcmhBeUZ0eDBJOGdkUklqQWZOTFdqK0s3Z0dqMUdzMndjRTNHd3V5WURpNTVoa1JYQXU1REluMVVTSXZpZDlvRmNiS2hRPT0YACACKAIwmLmUy+vW/QI4pOL3o+0wQOO02rXtMEocaEcybkpTTnNlL1JwMjJHUEJiZVBwY2VBU0hBPVofIh1vWDlsZ21yM1FNT2x4WHc0NmhNVGkrM3RPQ1dvPWWLoIzREqsBCAESpgEKHHl4Si82ZnZrZWNyN2twNUVRekI0dFdMcGRiRT0STlo6QURxdEFaeHYvK1ZmTkxMaDZUMjVqQ2xYSEZlSW1oTTdrVzArRHdmZUtoclBDUXQrc2NEeWNaMVp6MW5pZHIvajF6UjBwWHFBNGs4NxgAIAAoADDnqLiW/8v9AjgAQABKHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAEvQBCCIS7wEKHEpLdkhZV0ZucVNNOUFYY2E3dHBSV2ZnZkVQST0SZlo6QURxdEFaeHBKNG15MmFUUU9OdXMvTUs1N3Q2Wm55cFJxSUc3NGRmMFRhVW51L2NKQ0pCS2RMMCtaZkRxWFJGR0s1eFZISnlUS2dzQThLQnZ1YXJLVFExcFpuUFZ3NE5UNVE9PRgAIAAoADCZg8aB/Mv9AjiO5MqD7DBAjuTKg+wwShxiM3hxUStQTXpvY25MeXhQdU9DQkJaais0Znc9WiciJf////8AAAA19VFWbUU0OTFlSjFWVkVlOFczMlpoTExWSHpaST1lAAAAABLrAQgeEuYBChxFNFV0R1NJMS9TdlI2eWR0ek5hb3dCM05pekk9EmZaOkFEcXRBWnhwSjRteTJhVFFPTnVzL01LNTd0NlorNHN6WmNBNExzSzAvK2d2QVRCallwaTRra05ldWZ3MURIRjVueWJKbWhsa0IzQXJyZmcza0lYUmlaWTdwZTM0QSsraEdRPT0YACACKAIw4orcn//L/QI4vru9g+wwQMvZ/4PsMEoceSt6MTkvblBwVEsvcW9WQk1FeGFudXJ0QkpBPVoeIhx4VnBFVEF4bE54eFFQYTV2WTRIZ0xhZ0lPOE09ZcspYacSwwEIAhK+AQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRJmWjpBRHF0QVp5eVVaZVlDMzh0d0NuS1cxVU1JdlJYcmZGSElCVlB4OE1zNHQvZHpJeUNISFM3SDY4Z2lzaFNkYjlxSWU2Z21PU0FjOWp0OURIOFphN0kwdUZGRGZZalVxNE0xdz09GAAgACgAMOeouJb/y/0COABAAEocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PVoAZQAAAAAwATgBQLGC4Z2Pw/0C",
+   "version": 1
+}

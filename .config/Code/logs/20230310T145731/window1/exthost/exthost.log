@@ -1,0 +1,178 @@
+2023-03-10 14:57:40.156 [info] Extension host with pid 8051 started
+2023-03-10 14:57:40.156 [info] Skipping acquiring lock for /home/cp/.config/Code/User/workspaceStorage/ddc427aed279908ad3008ad1fba80c91.
+2023-03-10 14:57:40.230 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-03-10 14:57:40.374 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2023-03-10 14:57:40.985 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-03-10 14:57:41.003 [info] ExtensionService#_doActivateExtension DivyanshuAgrawal.competitive-programming-helper, startup: true, activationEvent: '*'
+2023-03-10 14:57:41.207 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-03-10 14:57:41.377 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-03-10 14:57:41.538 [info] Eager extensions activated
+2023-03-10 14:57:41.553 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2023-03-10 14:57:41.693 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-03-10 14:57:41.876 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-03-10 14:57:43.520 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-03-10 14:57:43.588 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-03-10 14:57:43.694 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-03-10 14:57:45.877 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2023-03-10 14:58:00.117 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2023-03-10 15:21:09.902 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2023-03-10 15:21:10.004 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2023-03-10 15:21:11.358 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2023-03-10 15:21:11.412 [error] [vscode.markdown-language-features] provider FAILED
+2023-03-10 15:21:11.415 [error] Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)
+2023-03-10 15:21:52.889 [error] [vscode.markdown-language-features] provider FAILED
+2023-03-10 15:21:52.899 [error] Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)
+2023-03-10 15:21:56.157 [error] [vscode.markdown-language-features] provider FAILED
+2023-03-10 15:21:56.158 [error] Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)
+2023-03-10 15:22:00.074 [error] [vscode.markdown-language-features] provider FAILED
+2023-03-10 15:22:00.075 [error] Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)
+2023-03-10 15:26:30.629 [error] [vscode.markdown-language-features] provider FAILED
+2023-03-10 15:26:30.635 [error] Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)
+2023-03-10 15:26:39.957 [error] [vscode.markdown-language-features] provider FAILED
+2023-03-10 15:26:39.957 [error] Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)
+2023-03-10 15:28:43.946 [error] [vscode.markdown-language-features] provider FAILED
+2023-03-10 15:28:43.946 [error] Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)
+2023-03-10 15:39:02.699 [error] [vscode.markdown-language-features] provider FAILED
+2023-03-10 15:39:02.786 [error] Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)
+2023-03-10 15:51:42.436 [info] Extension host terminating: renderer closed the MessagePort
+2023-03-10 15:51:42.572 [error] Canceled: Canceled
+	at new a (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:88793)
+	at c.O (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:106:11260)
+	at V.<computed>.Q.charCodeAt.V.<computed> (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:106:8550)
+	at l.g (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:108198)
+	at l.executeCommand (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:107574)
+	at O.registerCommand.description (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:106867)
+	at l.h (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:108784)
+	at l.g (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:107674)
+	at l.executeCommand (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:107574)
+	at Object.executeCommand (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:30781)
+	at D (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1467127)
+	at f.invoke (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:63:145)
+	at g.deliver (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:63:2066)
+	at h.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:63:1704)
+	at Object.m [as dispose] (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1481856)
+	at /opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1485923
+	at Array.forEach (<anonymous>)
+	at g.dispose (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1485909)
+	at C.<anonymous> (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:12431)
+	at C.dispose (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:12566)
+	at C.<anonymous> (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1469257)
+	at C.dispose (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:12566)
+	at k (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:10:12074)
+	at f.X (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:11284)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:9088
+	at Array.map (<anonymous>)
+	at f.Q (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:9075)
+	at f.terminate (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:9347)
+	at u.terminate (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:1397)
+	at p (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:122:18592)
+	at MessagePortMain.<anonymous> (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:122:14731)
+	at MessagePortMain.emit (node:events:526:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:5:364) setContext undefined
+2023-03-10 15:51:42.573 [error] Canceled: Canceled
+	at new a (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:88793)
+	at c.O (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:106:11260)
+	at V.<computed>.Q.charCodeAt.V.<computed> (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:106:8550)
+	at l.g (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:108198)
+	at l.executeCommand (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:107574)
+	at O.registerCommand.description (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:106867)
+	at l.h (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:108784)
+	at l.g (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:107674)
+	at l.executeCommand (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:107574)
+	at Object.executeCommand (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:30781)
+	at D (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1467127)
+	at f.invoke (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:63:145)
+	at g.deliver (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:63:2066)
+	at h.fire (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:63:1704)
+	at Object.m [as dispose] (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1481856)
+	at /opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1485923
+	at Array.forEach (<anonymous>)
+	at g.dispose (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1485909)
+	at C.<anonymous> (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:12431)
+	at C.dispose (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:12566)
+	at C.<anonymous> (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1469257)
+	at C.dispose (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:12566)
+	at k (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:10:12074)
+	at f.X (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:11284)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:9088
+	at Array.map (<anonymous>)
+	at f.Q (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:9075)
+	at f.terminate (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:9347)
+	at u.terminate (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:1397)
+	at p (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:122:18592)
+	at MessagePortMain.<anonymous> (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:122:14731)
+	at MessagePortMain.emit (node:events:526:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:5:364) setContext undefined
+2023-03-10 15:51:42.595 [info] Extension host with pid 8051 exiting with code 0

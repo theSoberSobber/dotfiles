@@ -1,0 +1,19 @@
+{
+   "action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "js/vendor.js", "js/content_script.js" ],
+      "matches": [ "https://github.com/*" ]
+   } ],
+   "description": "Tired of scrolling through hundreds of Github issue comments to find that one magical response? Skip the scroll is here to help!",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkwyO0TDRiOgiGKYeZS1Qmdyk70vYeGwseQTgzI0i1YGiDxdYxf9ykzFYg3j9IewSYSm6oYKGnNAU4Z4eWE8RwRuBl3t/L8taGpc4UP293OALN0uCdhI7KHXESB4WkKXeEZklWXqD/Vgd2fBDC6wDMDAncoCztvf0sMJ4nMRiyBX46+sEBHWApJjp0hE3IF58WLoq1iSIFmOd045Krsh2Ga7l9UH1CW0SYIM2m4wnGcCxYIV/ccNsEWicz6at9hGZ4ZFkMM+92ItIGbZwvDpuONDYegzY4Ijygo5M1I/l2nKiMwATz1cENDy31apglQ56XPO8fZnacJkXeYGGT6snjwIDAQAB",
+   "manifest_version": 3,
+   "name": "Skip the Scroll",
+   "options_ui": {
+      "page": "options.html"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="510px" height="408px" viewBox="0 0 510 408" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>folder-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="folder-icon">
+            <path d="M459,51 L255,51 L204,0 L51,0 C22.95,0 0,22.95 0,51 L0,357 C0,385.05 22.95,408 51,408 L459,408 C487.05,408 510,385.05 510,357 L510,102 C510,73.95 487.05,51 459,51 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+            <path d="M252,242 L402,242" id="Line" stroke="#FFFFFF" stroke-width="60" stroke-linecap="square"></path>
+            <path d="M328,166 L328,316" id="Line-2" stroke="#FFFFFF" stroke-width="60" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>

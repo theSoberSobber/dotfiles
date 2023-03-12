@@ -1,0 +1,41 @@
+{
+   "background": {
+      "scripts": [ "jquery-3.5.1.min.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "images/icon_128.png",
+         "16": "images/icon_16.png",
+         "256": "images/icon_256.png",
+         "48": "images/icon_48.png",
+         "96": "images/icon_96.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Modern for Wikipedia"
+   },
+   "content_scripts": [ {
+      "js": [ "content_start.js" ],
+      "matches": [ "*://*.wikipedia.org/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "jquery-3.5.1.min.js", "content.js" ],
+      "matches": [ "*://*.wikipedia.org/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Wikipedia gets a beautiful, clean, modern interface.",
+   "icons": {
+      "128": "images/icon_128.png",
+      "16": "images/icon_16.png",
+      "256": "images/icon_256.png",
+      "48": "images/icon_48.png",
+      "96": "images/icon_96.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnvD5tvbkPxOkVqSDcwcFb8jZ4HLSDsphSb6x4vKWukxZC0zJXCSH+p3cknrde604wbNmedjTqIEDHF0hccQ1rZvRfC8lwnz33fTFrkFAnO81w/OHIoBwi/iu2Ej9tZ7R5MH/0cyru/xpwJBr76RQzrDLR8iOy4FvN6FW09XFauhFNVCxNKZAUSI8JEu4rVM652z9Eukit3mkg9t/b9bQXtcWIKwm1raS+sJdwRoAMDZ+3TZv2pcHPGlA3b1eO0TTEcGa7yxD/yDbBt6VLhbIAKrWQB2PHQe3G3uJmexNAuXWBIGiKbgutQNgcQRVlg/K0AmAapXKr0LJdMn+HpLJ5QIDAQAB",
+   "manifest_version": 2,
+   "name": "Modern for Wikipedia",
+   "permissions": [ "tabs", "storage", "*://*.wikipedia.org/*" ],
+   "short_name": "Modern for Wikipedia",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.25",
+   "web_accessible_resources": [ "images/*", "content.css" ]
+}

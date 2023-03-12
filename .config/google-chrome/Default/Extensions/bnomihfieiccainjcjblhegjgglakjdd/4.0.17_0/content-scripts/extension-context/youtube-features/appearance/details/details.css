@@ -1,0 +1,236 @@
+/*--------------------------------------------------------------
+>>> DETAILS
+----------------------------------------------------------------
+# 
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+#info #info-text {
+	max-height: 6rem;
+	display: block;
+} 
+
+/*--------------------------------------------------------------
+# HIDE DETAILS
+--------------------------------------------------------------*/
+
+html[it-hide-details='true'] ytd-video-primary-info-renderer,
+html[it-hide-details='true'] ytd-video-secondary-info-renderer {
+	display: none !important;
+}
+
+
+/*--------------------------------------------------------------
+# HIDE VIEWS COUNT
+--------------------------------------------------------------*/
+
+html[it-hide-views-count='true'] #info #count,
+html[it-hide-views-count='true'] #info #count + #info-strings>#dot {
+	display: none !important;
+}
+
+/*--------------------------------------------------------------
+# HIDE COMMENTS COUNT
+--------------------------------------------------------------*/
+
+html[it-hide-comments-count='true'] #comments #count {
+  display: none !important;
+}
+
+/*--------------------------------------------------------------
+# HIDE DATE
+--------------------------------------------------------------*/
+
+html[it-hide-date='true'] #info #count + #info-strings>yt-formatted-string,
+html[it-hide-date='true'] #info #count + #info-strings>#dot {
+	display: none !important;
+}
+
+
+ /*--------------------------------------------------------------
+HIDE LIKE BUTTON
+--------------------------------------------------------------*/
+
+html[it-likes='hidden'] #info #top-level-buttons-computed ytd-toggle-button-renderer:nth-child(1),
+html[it-likes='icons_only'] #top-level-buttons-computed ytd-toggle-button-renderer:nth-child(1) div.cbox {
+	display: none;
+}
+
+html[it-likes='icons_only'] #top-level-buttons-computed ytd-toggle-button-renderer:nth-child(1) .yt-spec-button-shape-next__icon,
+html[it-likes='icons_only'] #top-level-buttons-computed ytd-toggle-button-renderer:nth-child(1) button{
+	margin: 0;
+	padding: 0 5px;
+}
+
+
+ /*--------------------------------------------------------------
+HIDE DISLIKE BUTTON
+--------------------------------------------------------------*/
+
+html[it-hide-dislike-button='hidden'] #top-level-buttons-computed ytd-toggle-button-renderer:nth-child(2),
+html[it-hide-dislike-button='icons_only'] #top-level-buttons-computed ytd-toggle-button-renderer:nth-child(2) div.cbox {
+	display: none;
+}
+
+html[it-hide-dislike-button='icons_only'] #top-level-buttons-computed ytd-toggle-button-renderer:nth-child(2) .yt-spec-button-shape-next__icon,
+html[it-hide-dislike-button='icons_only'] #top-level-buttons-computed ytd-toggle-button-renderer:nth-child(2) button{
+	margin: 0;
+	padding: 0 5px;
+}
+
+
+/*--------------------------------------------------------------
+# HIDE SHARE BUTTON
+--------------------------------------------------------------*/
+
+html[it-hide-share-button='hidden'] #top-level-buttons-computed ytd-button-renderer#Share-button,
+html[it-hide-share-button='icons_only'] #top-level-buttons-computed ytd-button-renderer#Share-button div.cbox {
+	display: none;
+}
+
+html[it-hide-share-button='icons_only'] #top-level-buttons-computed ytd-button-renderer#Share-button .yt-spec-button-shape-next__icon,
+html[it-hide-share-button='icons_only'] #top-level-buttons-computed ytd-button-renderer#Share-button button{
+	margin: 0;
+	padding: 0 5px;
+}
+
+
+/*--------------------------------------------------------------
+# HIDE DOWNLOAD BUTTON
+--------------------------------------------------------------*/
+
+html[it-hide-download-button='hidden'] #top-level-buttons-computed ytd-download-button-renderer,
+html[it-hide-download-button='icons_only'] #top-level-buttons-computed ytd-download-button-renderer div.cbox {
+	display: none;
+}
+
+html[it-hide-download-button='icons_only'] #top-level-buttons-computed ytd-download-button-renderer .yt-spec-button-shape-next__icon,
+html[it-hide-download-button='icons_only'] #top-level-buttons-computed ytd-download-button-renderer button{
+	margin: 0;
+	padding: 0 5px;
+}
+
+
+/*--------------------------------------------------------------
+# HIDE THANKS BUTTON
+--------------------------------------------------------------*/
+
+html[it-hide-thanks-button='hidden'] #top-level-buttons-computed ytd-button-renderer#Thanks-button,
+html[it-hide-thanks-button='icons_only'] #top-level-buttons-computed ytd-button-renderer#Thanks-button div.cbox {
+	display: none;
+}
+
+html[it-hide-thanks-button='icons_only'] #top-level-buttons-computed ytd-button-renderer#Thanks-button .yt-spec-button-shape-next__icon,
+html[it-hide-thanks-button='icons_only'] #top-level-buttons-computed ytd-button-renderer#Thanks-button button{
+	margin: 0;
+	padding: 0 5px;
+}
+
+
+/*--------------------------------------------------------------
+# HIDE CLIP BUTTON
+--------------------------------------------------------------*/
+
+html[it-hide-clip-button='hidden'] #top-level-buttons-computed ytd-button-renderer#Clip-button,
+html[it-hide-clip-button='icons_only'] #top-level-buttons-computed ytd-button-renderer#Clip-button div.cbox {
+	display: none;
+}
+
+html[it-hide-clip-button='icons_only'] #top-level-buttons-computed ytd-button-renderer#Clip-button .yt-spec-button-shape-next__icon,
+html[it-hide-clip-button='icons_only'] #top-level-buttons-computed ytd-button-renderer#Clip-button button{
+	margin: 0;
+	padding: 0 5px;
+}
+
+
+/*--------------------------------------------------------------
+# HIDE SAVE BUTTON
+--------------------------------------------------------------*/
+
+html[it-hide-save-button='hidden'] #top-level-buttons-computed ytd-button-renderer#Save-button,
+html[it-hide-save-button='icons_only'] #top-level-buttons-computed ytd-button-renderer#Save-button div.cbox {
+	display: none;
+}
+
+html[it-hide-save-button='icons_only'] #top-level-buttons-computed ytd-button-renderer#Save-button .yt-spec-button-shape-next__icon,
+html[it-hide-save-button='icons_only'] #top-level-buttons-computed ytd-button-renderer#Save-button button{
+	margin: 0;
+	padding: 0 5px;
+}
+
+
+/*--------------------------------------------------------------
+# HIDE REPORT BUTTON
+--------------------------------------------------------------*/
+
+html[it-hide-report-button='hidden'] #top-level-buttons-computed ytd-button-renderer#Report-button {
+	display: none;
+}
+
+
+/*--------------------------------------------------------------
+# HIDE MORE BUTTON
+--------------------------------------------------------------*/
+
+html[it-hide-more-button='hidden'] #menu yt-button-shape#button-shape {
+	display: none;
+}
+
+
+/*--------------------------------------------------------------
+# DESCRIPTION
+--------------------------------------------------------------*/
+
+html[it-description=hidden] ytd-video-secondary-info-renderer ytd-expander.ytd-video-secondary-info-renderer,
+html[it-description=hidden] div#action-panel-details,
+ytd-watch-flexy #info-contents, ytd-watch-flexy #meta-contents {
+	display: none !important;
+}
+
+html[it-description=normal] ytd-watch-metadata,
+html[it-description=expanded] ytd-watch-metadata {
+	display: none !important;
+}
+
+html[it-description=normal] ytd-watch-flexy #info-contents, ytd-watch-flexy #meta-contents,
+html[it-description=expanded] ytd-watch-flexy #info-contents, ytd-watch-flexy #meta-contents {
+	display: block !important;
+}
+
+
+/*--------------------------------------------------------------
+# HOW LONG AGO THE VIDEO WAS UPLOADED
+--------------------------------------------------------------*/
+
+.it-how-long-ago-the-video-was-uploaded {
+	float: right !important;
+
+	margin-left: 4px !important;
+
+	color: var(--yt-spec-text-secondary) !important;
+}
+
+
+/*--------------------------------------------------------------
+# SHOW CHANNEL VIDEOS COUNT
+--------------------------------------------------------------*/
+
+.it-channel-videos-count {
+	display: inline-block !important;
+
+	margin-left: 4px !important;
+
+	color: var(--yt-spec-text-secondary) !important;
+}
+
+
+/*--------------------------------------------------------------
+# SHOW DISLIKE RED COLOR
+--------------------------------------------------------------*/
+
+html[it-red-dislike-button='true'] #info .top-level-buttons>ytd-toggle-button-renderer:nth-child(2),
+html[it-red-dislike-button='true'] #info .top-level-buttons>ytd-toggle-button-renderer:nth-child(2) yt-formatted-string {
+	color: #fc0000 !important;
+}

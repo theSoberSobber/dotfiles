@@ -1,0 +1,13 @@
+# Static table lookup for hostnames.
+# See hosts(5) for details.
+
+127.0.0.1 localhost
+::1 localhost
+127.0.0.1 meso.localdomain meso
+213.248.110.126 codeforces.com
+# Discord Blockers
+# 213.247.110.126 *.discord.com
+# 213.247.110.126 discord.com
+213.247.110.126 www.discord.com
+213.247.110.126 *.discordapp.com
+213.247.110.126 cdn.discordapp.com

@@ -1,0 +1,25 @@
+{
+   "background": {
+      "scripts": [ "background.bundle.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "content.bundle.js" ],
+      "matches": [ "*://developer.android.com/reference/*" ]
+   } ],
+   "description": "Adds an 'ad' Omnibox command and 'view source' links for the Android SDK",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "32": "icon_32.png",
+      "48": "icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlrJkdpGt+jL9JpQBYcuBbBVPni8429mq6xkuqtDIUxCSPSPERdk35IHHaExYTsbibBeuRM9zK2ANfX/sxYHh1B+19eatoMtOFPrE2GwZgiad/8JtoY5Bm5OGsCryu2oUPk9GO/VqS2kJ8+iFuVvtU7HTfB+1xaKnIYyPraCN2qLKDLwY10cdMA63aYA/Tsp83FGUME03nXHrKxjjxNyo7oz3vhCP5JlXLlvcJB8X2bNN3B8eS9Pj8pcBrCd9Ua3LUIIU72SU8EUGl7ra+eSTOgM8oLrMQIMtpXLdsaPwmlxKuVhJZT0lDVCQa6vr/+hrI6/5DLFD/Cbeu4bTo4zGEQIDAQAB",
+   "manifest_version": 2,
+   "name": "Android SDK Search",
+   "omnibox": {
+      "keyword": "ad"
+   },
+   "permissions": [ "storage", "https://api.sdksearch.app/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4.1.0"
+}

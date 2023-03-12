@@ -1,0 +1,11 @@
+2023-03-11 18:44:01.672 [info] Extension host with pid 29682 started
+2023-03-11 18:44:01.716 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-03-11 18:44:02.054 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-03-11 18:44:02.223 [info] ExtensionService#_doActivateExtension DivyanshuAgrawal.competitive-programming-helper, startup: true, activationEvent: '*'
+2023-03-11 18:44:02.375 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-03-11 18:44:02.628 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-03-11 18:44:03.675 [info] Eager extensions activated
+2023-03-11 18:44:04.009 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-03-11 18:44:04.494 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-03-11 18:44:05.061 [info] Extension host terminating: parent process 29550 does not exist anymore: kill ESRCH (code: ESRCH) (errno: -3)
+2023-03-11 18:44:05.070 [info] Extension host with pid 29682 exiting with code 0

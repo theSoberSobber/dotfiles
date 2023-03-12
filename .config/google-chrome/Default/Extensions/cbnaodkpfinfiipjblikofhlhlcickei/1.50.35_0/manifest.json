@@ -1,0 +1,86 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "backgroundPage.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "256": "assets/images/logo/256.png"
+      },
+      "default_title": "__MSG_extension_name__"
+   },
+   "commands": {
+      "HIGHLIGHT_COLOR_01": {
+         "description": "create highlight using highlight color #01"
+      },
+      "HIGHLIGHT_COLOR_02": {
+         "description": "create highlight using highlight color #02"
+      },
+      "HIGHLIGHT_COLOR_03": {
+         "description": "create highlight using highlight color #03"
+      },
+      "HIGHLIGHT_COLOR_04": {
+         "description": "create highlight using highlight color #04"
+      },
+      "HIGHLIGHT_COLOR_05": {
+         "description": "create highlight using highlight color #05"
+      },
+      "HIGHLIGHT_COLOR_06": {
+         "description": "create highlight using highlight color #06"
+      },
+      "HIGHLIGHT_COLOR_07": {
+         "description": "create highlight using highlight color #07"
+      },
+      "HIGHLIGHT_COLOR_08": {
+         "description": "create highlight using highlight color #08"
+      },
+      "HIGHLIGHT_COLOR_09": {
+         "description": "create highlight using highlight color #09"
+      },
+      "HIGHLIGHT_COLOR_10": {
+         "description": "create highlight using highlight color #10"
+      },
+      "TOGGLE_HIGHLIGHT_MODE_BY_SHORTCUT": {
+         "description": "Enable/Disable Weava",
+         "suggested_key": {
+            "default": "Alt+S"
+         }
+      },
+      "TOGGLE_WEAVA_SIDEBAR": {
+         "description": "Toggle Weava Sidebar",
+         "suggested_key": {
+            "default": "Alt+W"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "contentPage.js" ],
+      "matches": [ "http://*/*", "https://*/*", "file://*/*.pdf" ],
+      "run_at": "document_idle"
+   } ],
+   "content_security_policy": "script-src 'self' https://*.firebaseio.com 'unsafe-eval'; script-src-elem 'self' 'nonce-weava-script' 'unsafe-inline' https://*.firebaseio.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_extension_description__",
+   "externally_connectable": {
+      "matches": [ "*://*.weavatools.com/*" ]
+   },
+   "icons": {
+      "128": "assets/images/logo/128.png",
+      "16": "assets/images/logo/16.png",
+      "19": "assets/images/logo/19.png",
+      "256": "assets/images/logo/256.png",
+      "32": "assets/images/logo/32.png",
+      "38": "assets/images/logo/38.png",
+      "48": "assets/images/logo/48.png",
+      "64": "assets/images/logo/64.png",
+      "96": "assets/images/logo/96.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1PhUFbToAKr8M2ctLraQf/nMr+hucTxhkSTVkFHZ3DYhAg66D9QiUDVGKJUpR0P6bk9DSIfIDtrPNs4JV3q5sP35olIbTLudlLz8JQkm6rrHaNYvOXfK5lSjuhsm9EfsrCMFZXt7PYI6xy6btddfEd79Y7rp1Hxvevyl54eLS/TqxvtzvN3TfpdPpusMxyu5T2VbYBcKrgb55CNgug8q13ffDIfAs2W2mYu7rh1eMIebuVlpLyA58r6Dxy+pHNTdthdiw8+PhuzAehjUxQnXB0scU3SAbYe4lsCDnbxv6czOdWyB/IFA3n6HK5GKgmRIV2JiZ0K65hzxr7LEtnWDpQIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_extension_name__",
+   "permissions": [ "tabs", "contextMenus", "storage", "unlimitedStorage", "webNavigation", "webRequest", "http://*/*", "https://*/*", "webRequestBlocking", "file://*/*.pdf", "*://*.weavatools.com/*", "https://weava-files-storage.s3.amazonaws.com/pdf/*", "https://weava-files-storage-dev.s3.amazonaws.com/pdf/*" ],
+   "short_name": "Weava Highlighter",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.50.35",
+   "web_accessible_resources": [ "index.html", "styles.css", "main.js", "polyfills.js", "runtime.js", "assets/images/*", "src/pdfviewer/web/viewer.html", "src/pdfviewer/web/assets/*.js", "src/pdfviewer/web/elements/*.js", "src/webviewer/viewer.html", "src/webviewer/communicator.html", "src/webviewer/elements/*.js" ]
+}

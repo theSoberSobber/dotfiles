@@ -1,0 +1,17 @@
+{
+   "content_scripts": [ {
+      "js": [ "skribbl-assistant.js" ],
+      "matches": [ "https://skribbl.io/*" ]
+   } ],
+   "description": "Fetches the Skribbl.io wordlist and displays clickable hints based on the current word's pattern.",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "48": "icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgTHQaRHkzn+j5VFXL46K7YTRvlSUWSD0dDAz0pOklX6YsmzEL0hUGO2gmVmIkahDf0vj0Wn9eXrRSpHKQtLg0qiKSHH0BoZXQGPvhMlXN8T0a7BGWF4VffWrVTwHgWpTJBWy+hbePY1lz3mmqijsOW3AexNA/dLfTTtiUBHyuSkZ1azelLokxtq/SXOJGYZH0WJjSCJU2nCF/JzQFvdJQ/FSSF/pImsv7aLn39bjB4KZKijLN4QFykDxO4Uf73KYpBqE2aLGoLBc5xWNNndJMRv4hcQCgdMRlidkvb1bxhId2SEooSwdmo3AeLEZXn18ZxKtl8qN2iMg3V0VQzBjQQIDAQAB",
+   "manifest_version": 2,
+   "name": "Skribbl Assistant",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2.0"
+}

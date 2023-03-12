@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Viewer</title>
+    <style>
+      *,
+      *:before,
+      *:after {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="elements/styles.css" />
+  </head>
+  <body>
+    <!-- NOTE: concat/merge all the files below -->
+    <script src="elements/polyfills.js" defer></script>
+    <script src="elements/polyfill-webcomp.js" defer></script>
+    <script src="elements/polyfill-webcomp-es5.js" defer></script>
+    <script src="elements/scripts.js" defer></script>
+
+    <script src="elements/main.js" defer></script>
+
+    <!-- TODO: when everything is working correctly, try to revisit the nonce property to check how
+    to securely and properly set this up -->
+    <!-- we defer the loading of this script in order to make the webview load properly,
+    as a work-around the src should have a value. https://stackoverflow.com/a/68877008/1186938 -->
+    <script defer src="data:application/javascript,eval(document.currentScript.textContent)" nonce="weava-script">
+      const webViewer = document.createElement("web-viewer");
+
+      let queryParameter = "";
+
+      const fileQueryUrl = window.location.search;
+      if (fileQueryUrl) {
+        queryParameter = fileQueryUrl.split("?url=")[1];
+      }
+
+      if (!queryParameter) {
+        // TODO: add better error handling once technical debt is cleared
+        console.error("No URL parameter for web viewer.");
+      }
+
+      // NOTE: even if the queryParameter is empty we should still proceed to load the webviewer
+      // There will be an error message that will greet the user in case queryParameter is empty
+      webViewer.src = queryParameter;
+
+      document.body.appendChild(webViewer);
+    </script>
+  </body>
+</html>

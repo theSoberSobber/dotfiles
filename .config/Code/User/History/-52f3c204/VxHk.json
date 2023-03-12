@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.sideBar.location": "right",
+    "files.autoSave": "afterDelay",
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 2,
+    "workbench.activityBar.visible": false,
+    "window.menuBarVisibility": "toggle",
+    "workbench.statusBar.visible": false
+}

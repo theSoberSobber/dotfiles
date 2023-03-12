@@ -1,0 +1,17 @@
+{
+   "content_scripts": [ {
+      "css": [ "main.css" ],
+      "js": [ "dist/main.js" ],
+      "matches": [ "https://skribbl.io/*" ]
+   } ],
+   "description": "Auto draws images in pictionary game skribbl.io.",
+   "homepage_url": "https://github.com/galehouse5/skribbl-io-autodraw",
+   "icons": {
+      "128": "icon128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0No2RBqGR+22wK6hM7ikQcbnstBIy8atyvn94s1pExMWOA+qtUMXl9gIEXDlmypvbzBSVMgqERXXTFMYLrihnTd2vuPm12b4aSKQrJzki3rijgpWKZup/B34v5D3uWUwM4Mq1q6x/XLTsKzQMpsAX+8w6T+AIZCP1bJB7j9SKsP7YTzmkBH+CBfYGA7VloQhN12s7liQnrtJNwMmTu3PQrIYmdusu1i87sqIf9PVn/kck/aabrBNwN0UUT0PxTvn4OQkTrXWJcHAYCntm/0tmxHmXyjiUcxUUP3JO50LpdDBrBqqc0zqauul3dRWNwbtaNtSSPU5vtggRYZolcBY/QIDAQAB",
+   "manifest_version": 2,
+   "name": "AutoDraw for skribbl.io",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.3.1"
+}

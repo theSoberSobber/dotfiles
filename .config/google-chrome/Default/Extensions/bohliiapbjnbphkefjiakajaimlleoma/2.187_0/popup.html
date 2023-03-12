@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/keywords.css#2">
+<link rel="stylesheet" href="css/source.css#5">
+<link rel="stylesheet" href="css/flags.css#1">
+<link rel="stylesheet" href="translate.css#2">
+<link rel="stylesheet" href="css/style.css?up=5">
+<link rel="stylesheet" href="css/links.css?up=7">
+
+
+<head>
+
+	<title>Stats</title>
+</head>
+<body>
+	<div id="wrap" class="wrap __MSG_language__">
+
+		<header class="header">
+			<div class="header-left">
+				<div class="header-brand">
+					<img class="ico_dom" src="images/net.png" alt="">
+					<a class="brand-name" id="domain" href=""><span class="undln" ><img class="loadintop" src="images/load.gif" alt=""></span></a>
+					<span style='display:none;' id="domain_c"></span>
+					<a href="http://similarweb.com" id="simurl" target="_blank"><span class="undln" >Similarweb Info</span></a>
+					<a href="http://alexa.com"id="alexaurl" target="_blank"><span class="undln" >Alexa.com</span></a>
+				</div>
+			</div>
+			<div class="header-right">
+				<div class="header-logo">
+					<img src="images/logo2.png">
+					<p><strong>V</strong><span class="bold">stat</span></p>
+				</div>
+				<span class="version" id="vers">Ver.</span>
+
+			</div>
+		</header>
+		<div class="menu">
+			<ul>
+				<li class="active" to=".stats_block"><img class="w" src="images/stats-white.png" alt=""><img class="b" src="images/stats.png"><span class="translate-stats"></span></li>
+				<li to=".sources_block"><img class="b" src="images/net.png"><img class="w translate-sources" src="images/net-white.png"><span class="translate-sources"></span></li>
+				<li to=".links_block"><img class="b" src="images/link.png"><img class="w translate-links" src="images/link-white.png"><span class="translate-links"></span></li>
+				<li to=".keywords_block"><img class="b" src="images/key.png"><img class="w translate-keywords" src="images/key-white.png"><span class="translate-keywords"></span></li>
+			</ul>
+			<div class="waitme" style="margin-top:10px; float: right;    margin-left: 10px;">
+			<span class="translate-keywordswaitafew"></span>
+			</div>
+			<div class="loader">
+				<img src="images/load.gif" alt="">
+			</div>
+		</div>
+		
+		<div class="stats_block">
+		<div class="time-dot">
+			<div class="time-dot-block">
+				<span class="time-dot-sum" id="MONTHLY_VISITS"><img class="loadintop" src="images/load.gif" alt=""></span>
+				<span class="time-dot-day"><span class="translate-MONTHLY_VISITS"></span></span>
+			</div>
+			<div class="time-dot-block">
+				<span class="time-dot-sum" id="MONTHLY_VIEWS"><img class="loadintop" src="images/load.gif" alt=""></span>
+				<span class="time-dot-day"><span class="translate-MONTHLY_VIEWS"></span></span>
+			</div>
+			<div class="time-dot-block">
+				<span class="time-dot-sum blue-color" id="DAILY_VISITS"><img class="loadintop" src="images/load.gif" alt=""></span>
+				<span class="time-dot-day"><span class="translate-DAILY_VISITS"></span></span>
+			</div>
+			<div class="time-dot-block">
+				<span class="time-dot-sum blue-color" id="DAILY_VIEWS"><img class="loadintop" src="images/load.gif" alt=""></span>
+				<span class="time-dot-day"><span class="translate-DAILY_VIEWS"></span></span>
+			</div>
+		</div>
+		<div class="direction">
+			<div class="direction-category">
+				<div class="category-name">
+					<div class="name-img"><img src="images/tere.png" alt=""><span><span class="translate-CATEGORY"></span></span></div>
+					<div id="CATEGORY"><img class="loadintop" src="images/load.gif" alt=""></div>
+				</div>
+				<div class="category-point">
+					<div class="point-img"><img src="images/poisk.png" alt=""><span><span class="translate-mostvisits"></span></span></div>
+					<div class="country-img"><i class="flag"></i><span id="traffic_by_countries"><img class="loadintop" src="images/load.gif" alt=""></span></div>
+				</div>
+			</div>
+			<div class="direction-top">
+				<div class="top-name">
+					<div class="name-img"><img src="images/arrow-r.png" alt=""><span class="translate-topref"></span></div>
+					<div id="REFFERAL_SITES">
+					<img class="loadintop" src="images/load.gif" alt="">
+					</div>
+					<div class="organic-choise choise-not"><span class="translate-nodata"></span></div>
+				</div>
+			</div>
+			<div class="direction-organic">
+				<div class="organic-name">
+					<div class="name-img"><img src="images/hash.png" alt=""><span class="translate-orgkw"></span></div>
+					<div id="KEYWORDS">
+						<img class="loadintop" src="images/load.gif" alt="">
+					</div>
+					<div class="organic-choise choise-more"><a id="choise-more"><span class="translate-seemore"></span></a></div>
+					<div class="organic-choise choise-not"><span class="translate-nodata"></span></div>
+				</div>
+			</div>
+			<div class="direction-bounce">
+				<div class="bounce-name">
+					<div class="name-img"><img src="images/row.png" alt=""><span class="translate-bounce"></span></div>
+					<div id="BOUNCE"><img class="loadintop" src="images/load.gif" alt=""></div>
+					<div class="bounce-main">
+						<div class="bounce-f"><img src="images/text.png" alt=""><span class="translate-pagespervisit"></span></div>
+						<div id="PageViews"><img class="loadintop" src="images/load.gif" alt=""></div>
+					</div>
+					<div class="bounce-main">
+						<div class="bounce-f"><img style="margin-top: -1.5px;"src="images/time.png" alt=""><span class="translate-timeonsite"></span><span id="TimeOnSite"><img class="loadintop" src="images/load.gif" alt=""></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grapherr">
+			<span class="translate-graphnodata"></span>
+			<canvas class="graphic_error" height="166" width="700"></canvas>
+		</div>
+		<div class="graphic">
+			<span class="translate-monthvisgraph"></span>
+			<canvas id="similarweb-traffic" height="125" width="710"></canvas>
+		</div>
+		
+		<div class="identification">
+			<div class="identification-block">
+					<div class="name-img block1">
+					<div class="name-left"><img src="images/post.png" alt=""><a id="whois1" target="_blank" class="undln" href="#">Whois1</a></div>
+					<div class="name-left"><img src="images/post.png" alt=""><a id="whois2" target="_blank" class="undln" href="#">Whois2</a></div>
+				</div>
+			</div>
+			<div class="identification-block">
+				<div class="name-img block2"><span class="translate-wot"></span></div>
+				<div class="name-img block2"><span class="translate-reputation"></span><a target="_blank" class="reput_wot notd wotvertstab" href="#"><img class="loadintop" src="images/load.gif" alt=""></a></div>
+				<div class="name-img block2"><span class="translate-reviews"></span>
+				
+				<a target="_blank" class="review_wot notd wotvertstab" href="#">
+				
+				<div class="loadintop dkp"><img class="loadintop" src="images/load.gif" alt=""></div>
+				</a>
+				
+				<a class="wotreview" target="_blank">
+				<span class="translate-wotaddreviwew"></span>
+				</a>
+				
+				</div>
+				
+				<div class="name-img block2">
+					<span class="id-ch"><span class="translate-tags"></span></span>
+					<div id="TAGS">
+						<img class="loadintop" src="images/load.gif" alt="">
+					</div>
+				</div>
+				<div class="name-img block2">
+					<div class="name-img block-s gs"><img src="images/go.png" alt=""><a class="dark" href="#">Google Play Store</a></div>
+					<div class="name-img block-s as"><img src="images/app.png" alt=""><a class="dark" href="#">App Store</a></div>
+					<div class="name-img block-s gstore"><img class="loadintop" src="images/load.gif" alt=""></div>
+					<div class="name-img block-s astore"><img class="loadintop" src="images/load.gif" alt=""></div>
+				</div>
+			</div>
+			<div class="identification-block">
+				<div class="name-img block3"><span class="translate-yournote"></span></div>
+				<div class="name-img block3">
+<span class="translate-textarea-placeholder"></span>
+
+					<textarea name="" id="note" cols="30" rows="10"></textarea>
+					
+				
+				</div>
+				<div class="name-img block3 editbut"><img src="images/pen.png" alt=""><a><span class="translate-edit"></span></a></div>
+			</div>
+		</div>
+		</div>
+		
+		
+		<div class="sources_block">
+			<div class="source-content">
+				
+			
+				<div class="grapherr2">
+					<span class="translate-graphnodata"></span>
+					<canvas class="graphic_error2" height="166" width="700"></canvas>
+				</div>
+				<div class="graphic graph-sorc">
+					<h3 class="gr-title"><span class="translate-trafficsources"></span></h3>
+					<span class="translate-last3months"></span>
+					<canvas id="similarweb-sources" height="140" width="710"></canvas>
+				<div class="undepis">
+		
+				</div>
+				</div>
+				<div class="source-content-left">
+					<div class="source-content-top top_countries">
+						<h3><span class="translate-topcountries"></span></h3>
+					<div class="unp">
+					<img class="loadintop" src="images/load.gif" alt="">
+					</div>
+					</div>
+					<div class="source-content-bottom decor top_publisher">
+						<h3><span class="translate-toppublishers"></span></h3>
+						<div class="unp">
+							<img class="loadintop" src="images/load.gif" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="source-content-right">
+					<div class="source-content-top decor top_scocial">
+						<h3><span class="translate-scocial"></span></h3>
+						<div class="unp">
+							<img class="loadintop" src="images/load.gif" alt="">
+						</div>
+					</div>
+					<div class="source-content-bottom decor top_acdvert">
+						<h3><span class="translate-advert"></span></h3>
+						<div class="unp">
+							<img class="loadintop" src="images/load.gif" alt="">
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		
+		<div class="links_block">
+
+
+		<div class="links-content">
+			<div class="link-content-top">
+				<div class="links-content-left arrow-up decor ogranheight156 refsites">
+					<h3><span class="translate-topref"></span></h3>
+					<div class="load"><img class="loadintop" src="images/load.gif" alt=""></div>
+				</div>
+				<div class="links-content-right arrow-down decor ogranheight156 destination">
+				
+					<h3><span class="translate-topdist"></span></h3>
+					<div class="load"><img class="loadintop" src="images/load.gif" alt=""></div>
+				</div>
+			</div>
+			<div class="links-content-center ogranheight156 similarsites">
+			
+				<h3><span class="translate-simsites"></span></h3>
+				<div class="links-content-center-left"></div>
+				<div class="load"><img class="loadintop" src="images/load.gif" alt=""></div>
+				<div class="links-content-center-right">
+
+				</div>
+			</div>
+			
+			
+			<div class="links-content-bottom">
+			
+			<div class="links-content-left decor alsovisited ogranheight156">
+				<h3><span class="translate-audinterests"></span></h3>
+				<div class="links-content-center-left">	</div>
+				<div class="load"><img class="loadintop" src="images/load.gif" alt=""></div>
+				<div class="links-content-center-right"></div>
+			</div>
+				
+				
+				
+
+			</div>
+		</div>	
+		
+
+		
+
+
+
+
+		</div>
+
+		<script type="text/javascript" src="src/translate.js#1"></script>
+		<div class="keywords_block">
+			<div class="keywords-content">
+			<div class="keywords-content-block decor org5kw">
+				<h3><span class="translate-org5kw"></span></h3>
+				<div class="unp">
+					<img class="loadintop" src="images/load.gif" alt="">
+				</div>
+			</div>
+			<div class="keywords-content-block decor paid5kw">
+				<h3><span class="translate-paid5kw"></span></h3>
+				<div class="unp">
+					<img class="loadintop" src="images/load.gif" alt="">
+				</div>
+			</div>
+			<div class="keywords-content-block kwrdswithinfo">
+				<div class="content-block-row">
+					<h4><span class="translate-keyword"></span></h4>
+					<div class="content">
+					
+					</div>
+					<img class="loadintop" style="    position: absolute;
+    margin-left: 250px;
+    margin-top: 60px;" src="images/load.gif" alt="">
+				</div>
+
+
+				<div class="content-block-row right-block">
+					<h4><span class="translate-volglobal"></span></h4>
+					<div class="content">
+					
+					</div>
+				</div>
+				
+								<div class="content-block-row right-block">
+					<h4><span class="translate-opcglobal"></span></h4>
+					<div class="content">
+					
+					</div>
+				</div>
+				<div style="clear:both;width:100%;"></div>
+			</div>
+		</div>	
+		</div>
+		
+		
+		<div class="footer">
+			<div class="footer-block">
+				<a target="_blank" href= "https://vstat.info"><span id="feedback"><span class="but translate-getfeedback"></span></span></a>
+				<!--div class="footer-center"><span class="translate-moreinfoon"></span> VSTAT</div-->
+				<div class="scocial">
+					<img id="fa-facebook" src="images/f.png" alt="">
+					<img id="fa-vk" src="images/v.png" alt="">
+					<img id="fa-twitter" src="images/t.png" alt="">
+					<img id="fa-odnoklassniki" src="images/i.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="src/vers.js"></script>
+	<script type="text/javascript" src="src/jquery.min.js"></script>
+    <script type="text/javascript" src="jst/tools.js#3" charset="UTF-8"></script>
+    <script type="text/javascript" src="src/tools.js#3" charset="UTF-8"></script>
+	<script type="text/javascript" src="src/moment.js"></script>
+	<script type="text/javascript" src="src/chart.js"></script>
+	
+	
+	<script type="text/javascript" src="popup/tools.js"></script>
+	
+	<script type="text/javascript" src="popup/graphic.js#3"></script>
+	<script type="text/javascript" src="popup/alexa.js#3"></script>
+	<script type="text/javascript" src="popup/techsimillar.js#3"></script>
+	<script type="text/javascript" src="popup/apisimillar.js#5"></script>
+	<script type="text/javascript" src="popup/simillar.js#4"></script>
+	<script type="text/javascript" src="popup/keywords.js#3"></script>
+	<script type="text/javascript" src="popup/wot.js#3"></script>
+	
+	<script type="text/javascript" src="src/popup.js#6"></script>
+	
+
+		<script type="text/javascript">
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");</script>
+	<script type="text/javascript" src="src/yacounter.js"></script>
+	
+
+</body>
+</html>

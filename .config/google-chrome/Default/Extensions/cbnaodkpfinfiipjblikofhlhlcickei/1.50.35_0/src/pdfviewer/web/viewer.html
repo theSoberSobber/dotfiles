@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PDF Viewer</title>
+    <base href="" />
+    <style>
+      *,
+      *:before,
+      *:after {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="elements/styles.css" />
+  </head>
+  <body>
+    <pdf-viewer id="weava-pdf-viewer-root"></pdf-viewer>
+    <app-weava-root id="weava-root" class="weava"></app-weava-root>
+
+    <!-- NOTE: concat/merge all the files below -->
+    <script src="elements/polyfills.js" defer></script>
+    <script src="elements/polyfill-webcomp.js" defer></script>
+    <script src="elements/polyfill-webcomp-es5.js" defer></script>
+    <script src="elements/vendors-node_modules_html2canvas_dist_html2canvas_js.js" defer></script>
+    <script src="elements/vendors-node_modules_canvg_lib_index_es_js.js" defer></script>
+    <script src="elements/scripts.js" defer></script>
+
+    <script src="elements/main.js" defer></script>
+
+    <!-- TODO: when everything is working correctly, try to revisit the nonce property to check how
+    to securely and properly set this up -->
+    <script nonce="weava-script">
+      const pdfViewer = document.querySelector("#weava-pdf-viewer-root");
+      if (!pdfViewer) {
+        console.error("The root PDF viewer is empty.");
+      } else {
+        let queryParameter = "";
+
+        /**
+        * NOTE:
+        * const urlSearchParams = new URLSearchParams(window.location.search);
+        * const queryParameter = urlSearchParams.get("file");
+
+        * urlSearchParams.get('file') decodes the query parameter
+        * under the hood but we want to pass the "encoded"" query parameter
+        * to pdf.js and defer the decoding of special symbols.
+        *
+        * If we pass the already decoded query parameter containing the local pdf url
+        * then it will fail
+       */
+        const fileQueryUrl = window.location.search;
+        if (fileQueryUrl) {
+          queryParameter = fileQueryUrl.split("?file=")[1];
+
+          // NOTE: we only encode the ones in the local or online since
+          // the URL for the uploaded pfs will be returned via storage and
+          // are already encoded
+          if (fileQueryUrl.indexOf("apis/pdfstorage") === -1) {
+            queryParameter = encodeURI(queryParameter);
+          }
+        }
+
+        if (!queryParameter) {
+          // TODO: add better error handling once technical debt is cleared
+        }
+
+        // NOTE: even if the queryParameter is empty we should still proceed to load the pdfviewer
+        // There will be a modal with error message that will greet the user in case queryParameter is empty
+        pdfViewer.src = queryParameter;
+      }
+    </script>
+
+    <!-- Transpiled angular scripts -->
+    <script type="text/javascript" id="contentPage" src="../../../contentPage.js" defer></script>
+    <script src="../../../runtime.js" defer></script>
+    <script src="../../../polyfills.js" defer></script>
+    <script src="../../../scripts.js" defer></script>
+    <script type="text/javascript" id="sidebarAngularScript" src="../../../main.js" defer></script>
+  </body>
+</html>

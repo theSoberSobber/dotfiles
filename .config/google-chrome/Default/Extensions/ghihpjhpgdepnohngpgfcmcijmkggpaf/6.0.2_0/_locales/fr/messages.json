@@ -1,0 +1,140 @@
+{
+   "autosave": {
+      "message": "Enregistrement Auto - après capture, passe l'écran d'édition et sauvegarde la capture dans le dossier par défaut avec pour nom le titre de la page web"
+   },
+   "blur": {
+      "message": "Flou"
+   },
+   "border": {
+      "message": "Contour"
+   },
+   "cancel": {
+      "message": "Annuler"
+   },
+   "capture_area": {
+      "message": "Capture région"
+   },
+   "capture_webpage": {
+      "message": "Capture page entière"
+   },
+   "capture_window": {
+      "message": "Capture contenu visible"
+   },
+   "capturing": {
+      "message": "Capture en cours, attendez..."
+   },
+   "close": {
+      "message": "Fermer"
+   },
+   "copy": {
+      "message": "Copie"
+   },
+   "default_title": {
+      "message": "Capture écran"
+   },
+   "description": {
+      "message": "Capture le contenu visible de l'onglet, une région de la page web, ou la page entière en image PNG."
+   },
+   "edit_tip": {
+      "message": "Ci-dessous la capture d'écran. Vous pouvez l'éditer avec les outils à gauche. Cliquez Enregister quand vous avez terminé."
+   },
+   "highlight": {
+      "message": "Cadre"
+   },
+   "line": {
+      "message": "Ligne"
+   },
+   "loading": {
+      "message": "Chargement de la page, patientez..."
+   },
+   "lossless": {
+      "message": "Capture sans perte"
+   },
+   "lossy": {
+      "message": "Capture compressée"
+   },
+   "name": {
+      "message": "Capture d'écran"
+   },
+   "name_beta": {
+      "message": "Capture d'écran (beta)"
+   },
+   "ok": {
+      "message": "OK"
+   },
+   "open_save_path": {
+      "message": "Ouvrir l'emplacement"
+   },
+   "options": {
+      "message": "Options"
+   },
+   "quality_setting": {
+      "message": "Paramètres de qualité: "
+   },
+   "rect": {
+      "message": "Surface pleine"
+   },
+   "redact": {
+      "message": "Masque"
+   },
+   "save": {
+      "message": "Enregistrer"
+   },
+   "save_and_close": {
+      "message": "Enregistrer & Fermer"
+   },
+   "save_fail": {
+      "message": "L'enregistrement de la capture a échoué!"
+   },
+   "save_image": {
+      "message": "Enregistrement de l'image"
+   },
+   "save_setting": {
+      "message": "Paramètres d'enregistrement de la capture: "
+   },
+   "save_success": {
+      "message": "Capture enregistrée."
+   },
+   "save_tip": {
+      "message": "Chemin d'enregistrement par défaut: "
+   },
+   "set_save_path": {
+      "message": "Parcourir..."
+   },
+   "set_save_path_title": {
+      "message": "Selectionnez l'emplacement d'enregistrement par défaut"
+   },
+   "shortcut_setting": {
+      "message": "Paramètre du raccourci:"
+   },
+   "shortcutsetting_text": {
+      "message": "Activer les raccourcis clavier"
+   },
+   "size_huge": {
+      "message": "Énorme"
+   },
+   "size_large": {
+      "message": "Grande"
+   },
+   "size_normal": {
+      "message": "Normale"
+   },
+   "size_small": {
+      "message": "Petite"
+   },
+   "solid_black": {
+      "message": "Noir"
+   },
+   "special": {
+      "message": "C'est une page spéciale. Impossible d'effectuer une capture d'écran sur cette page."
+   },
+   "text": {
+      "message": "Texte"
+   },
+   "tip_copy_failed": {
+      "message": "La copie de la capture a échoué!"
+   },
+   "tip_copy_succeed": {
+      "message": "Capture copiée."
+   }
+}

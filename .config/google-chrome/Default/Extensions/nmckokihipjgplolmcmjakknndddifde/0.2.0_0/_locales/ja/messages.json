@@ -1,0 +1,20 @@
+{
+   "download_json": {
+      "message": "クッキーJSONをエクスポート"
+   },
+   "error_message": {
+      "message": "エラーが発生しました"
+   },
+   "ext_desc": {
+      "message": "Puppeteerでインポート可能なクッキーJSONファイルを出力します。"
+   },
+   "ext_name": {
+      "message": "クッキーJSONファイル出力 for Puppeteer"
+   },
+   "important_message": {
+      "message": "クッキーにはWEBサイトのセッションIDなど、セキュリティ上非常に重要な情報が書き込まれている可能性があるので、取扱いには十分注意してください(セッションIDが漏洩するとアカウントの乗っ取りなどされる恐れがあります)。"
+   },
+   "no_cookies": {
+      "message": "現在開いているページで保存されているクッキーはありません"
+   }
+}

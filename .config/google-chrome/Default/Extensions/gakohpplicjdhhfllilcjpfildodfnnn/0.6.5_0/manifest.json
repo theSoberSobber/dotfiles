@@ -1,0 +1,33 @@
+{
+   "background": {
+      "page": "src/background/background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": "icons/icon128.png",
+      "default_popup": "src/popup/popup.html",
+      "default_title": "Carrot"
+   },
+   "content_scripts": [ {
+      "css": [ "src/content/content.css" ],
+      "js": [ "polyfill/browser-polyfill.min.js", "src/content/content.js" ],
+      "matches": [ "*://*.codeforces.com/*" ]
+   } ],
+   "description": "Rating predictor for Codeforces",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA06iMtIRhq47hz50onZSlq13kQ2jlMDqrVcyv2L3YE35/SBme6N13o2aZv0FlfwWnrP0hKPGIWrfrokjxoLe9QfOnTGkBgpGsExinjYu6Lj6477fV9qNRRiWc0xGhAD8SFPBDJO2f6r9kC1Mmdda19YcGqz3baKImsv8DJM0wtk4ZS5oK/l+o8/N4Gs8YFBIa1mFwYCl9C0bu5eJ8fC2hXDaZIGwha7/BK8UqzOiYf2T4x0qLlHqbxADqdgCTeyV8FEeh5dxD4fvc84ORxsHuMpyc03XfAs7ZmkQ0N0LHm9kNPpgh6XncY4XyeSzmU/4pveHAfphQlSi0MqrPMH0f9wIDAQAB",
+   "manifest_version": 2,
+   "name": "Carrot",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "src/options/options.html"
+   },
+   "permissions": [ "storage", "unlimitedStorage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.6.5"
+}

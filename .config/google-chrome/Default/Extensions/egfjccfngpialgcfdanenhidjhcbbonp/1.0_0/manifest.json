@@ -1,0 +1,23 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "bot.js" ],
+      "matches": [ "https://skribbl.io/*" ]
+   } ],
+   "description": "Narrows down the possible words for skribble.io.",
+   "icons": {
+      "128": "skribbl-icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwg6g7MCvvKKdIV3fxKsbpLRGX20aQSVbE9YQANDFTFtlyNIpTJ7/q6wvX4pRwYpGEEb/xq/xifS7ehHGZPFtSvooMg7LHWrKn2R/2rg4hW4vI1jFWWDBkFLCaiM/wYhSqa6xT62Yrah5PW0jwxPsHj0fIoZNwy69ijvzm66CRVxtSUAXZaMQbQDgMrW7SaQOerPRbqGYIc8QyHbpti2KwBkTJu34XmaW2+iEGwCA6jcFXSydIo394tqO3GfoutxRrQgsBMcpjuQQ+q78crWZbMjaEiZguhn50GMcqY5TbABWvYCX8O7PfmIpqSFrdXIkH5qtb2YrqcgGQGnQFW/2FwIDAQAB",
+   "manifest_version": 2,
+   "name": "skribbl.io Bot",
+   "page_action": {
+      "default_popup": "popup.html"
+   },
+   "permissions": [ "declarativeContent" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}

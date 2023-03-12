@@ -1,0 +1,38 @@
+2023-03-11 11:08:34.102 [info] Using settings sync service https://vscode-sync.trafficmanager.net/
+2023-03-11 11:08:34.102 [info] Auto Sync is enabled.
+2023-03-11 11:08:34.102 [info] Auto Sync: Suspended until auth token is available.
+2023-03-11 11:08:35.501 [info] Deleting non existing profile from backup /home/cp/.config/Code/User/sync/extensions
+2023-03-11 11:08:35.513 [info] Deleting non existing profile from backup /home/cp/.config/Code/User/sync/globalState
+2023-03-11 11:08:35.517 [info] Deleting non existing profile from backup /home/cp/.config/Code/User/sync/keybindings
+2023-03-11 11:08:35.524 [info] Deleting non existing profile from backup /home/cp/.config/Code/User/sync/profiles
+2023-03-11 11:08:35.526 [info] Deleting non existing profile from backup /home/cp/.config/Code/User/sync/settings
+2023-03-11 11:08:35.530 [info] Deleting non existing profile from backup /home/cp/.config/Code/User/sync/snippets
+2023-03-11 11:08:35.533 [info] Deleting non existing profile from backup /home/cp/.config/Code/User/sync/tasks
+2023-03-11 11:08:39.441 [info] Auto Sync: Triggered by Interval
+2023-03-11 11:08:39.441 [info] Sync started.
+2023-03-11 11:08:39.862 [info] Settings: Last sync resource does not exist locally.
+2023-03-11 11:08:40.063 [info] Settings: No changes found during synchronizing settings.
+2023-03-11 11:08:40.139 [info] Keybindings: Last sync resource does not exist locally.
+2023-03-11 11:08:40.388 [info] Keybindings: No changes found during synchronizing keybindings.
+2023-03-11 11:08:40.392 [info] Snippets: Last sync resource does not exist locally.
+2023-03-11 11:08:40.628 [info] Snippets: No changes found during synchronizing snippets.
+2023-03-11 11:08:40.634 [info] Tasks: Last sync resource does not exist locally.
+2023-03-11 11:08:40.850 [info] Tasks: No changes found during synchronizing tasks.
+2023-03-11 11:08:40.855 [info] GlobalState: Last sync resource does not exist locally.
+2023-03-11 11:08:41.294 [info] GlobalState: Updated remote ui state. Updated: workbench.statusbar.hidden,java.2.lastSessionDate,java.2.sessionCount,javascript.1.lastSessionDate,javascript.1.sessionCount,typescript.1.lastSessionDate,typescript.1.sessionCount.
+2023-03-11 11:08:41.538 [info] GlobalState: Updated last synchronized ui state
+2023-03-11 11:08:41.549 [info] Extensions: Last sync resource does not exist locally.
+2023-03-11 11:08:41.769 [info] Extensions: No changes found during synchronizing extensions.
+2023-03-11 11:08:41.779 [info] Profiles: Last sync resource does not exist locally.
+2023-03-11 11:08:41.968 [info] Profiles: No changes found during synchronizing profiles.
+2023-03-11 11:08:41.975 [info] Sync done. Took 2534ms
+2023-03-11 11:08:49.855 [info] Auto Sync: Triggered by Activity
+2023-03-11 11:08:49.856 [info] Sync started.
+2023-03-11 11:08:49.966 [info] Settings: No changes found during synchronizing settings.
+2023-03-11 11:08:49.977 [info] Keybindings: No changes found during synchronizing keybindings.
+2023-03-11 11:08:49.991 [info] Snippets: No changes found during synchronizing snippets.
+2023-03-11 11:08:50.003 [info] Tasks: No changes found during synchronizing tasks.
+2023-03-11 11:08:50.137 [info] GlobalState: No changes found during synchronizing ui state.
+2023-03-11 11:08:50.301 [info] Extensions: No changes found during synchronizing extensions.
+2023-03-11 11:08:50.314 [info] Profiles: No changes found during synchronizing profiles.
+2023-03-11 11:08:50.320 [info] Sync done. Took 468ms

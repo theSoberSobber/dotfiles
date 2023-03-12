@@ -1,0 +1,17 @@
+
+<svg width="198px" height="146px" viewBox="1153 194 198 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="loading-state" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(1251.814990, 266.708522) rotate(2.000000) translate(-1251.814990, -266.708522) translate(1156.314990, 198.708522)">
+        <g id="highlight-tool" transform="translate(0.000000, -0.000000)" opacity="0.673215951">
+            <path d="M17.5921053,34.9789627 C27.3079567,34.9789627 35.1842105,27.2750058 35.1842105,17.7716934 C35.1842105,8.26838089 27.3079567,0.564423975 17.5921053,0.564423975 C7.87625381,0.564423975 2.27373675e-13,8.26838089 2.27373675e-13,17.7716934 C2.27373675e-13,27.2750058 7.87625381,34.9789627 17.5921053,34.9789627 Z" id="Oval" fill="#FFA4BE"></path>
+            <ellipse id="Oval" fill="#FFDE70" cx="29.0808271" cy="120.878035" rx="15.4379699" ry="15.1002568"></ellipse>
+            <path d="M83.6522556,99.2064525 C101.299414,99.2064525 115.605263,85.2135512 115.605263,67.9524326 C115.605263,50.691314 101.299414,36.6984127 83.6522556,36.6984127 C66.0050969,36.6984127 51.6992481,50.691314 51.6992481,67.9524326 C51.6992481,85.2135512 66.0050969,99.2064525 83.6522556,99.2064525 Z" id="Oval" fill="#FFFB78"></path>
+            <ellipse id="Oval" fill="#B4FFEC" cx="126.640311" cy="125.206349" rx="11.0350478" ry="10.7936508"></ellipse>
+            <ellipse id="Oval" fill="#FBBDFF" cx="172.053401" cy="54.6878307" rx="18.3917464" ry="17.989418"></ellipse>
+        </g>
+        <path d="M115.964286,66.5608466 L154.738722,60.0846561" id="Line" stroke="#E5E5E5" stroke-linecap="square"></path>
+        <path d="M102.680451,93.5449735 L120.272556,116.21164" id="Line" stroke="#E5E5E5" stroke-linecap="square"></path>
+        <path d="M57.5373736,50.105454 L30.5169173,29.1428571" id="Line" stroke="#E5E5E5" stroke-linecap="square"></path>
+        <path d="M61.3928571,90.3068783 L39.8515038,109.73545" id="Line" stroke="#E5E5E5" stroke-linecap="square"></path>
+    </g>
+</svg>

@@ -1,0 +1,544 @@
+
+.translate-stats::before {
+   content: "Stats";
+}
+.translate-ru .translate-stats::before {
+   content: "Статистика";
+}
+
+.translate-sources::before {
+   content: "Sources";
+}
+
+.translate-ru .translate-sources::before {
+   content: "Вх. данные";
+}
+
+.translate-links::before {
+   content: "Links";
+}
+
+.translate-ru .translate-links::before {
+   content: "Ссылки";
+}
+
+.translate-keywords::before {
+   content: "Keywords";
+}
+.translate-ru .translate-keywords::before {
+   content: "Ключевики";
+}
+
+
+.translate-keywordswaitafew::before {
+   content: "Wait a few minutes";
+}
+		
+
+.translate-ru .translate-keywordswaitafew::before {
+   content: "Подождите несколько минут";
+}
+
+
+	
+.translate-MONTHLY_VISITS::before{
+	content: "MONTHLY VISITS";
+}
+.translate-ru .translate-MONTHLY_VISITS::before{
+	content: "Мес. Посещения";
+}
+
+
+.translate-MONTHLY_VIEWS::before{
+   content: "MONTHLY VIEWS";	
+}
+
+.translate-ru .translate-MONTHLY_VIEWS::before{
+   content: "Мес. Просмотры";	
+}
+
+
+.translate-DAILY_VISITS::before{
+	content: "DAILY VISITS";
+}
+
+.translate-ru .translate-DAILY_VISITS::before{
+	content: "Ежед. Посещение";
+}
+
+.translate-DAILY_VIEWS::before{
+	content: "DAILY VIEWS";	
+}
+.translate-ru .translate-DAILY_VIEWS::before{
+	content: "Ежед. Просмотры";	
+}
+
+
+.translate-CATEGORY::before{
+	content: "Category:";	
+}
+
+.translate-ru .translate-CATEGORY::before{
+	content: "Категория:";	
+}
+
+
+
+.translate-mostvisits::before{
+	content: "Most visits from:";	
+}
+.translate-ru .translate-mostvisits::before{
+	content: "Макс. запрос.:";	
+}
+
+
+.translate-topref::before{
+	content: "Top Referring Sites:";	
+}
+.translate-ru .translate-topref::before{
+	content: "Топ. реф. сайтов:";	
+}
+
+
+
+.translate-nodata::before{
+	content: "Sorry, no data available";	
+}
+.translate-ru .translate-nodata::before{
+	content: "Нет данных";	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+.translate-orgkw::before{
+	content: "Keywords:";	
+}
+.translate-ru .translate-orgkw::before{
+	content: "Ключ. слова:";	
+}
+
+
+
+
+.translate-last3months::before{
+	content: "Last 3 months";	
+}
+.translate-ru .translate-last3months::before{
+	content: "За 3 мес.";	
+}
+
+
+
+
+.translate-seemore::before{
+	content: "See more";	
+}
+.translate-ru .translate-seemore::before{
+	content: "Ещё...";	
+}
+
+
+.translate-bounce::before{
+	content: "Bounce:";	
+}
+.translate-ru .translate-bounce::before{
+	content: "Конверс.";	
+}
+
+
+.translate-monthvisgraph::before{
+	content: "Monthly visits for last 6 months";	
+}
+.translate-ru .translate-monthvisgraph::before{
+	content: "Помесячные визиты за последние 6 месяцев";	
+
+}
+
+
+
+
+.translate-pagespervisit::before{
+	content: "Pages per Visit:";	
+}
+.translate-ru .translate-pagespervisit::before{
+	content: "Кол-во страниц за посещение";	
+}
+
+
+.translate-timeonsite::before{
+	content: "Time on site:";	
+}
+.translate-ru .translate-timeonsite::before{
+	content: "Время на сайте";	
+}
+
+
+
+.translate-wot::before{
+	content: "WOT";	
+}
+.translate-ru .translate-wot::before{
+	content: "WOT";	
+}
+
+
+
+
+
+.translate-reputation::before{
+	content: "Reputation:";	
+}
+.translate-ru .translate-reputation::before{
+	content: "Репутация:";	
+}
+
+
+.translate-reviews::before{
+	content: "Reviews:";	
+}
+.translate-ru .translate-reviews::before{
+	content: "Отзывы:";	
+}
+
+
+
+.translate-tags::before{
+	content: "Tags:";	
+}
+.translate-ru .translate-tags::before{
+	content: "Теги:";	
+}
+
+
+.translate-trafficsources::before{
+	content: "Traffic sources";	
+}
+.translate-ru .translate-trafficsources::before{
+	content: "Вх. трафик:";	
+}
+
+
+.translate-topcountries::before{
+	content: "Top countries";	
+}
+.translate-ru .translate-topcountries::before{
+	content: "Топ стран";	
+}
+
+
+
+
+.translate-toppublishers::before{
+	content: "Top publishers";	
+}
+.translate-ru .translate-toppublishers::before{
+	content: "Топ публикаторов";	
+}
+
+
+.translate-scocial::before{
+	content: "Top Social";	
+}
+.translate-ru .translate-scocial::before{
+	content: "Топ по соц. сетям";	
+}
+
+
+
+
+.translate-advert::before{
+	content: "Top Advert";	
+}
+.translate-ru .translate-advert::before{
+	content: "Топ. рекламодателей";	
+}
+
+
+.translate-org5kw::before{
+	content: "Top 5 organic keywords";	
+}
+.translate-ru .translate-org5kw::before{
+	content: "Топ 5 орг. ключ. слов";	
+}
+
+
+.translate-paid5kw::before{
+	content: "Top 5 pay keywords  that show a high purchase intent";	
+}
+
+.translate-ru .translate-paid5kw::before{
+	content: "Топ 5 проплаченных ключ. слов отображающих высокое намерение к покупке";	
+}
+
+
+.translate-keyword::before{
+	content: "Keyword";	
+}
+.translate-ru .translate-keyword::before{
+	content: "Ключ. слово";	
+}
+
+
+.translate-opcglobal::before{
+	content: "OPC (Global)";	
+}
+.translate-ru .translate-opcglobal::before{
+	content: "Цена за клик";	
+}
+
+
+.translate-volglobal::before{
+	content: "Mountly volume (Global)";	
+}
+.translate-ru .translate-volglobal::before{
+	content: "Месячный оборот";	
+}
+
+
+.translate-getfeedback::before{
+	content: "Give Feedback";	
+}
+.translate-ru .translate-getfeedback::before{
+	content: "Обратная связь";	
+}
+
+
+
+.translate-moreinfoon::before{
+	content: "More INFO on";	
+}
+.translate-ru .translate-moreinfoon::before{
+	content: "Больше информации на";	
+}
+
+
+
+
+
+
+
+.translate-textarea-placeholder:before{
+	content: "See only you";
+}
+
+.translate-ru .translate-textarea-placeholder:before{
+	content: "Видима только Вам";
+}
+
+
+
+.translate-wotaddreviwew:before{
+	content: "Add review";
+		
+}
+.translate-ru .translate-wotaddreviwew:before{
+	content: "Добавить отзыв";
+}
+
+
+
+
+
+/*notes*/
+.translate-graphnodata::before{
+    content: "Sorry, no data available. Under 10,000 visits / month.";
+}
+.translate-ru .translate-graphnodata::before{
+	content: "К сожалению, нет доступной информации";	
+}
+
+
+
+.translate-notdatatags::before{
+	content: "N/A";	
+}
+.translate-ru .translate-notdatatags::before{
+	content: "N/A";	
+}
+
+
+
+
+.translate-yournote::before{
+	content: "Your note:";	
+}
+.translate-ru .translate-yournote::before{
+	content: "Ваша заметка:";	
+}
+
+
+.translate-edit::before{
+	content: "Edit";	
+}
+.translate-ru .translate-edit::before{
+	content: "Редактировать";	
+}
+
+
+
+
+/*notes*/
+
+
+
+.translate-grDIRECT::before{
+	content: "DIRECT";	
+}
+.translate-ru .translate-grDIRECT::before{
+	content: "Прямые";	
+}
+
+.translate-grDISPLAY::before{
+	content: "DISPLAY";	
+}
+.translate-ru .translate-grDISPLAY::before{
+	content: "Проплаченные";	
+}
+
+.translate-grMAIL::before{
+	content: "MAIL";	
+}
+.translate-ru .translate-grMAIL::before{
+	content: "С почты";	
+}
+
+.translate-grSOCIAL::before{
+	content: "SOCIAL";	
+}
+.translate-ru .translate-grSOCIAL::before{
+	content: "Соц.сеть";	
+}
+
+.translate-grLINKS::before{
+	content: "LINKS";	
+}
+.translate-ru .translate-grLINKS::before{
+	content: "По ссылке";	
+}
+
+.translate-grSEARCH::before{
+	content: "SEARCH";	
+}
+.translate-ru .translate-grSEARCH::before{
+	content: "Ищут";	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*links*/
+
+.translate-topdist::before{
+	content: "Top destinations";	
+}
+.translate-ru .translate-topdist::before{
+	content: "Основные направения";	
+}
+
+
+.translate-simsites::before{
+	content: "Competitors & similar sites";	
+}
+.translate-ru .translate-simsites::before{
+	content: "Конкуренты и похожие сайты";	
+}
+
+
+.translate-audinterests::before{
+	content: "Audients interests";	
+}
+.translate-ru .translate-audinterests::before{
+	content: "Интерес аудитории";	
+}
+
+
+.translate-subdomains::before{
+	content: "Subdomains";	
+}
+.translate-ru .translate-subdomains::before{
+	content: "Поддомены";	
+}
+
+
+
+
+
+
+
+
+.translate-regauth::before{
+	content: "To receive content, please registr";	
+}
+.translate-ru .translate-regauth::before{
+	content: "Зарегистрируйте пожалуйста чтобы иметь доступ к расширенному функционалу";	
+}
+
+.translate-regauthbut::before{
+	content: "Registr";	
+}
+.translate-ru .translate-regauthbut::before{
+	content: "Зарегистрироваться";	
+}
+
+
+
+
+.translate-errorlocal::before{
+	content: "Sorry, the server is not available now. Closed connection..";	
+}
+.translate-ru .translate-errorlocal::before{
+	content: "К сожалению, сервер недоступен, закрыто соединение";	
+}
+
+
+.translate-errorserver::before{
+	content: "Sorry, the server is not available now..";	
+}
+.translate-ru .translate-errorserver::before{
+	content: "К сожалению, сервер недоступен";	
+}
+
+
+
+/*links*/
+
+
+
+
+/*update*/
+.translate-update::before{
+	content: "Please update extension to last version";	
+}
+.translate-ru .translate-update::before{
+	content: "Пожалуйста, обновите расширение до последней версии";	
+}
+
+
+/*update*/
+
+

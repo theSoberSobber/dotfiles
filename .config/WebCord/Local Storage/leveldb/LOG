@@ -1,0 +1,5 @@
+2023/03/08-19:53:48.444 3396 Creating DB /home/cp/.config/WebCord/Local Storage/leveldb since it was missing.
+2023/03/08-19:53:48.930 3396 Reusing MANIFEST /home/cp/.config/WebCord/Local Storage/leveldb/MANIFEST-000001
+2023/03/08-19:56:54.023 3396 Level-0 table #5: started
+2023/03/08-19:56:54.167 3396 Level-0 table #5: 1462838 bytes OK
+2023/03/08-19:56:54.223 3396 Delete type=0 #3

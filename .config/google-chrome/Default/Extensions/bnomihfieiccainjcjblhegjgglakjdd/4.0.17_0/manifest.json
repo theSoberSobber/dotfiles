@@ -1,0 +1,37 @@
+{
+   "action": {
+      "default_popup": "options-page/index.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "content-scripts/extension-context/youtube-features/content-styles.css", "content-scripts/extension-context/youtube-features/night-mode/night-mode.css", "content-scripts/extension-context/youtube-features/general/general.css", "content-scripts/extension-context/youtube-features/appearance/header/header.css", "content-scripts/extension-context/youtube-features/appearance/player/player.css", "content-scripts/extension-context/youtube-features/appearance/details/details.css", "content-scripts/extension-context/youtube-features/appearance/sidebar/sidebar.css", "content-scripts/extension-context/youtube-features/appearance/comments/comments.css", "content-scripts/extension-context/youtube-features/appearance/footer/footer.css" ],
+      "exclude_matches": [ "https://www.youtube.com/audiolibrary/*", "https://www.youtube.com/tv*" ],
+      "js": [ "assets/satus/satus.js", "content-scripts/extension-context/core.js", "content-scripts/extension-context/functions.js", "content-scripts/extension-context/youtube-features/night-mode/night-mode.js", "content-scripts/extension-context/youtube-features/general/general.js", "content-scripts/extension-context/youtube-features/appearance/player/player.js", "content-scripts/extension-context/youtube-features/appearance/details/details.js", "content-scripts/extension-context/youtube-features/appearance/sidebar/sidebar.js", "content-scripts/extension-context/youtube-features/appearance/comments/comments.js", "content-scripts/extension-context/init.js" ],
+      "matches": [ "https://www.youtube.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_description_ext__",
+   "icons": {
+      "128": "assets/icons/128.png",
+      "16": "assets/icons/16.png",
+      "32": "assets/icons/32.png",
+      "48": "assets/icons/48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCdkqLXi7Mi4b0wkmrsD1/abn/jLvqmLlOl/RFmymdvzJehXGghUMsKKbzDyDLnpKX7d2gzk6Jy7CYCRBImcDWozhFAf9bfIWNODEcfCjuAAXNmGbAxnAYLd+Tg8n7A8QEXI5b0bMEg3JvJ0cCJYQiLujY/OHYO9XeYq6d+s1DLewIDAQAB",
+   "manifest_version": 3,
+   "name": "ImprovedTube",
+   "offline_enabled": true,
+   "optional_permissions": [ "downloads" ],
+   "options_page": "options-page/index.html",
+   "permissions": [ "contextMenus", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.0.17",
+   "web_accessible_resources": [ {
+      "matches": [ "https://www.youtube.com/*" ],
+      "resources": [ "options-page/index.html", "content-scripts/website-context/core.js", "content-scripts/website-context/functions.js", "content-scripts/website-context/youtube-features/appearance.js", "content-scripts/website-context/youtube-features/themes.js", "content-scripts/website-context/youtube-features/player.js", "content-scripts/website-context/youtube-features/playlist.js", "content-scripts/website-context/youtube-features/channel.js", "content-scripts/website-context/youtube-features/shortcuts.js", "content-scripts/website-context/youtube-features/blacklist.js", "content-scripts/website-context/youtube-features/settings.js", "content-scripts/website-context/init.js", "content-scripts/website-context/mutations.js" ]
+   } ]
+}

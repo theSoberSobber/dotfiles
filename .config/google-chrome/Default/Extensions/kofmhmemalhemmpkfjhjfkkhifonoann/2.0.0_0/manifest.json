@@ -1,0 +1,30 @@
+{
+   "action": {
+      "default_popup": "pages/popup/index.html",
+      "default_title": "Watch on Odysee"
+   },
+   "background": {
+      "service_worker": "service-worker-entry-point.js"
+   },
+   "content_scripts": [ {
+      "js": [ "scripts/ytContent.js" ],
+      "matches": [ "https://www.youtube.com/*", "https://yewtu.be/*", "https://vid.puffyan.us/*", "https://invidio.xamh.de/*", "https://invidious.kavin.rocks/*" ]
+   } ],
+   "host_permissions": [ "https://www.youtube.com/", "https://yewtu.be/", "https://vid.puffyan.us/", "https://invidio.xamh.de/", "https://invidious.kavin.rocks/", "https://api.odysee.com/", "https://lbry.tv/", "https://odysee.com/", "https://madiator.com/", "https://finder.madiator.com/" ],
+   "icons": {
+      "128": "assets/icons/wol/icon128.png",
+      "16": "assets/icons/wol/icon16.png",
+      "48": "assets/icons/wol/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoqIh2GwWpky0Cf9d4v+PlJ99F4TqVwzV0S2A/8sLOiSCNcTjP1F5ig1Dc+5vO/yrN2zpsxk9HeMReoTYlT1unLriJrODoCvdutd9UHOjPieaOcZlovm1hW9JBRPM7wvCG25aJMes6e4je8ZYQY5/TZe07ba+ZW0GFFN8ItgSPzpJoaeCKHNjRUtz63QBNxRPhrwY/HTXT4qaRk0oPCpeK67IwkqIKOjPLC7g2YRFaZfjtPqFI6p6sjZeA73ruRdTMeun8o27OqmblzVFCdSGGNY91i+RfCjHyRu0jn3mp5hdFZgb54nZiEiwFj8yGQGkhrKekEtLoEd4ZtRm9cEn8wIDAQAB",
+   "manifest_version": 3,
+   "name": "Watch on Odysee",
+   "permissions": [ "tabs", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.0",
+   "web_accessible_resources": [ {
+      "extension_ids": [  ],
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "pages/popup/index.html", "pages/YTtoLBRY/index.html", "pages/import/index.html", "assets/icons/lbry/lbry-logo.svg", "assets/icons/lbry/odysee-logo.svg", "assets/icons/lbry/madiator-logo.svg" ]
+   } ]
+}

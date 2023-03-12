@@ -1,0 +1,29 @@
+[Data Source]
+DisplayName=pavitchhabra2000@gmail.com
+Enabled=true
+Parent=caa3824ee1ac0277f1685d8e46fa6a63fe4d3055
+
+[Mail Submission]
+SentFolder=folder://local/Sent
+TransportUid=4dc16b5f9b4eb622d1a8cf218d23c4099624a24c
+RepliesToOriginFolder=false
+UseSentFolder=true
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://local/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=
+StartBottom=inconsistent
+TopSignature=inconsistent
+Language=
+
+[Mail Identity]
+Address=pavitchhabra2000@gmail.com
+Aliases=
+Name=
+Organization=
+ReplyTo=
+SignatureUid=none

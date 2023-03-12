@@ -1,0 +1,36 @@
+2023-03-11 18:44:27.768 [info] Using settings sync service https://vscode-sync.trafficmanager.net/
+2023-03-11 18:44:27.768 [info] Auto Sync is enabled.
+2023-03-11 18:44:27.768 [info] Auto Sync: Suspended until auth token is available.
+2023-03-11 18:44:37.619 [info] Auto Sync: Triggered by Interval
+2023-03-11 18:44:37.620 [info] Sync started.
+2023-03-11 18:44:38.706 [info] Settings: Last sync resource does not exist locally.
+2023-03-11 18:44:38.903 [info] Settings: No changes found during synchronizing settings.
+2023-03-11 18:44:38.945 [info] Keybindings: Last sync resource does not exist locally.
+2023-03-11 18:44:39.237 [info] Keybindings: No changes found during synchronizing keybindings.
+2023-03-11 18:44:39.244 [info] Snippets: Last sync resource does not exist locally.
+2023-03-11 18:44:39.780 [info] Snippets: No changes found during synchronizing snippets.
+2023-03-11 18:44:39.789 [info] Tasks: Last sync resource does not exist locally.
+2023-03-11 18:44:39.941 [info] Tasks: No changes found during synchronizing tasks.
+2023-03-11 18:44:39.949 [info] GlobalState: Last sync resource does not exist locally.
+2023-03-11 18:44:40.514 [info] GlobalState: Updated remote ui state. Updated: workbench.statusbar.hidden.
+2023-03-11 18:44:40.619 [info] GlobalState: Updated last synchronized ui state
+2023-03-11 18:44:40.631 [info] Extensions: Last sync resource does not exist locally.
+2023-03-11 18:44:41.496 [info] Extensions: No changes found during synchronizing extensions.
+2023-03-11 18:44:41.500 [info] Profiles: Last sync resource does not exist locally.
+2023-03-11 18:44:41.724 [info] Profiles: No changes found during synchronizing profiles.
+2023-03-11 18:44:41.731 [info] Sync done. Took 4112ms
+2023-03-11 18:44:51.015 [info] Auto Sync: Triggered by Activity
+2023-03-11 18:44:51.016 [info] Sync started.
+2023-03-11 18:44:51.071 [info] Request failed https://vscode-sync.trafficmanager.net/v1/manifest
+2023-03-11 18:44:51.071 [error] RequestFailed (UserDataSyncError) syncResource:unknown operationId:unknown: Connection refused for the request 'https://vscode-sync.trafficmanager.net/v1/manifest'.
+    at y.w (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:90:146145)
+    at async y.manifest (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:90:144157)
+    at async s.createSyncTask (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:90:118031)
+    at async o.z (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:90:108642)
+    at async o.y (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:90:108269)
+2023-03-11 18:44:51.071 [error] RequestFailed (UserDataSyncError) syncResource:unknown operationId:unknown: Connection refused for the request 'https://vscode-sync.trafficmanager.net/v1/manifest'.
+    at y.w (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:90:146145)
+    at async y.manifest (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:90:144157)
+    at async s.createSyncTask (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:90:118031)
+    at async o.z (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:90:108642)
+    at async o.y (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:90:108269)

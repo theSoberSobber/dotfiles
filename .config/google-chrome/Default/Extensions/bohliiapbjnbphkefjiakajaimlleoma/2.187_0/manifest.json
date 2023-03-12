@@ -1,0 +1,29 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_title": "VStat3"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "src/jquery.min.js", "src/tools/json.js", "src/tools/base64.js", "src/content.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "homepage_url": "https://vstat.info/",
+   "icons": {
+      "128": "icon1.png",
+      "16": "icon.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJn5jsOiNGp4BUdbichSWAg0IRLChywtb7d1caShyYB9KTcwAp/6QfLOQ8QC97uDaf3BS7FImcGdRcqFzGpDtF+LtHa0yL4kcfte5K8MdC0A6MLSzU7UakQD4fWqEKgCIuYOjI9wkp1lJQB7G2d0JnK1BqQiEsf8TI31xF6LrklwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "permissions": [ "tabs", "activeTab", "\u003Call_urls>", "storage", "webRequest", "webRequestBlocking", "webNavigation" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.187",
+   "web_accessible_resources": [ "*", "popup.html", "translate.css", "link_error.html", "css/style.css", "css/links.css" ]
+}

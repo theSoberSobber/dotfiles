@@ -1,0 +1,26 @@
+{
+   "action": {
+      "default_icon": "icon.gif",
+      "default_popup": "popup.html",
+      "default_title": "Save All Resources"
+   },
+   "author": "up209d",
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "description": "Save all resources files with retaining folder structure.",
+   "devtools_page": "devtool.html",
+   "homepage_url": "https://github.com/up209d/ResourcesSaverExt",
+   "host_permissions": [ "http://*/", "https://*/" ],
+   "icons": {
+      "128": "icon.gif"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnolmUClW0WNsy3afUWJ2UP2igowdQ+7qGwhnTsjj1jkyNLdW+geL4M0/wGs0v54w6rLk5KvN+b/I70LJI7Fc9qNQs3V75G+30Ig+V0xXt2nqvieqQu7Q1SFmzDcTc2jf9m166SnumEdAoRUvIXaNj5BJoKP4YIioWL/3jFmK5+00SWbQrmZsNhn/B79S5bjbQsv7FLl3AjFIjp8m6IsOZSIGA8lFw94D7RKDVrJNy/vhbCfIIM1G1yVYeT0Z4XcQ4oqIhJBjIl8jUsSCTMH5oOW8ncwHx44lRu2mf8l3vbFdAM2lpgjfksLRHj+GLCWrBYj3djKMROW5wr/RvNJn3wIDAQAB",
+   "manifest_version": 3,
+   "name": "Save All Resources",
+   "optional_host_permissions": [ "*://*/*" ],
+   "permissions": [ "tabs", "downloads", "downloads.shelf" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.4"
+}

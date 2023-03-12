@@ -1,0 +1,14 @@
+2023-03-11 11:08:47.355 [info] Extension host with pid 7608 started
+2023-03-11 11:08:47.355 [info] Skipping acquiring lock for /home/cp/.config/Code/User/workspaceStorage/3b06688bf55d2e021f0e23f71cb64f6b.
+2023-03-11 11:08:47.891 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-03-11 11:08:47.911 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-03-11 11:08:47.920 [info] ExtensionService#_doActivateExtension DivyanshuAgrawal.competitive-programming-helper, startup: true, activationEvent: '*'
+2023-03-11 11:08:48.189 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-03-11 11:08:48.255 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-03-11 11:08:48.518 [info] Eager extensions activated
+2023-03-11 11:08:49.329 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-03-11 11:08:49.334 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-03-11 11:08:50.928 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2023-03-11 11:08:51.200 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2023-03-11 11:08:54.904 [info] Extension host terminating: renderer closed the MessagePort
+2023-03-11 11:08:54.913 [info] Extension host with pid 7608 exiting with code 0

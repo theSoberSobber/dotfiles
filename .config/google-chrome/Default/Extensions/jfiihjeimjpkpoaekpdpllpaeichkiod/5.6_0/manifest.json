@@ -1,0 +1,31 @@
+{
+   "action": {
+      "default_icon": "icon.png",
+      "default_title": "Page Marker"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "commands": {
+      "_execute_action": {
+         "suggested_key": {
+            "default": "Alt+Shift+D"
+         }
+      }
+   },
+   "description": "Draw directly on any website in real time.",
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiI97dS0lyK9ow4mxGDvr/Wy9VTNEWsLbgBz+alHqZXLn/1g7jnTVV5TviZEmrGmy7Vf4XemJScV3oM3+adCypYrryGfHvQq8tyHWvtG/NuOy3KvsA2jEi1jXfirQQJnXsSoIVIVUhIIhocwSC4FwU8UDb12sgTN5asyNDg5sBdhgHESlRPFkFt2Ho86TGUADYfmQg8PkdqnOo889+UXl452wUkkmho+3Pih4PZTYwORSvlNUyYsNRA7AXMcAwahg1VYMpi0DSSl0OLUa7pCcwWBcbe8aTucmbebEIEsWkHyzyNebmh6TTMlHdlUw7t4FTJCiEh4uKdbPIv1tDUQqvwIDAQAB",
+   "manifest_version": 3,
+   "name": "Page Marker - Draw on Web",
+   "options_page": "options.html",
+   "permissions": [ "activeTab", "storage", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "5.6",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "main.css", "marker.png", "eraser.png", "save.png", "pointer.png", "highlighter.png", "clear.png", "undo.png", "redo.png", "move.png", "text.png", "line.png", "exit.png", "cup-border.png" ]
+   } ]
+}

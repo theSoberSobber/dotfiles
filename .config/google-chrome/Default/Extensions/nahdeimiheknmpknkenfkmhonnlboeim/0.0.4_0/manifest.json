@@ -1,0 +1,17 @@
+{
+   "browser_action": {
+      "default_icon": "logo/128.png",
+      "default_popup": "index.html"
+   },
+   "description": "An extension that keeps users updated about Coding or Competitive Programming contests.",
+   "icons": {
+      "128": "logo/128.png",
+      "16": "logo/16.png",
+      "48": "logo/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt3BfQh54swlw9thbq1GuhamnbleHgO+jnNuhz3GLmevAQHX3riTD/TB6pAjMNcySFk3MX9pWJrcqP4fIdIpOzVVg/aQgC1wXiCeBfbMMRtvVqd2biHJCZMYy8q1khhUOMD9OSNexc52c9+jLSNlZ7c8e5enBvWxJ4uKo4NFgFgaGq4HUa8Tq1aPPNRJuJt+bX4tBvC0cRmsZpTZ9anQF+KSoIgRe1nSXmV0rUxWcOzP8SmVK+RECKsHEW/qjXRsqfqa8HwOENImqAbiG19EU2krrL3XntsBGP5ZOTZYwTPu5o4k6871wkZj2VSjACsMqkHlX+GnMv9s6grAV3IYGPwIDAQAB",
+   "manifest_version": 2,
+   "name": "CP Calendar",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.4"
+}

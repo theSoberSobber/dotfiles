@@ -1,0 +1,17 @@
+{
+   "background": {
+      "scripts": [ "background_chrome.js" ]
+   },
+   "description": "This is a tool that provides various options for advance and versatile search.",
+   "homepage_url": "https://github.com/aditya12anand/Recon",
+   "icons": {
+      "48": "icons/recon-48.png",
+      "96": "icons/recon-96.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8HI/Dj5Ke9NiJhXlf/yv55MxDr6ri7yP6y1KBsZvZuNpTQrabc43NdyvhqA4JIgvdetYhIkaESglxwRMz4KdWq+zIjoqBkD0MFbVTfDYmenvSX5HU3o7MxFTys/llfyBQ4fkGKYJCGwEHRQ4dDCz6uKqog8adoWDf4Q7dpYV7Wwcr2xN1EcQRhuo4mFjVYQ+eM/HoH4/S57gtedPkXgNyBcS3ad8AVM8DSvT16OZr0JZkV8eePpCS4bAVo4jeIiqb/RKEiEvBBYEEKPy41UaylaiBq2FLPkzFwffof6gCSsDXjizgc5yHMAKeKDtoHArW/729s+ccf9tvpX2j5rwEwIDAQAB",
+   "manifest_version": 2,
+   "name": "Recon",
+   "permissions": [ "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.9"
+}

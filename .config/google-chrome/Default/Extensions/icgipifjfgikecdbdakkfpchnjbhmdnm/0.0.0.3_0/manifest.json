@@ -1,0 +1,25 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon48.png",
+      "default_popup": "dn_popup.html",
+      "default_title": "Doubtnut Extension"
+   },
+   "content_scripts": [ {
+      "js": [ "jquery-3.5.1.min.js", "content.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "icons": {
+      "128": "icon128.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3MtGB7CUhkkU3NAicuTX15HHMiNeOydilQ3wep4rdel4fagMntLa5ifpzlZoZmYQBa0BsO9L3w7Ob6hbrU+sP5xBlwkfSNNK6mk4B28R1vQEZ5whMNe2x8XjvV+EEA4y0YK+bkZi+tZMM+wJEU+BzqK2Wn/4jMC4p6CmOMOEZhcJCv+QawynlDcRpJgfT6J3fAqqy5RlMhnwWtwksASAo3AE13cDwTPoq2OhOZpJ6v/KVsf50SO/QEoGLe3wg12xTJQUNqe3P2G6B3XvSIshvNbCz8cs16XUe5fgSFdpGOY37mvngyp20Dam6pHtUFzehbfGO0ojsNZpycGAVYAvGQIDAQAB",
+   "manifest_version": 2,
+   "name": "Doubtnut Search",
+   "permissions": [ "contextMenus", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.0.3"
+}

@@ -1,0 +1,33 @@
+{
+   "action": {
+      "default_icon": "images/icon_128_reshaped.png"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "core_injection.js" ],
+      "matches": [ "https://web.whatsapp.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "css": [ "styles.css", "lib/css/drop-theme-basic.css" ],
+      "js": [ "core/ui_class_names.js", "core/ui.js", "lib/drop.js", "lib/sweetalert.min.js" ],
+      "matches": [ "https://web.whatsapp.com/*" ]
+   } ],
+   "description": "Be invisible on WhatsApp™ Web by disabling read receipts and presence updates",
+   "host_permissions": [ "https://web.whatsapp.com/*" ],
+   "icons": {
+      "128": "images/icon_128_blue.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl/qqpAM16NHOATA73ywCB+cXILR0ZORVZuUGCYdH4mXHH5y6FCgoc+7PtE7RaF3F1RLdoBl4LrgstmFAJaKBTR0il6Zrh60WuMAiyEnBhr8+OdP4vEhn1jbZpQYPes/jtXYWH85tyuckNjJ3WEqDZGyDzvbxTLdzmb9VTKen0DADXrbjd7e2ykfuGZ8Bex39TjEq/kwYzaGbLnyDaKc5A+Qv0xF55akEe10gHMRveaGKbBks5YgUBaURSluweoYzysO7s291Ev1lZhIPE/Jpe8Sl/xBN3DptjgBP33mnJ2RtSdQ7pAuZk1ASBlW7Dysr5s3zGdPQkwDMuaY3kUaM9QIDAQAB",
+   "manifest_version": 3,
+   "name": "WAIncognito",
+   "permissions": [ "storage" ],
+   "short_name": "WAIncognito",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.1",
+   "web_accessible_resources": [ {
+      "matches": [ "https://web.whatsapp.com/*" ],
+      "resources": [ "lib/*", "core/*", "images/*" ]
+   } ]
+}

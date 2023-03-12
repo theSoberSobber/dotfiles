@@ -1,0 +1,96 @@
+<div class="nr-ext" id="nr-ext-quick-start" ext-theme="light">
+    <div class="nr-ext-quick-bar" id="nr-ext-quick-bar" data-play="init">
+        <div class="nr-ext-quick-backdrop" id="nr-ext-quick-backdrop"></div>
+        <div class="nr-ext-quick-max">
+            <button class="ext-icon-button" id="nr-ext-quick-max">
+                <svg class="icon">
+                    <use xlink:href="#ext_icon_max"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="nr-ext-quick-play">
+            <button class="ext-icon-button-md" id="nr-ext-quick-play">
+                <svg class="icon icon-play">
+                    <use xlink:href="#ext_icon_play"></use>
+                </svg>
+                <svg class="icon icon-pause">
+                    <use xlink:href="#ext_icon_pause"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="nr-ext-quick-exit">
+            <button class="ext-icon-button" id="nr-ext-quick-exit">
+                <svg class="icon">
+                    <use xlink:href="#ext_icon_exit"></use>
+                </svg>
+            </button>
+        </div>
+        <div>
+            <button class="ext-icon-button" id="nr-ext-quick-blank">
+                <!-- <svg class="icon">
+                    <use xlink:href="#ext_icon_exit"></use>
+                </svg> -->
+            </button>
+        </div>
+    </div>
+    <div class="nr-ext-quick-start-exit-options" id="nr-ext-qcuik-start-exit-options">
+        <div class="nr-ext-quick-start-exit-options-content">
+            <h4 class="nr-ext-quick-start-exit-options-header">Hide quickstart widget?</h4>
+            <p>If you choose to hide indefinitely (option 2 or 3), you can unhide this feature in
+                the <b>“Reader”</b> section of <b>“More Settings”</b>.
+            <div class="nr-ext-quick-start-exit-options-box">
+                <div class="nr-ext-quick-start-exit-options-cell">
+                    <input type="radio" name="quick-start-exit-options" id="nr-quick-start-exit-once" value="exit-once"
+                        checked="true">
+                    <label for="nr-quick-start-exit-once">Hide just once only</label>
+                </div>
+                <div class="nr-ext-quick-start-exit-options-cell">
+                    <input type="radio" name="quick-start-exit-options" id="nr-quick-start-exit-this-page"
+                        value="exit-page">
+                    <label for="nr-quick-start-exit-this-page">Hide on this page indefinitely until you unhide
+                        it</label>
+                </div>
+                <div class="nr-ext-quick-start-exit-options-cell">
+                    <input type="radio" name="quick-start-exit-options" id="nr-quick-start-exit-forever"
+                        value="exit-forever">
+                    <label for="nr-quick-start-exit-forever">Hide indefinitely on all pages that you visit</label>
+                </div>
+            </div>
+
+            <div class="nr-ext-quick-start-exit-options-footer">
+                <button class="ext-link-button" id="nr-ext-quick-exit-cancel">Cancel</button>
+                <button class="ext-primary-button" id="nr-ext-quick-start-exit-confirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<svg width="0" height="0" class="hidden">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115" id="ext_icon_play">
+        <path
+            d="M113.885 57.5C113.885 88.7678 88.5371 114.115 57.2693 114.115C26.0014 114.115 0.65387 88.7678 0.65387 57.5C0.65387 26.2322 26.0014 0.884644 57.2693 0.884644C88.5371 0.884644 113.885 26.2322 113.885 57.5Z"
+            fill="#134DCD" color="#134DCD"></path>
+        <path
+            d="M82.2544 54.642C84.3666 56.2426 84.3666 59.4176 82.2544 61.0181L50.4158 85.1445C47.7814 87.1408 44 85.2618 44 81.9564L44 33.7037C44 30.3984 47.7814 28.5194 50.4158 30.5156L82.2544 54.642Z"
+            fill="white" color="white"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118" id="ext_icon_pause">
+        <path
+            d="M117.529 58.726C117.529 91.0958 91.288 117.337 58.9183 117.337C26.5485 117.337 0.307617 91.0958 0.307617 58.726C0.307617 26.3562 26.5485 0.115356 58.9183 0.115356C91.288 0.115356 117.529 26.3562 117.529 58.726Z"
+            fill="#134DCD" color="#134DCD"></path>
+        <path
+            d="M67.8344 34.0949C67.8344 31.8858 69.6252 30.0949 71.8343 30.0949H73.9081C76.1172 30.0949 77.9081 31.8858 77.9081 34.0949V83.7898C77.9081 85.9989 76.1172 87.7898 73.9081 87.7898H71.8344C69.6252 87.7898 67.8344 85.9989 67.8344 83.7898V34.0949Z"
+            fill="white" color="white"></path>
+        <rect x="40.3607" y="30.0949" width="10.0737" height="57.6948" rx="4" fill="white" color="white"></rect>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_max">
+        <path
+            d="M21 8.59V4C21 3.45 20.55 3 20 3H15.41C14.52 3 14.07 4.08 14.7 4.71L16.29 6.3L6.29 16.3L4.7 14.71C4.08 14.08 3 14.52 3 15.41V20C3 20.55 3.45 21 4 21H8.59C9.48 21 9.93 19.92 9.3 19.29L7.71 17.7L17.71 7.7L19.3 9.29C19.92 9.92 21 9.48 21 8.59Z"
+            stroke="1.5"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ext_icon_exit">
+        <path
+            d="M12 3c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1s1-.45 1-1V4c0-.55-.45-1-1-1zm5.14 2.86a.99.99 0 00-.01 1.39c1.13 1.2 1.83 2.8 1.87 4.57.09 3.83-3.08 7.13-6.91 7.17A6.981 6.981 0 015 12c0-1.84.71-3.51 1.87-4.76.37-.39.37-1-.01-1.38a.993.993 0 00-1.43.02A8.92 8.92 0 003 11.74c-.14 4.88 3.83 9.1 8.71 9.25 5.1.16 9.29-3.93 9.29-9 0-2.37-.92-4.51-2.42-6.11-.38-.41-1.04-.42-1.44-.02z">
+        </path>
+    </symbol>
+</svg>

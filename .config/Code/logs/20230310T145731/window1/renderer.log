@@ -1,0 +1,81 @@
+2023-03-10 14:57:41.816 [info] [perf] Render performance baseline is 190ms
+2023-03-10 15:21:11.418 [error] Illegal argument: range: Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)
+2023-03-10 15:21:52.927 [error] Illegal argument: range: Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)
+2023-03-10 15:21:56.197 [error] Illegal argument: range: Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)
+2023-03-10 15:22:00.129 [error] Illegal argument: range: Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)
+2023-03-10 15:26:30.656 [error] Illegal argument: range: Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)
+2023-03-10 15:26:39.979 [error] Illegal argument: range: Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)
+2023-03-10 15:28:43.969 [error] Illegal argument: range: Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)
+2023-03-10 15:39:02.788 [error] Illegal argument: range: Error: Illegal argument: range
+	at w (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1267)
+	at new Bt (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:33312)
+	at new r (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1865558)
+	at ee (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1857313)
+	at c (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892275)
+	at t.map (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1892361)
+	at Object.asDocumentLinks (/opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1863187)
+	at /opt/visual-studio-code/resources/app/extensions/markdown-language-features/dist/extension.js:2:1798883
+	at async me.provideLinks (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:98:51726)

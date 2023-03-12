@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  </head>
+
+
+   <div id="docsumo_screenshot" class="docsumo_container" @mousemove="move" @mousedown="mouseDown" @mouseup="mouseUp">
+  
+  
+      <!-- <transition name="screenshot">
+          <div class="docsumo_Flash" v-if="tookScreenShot"></div>
+        </transition> -->
+    
+        
+        <div style="color:white;" class="docsumo_overlay" :class="{ 'highlighting' : mouseIsDown }" :style="{ borderWidth: borderWidth }">
+          <div class="docsumo_helptext":class="{'hidden':mouseIsDown}">
+          <div class="docsumo_grabText" :class="{'hidden':mouseIsDown}">Please select text to grab &</div>
+          <div style="display:flex;flex-direction:row;">
+            <div class='docsumo_shortcut' :class="{'hidden':mouseIsDown}">Ctrl/Cmd+Shift+X</div> <div class="docsumo_grabText1" :class="{'hidden':mouseIsDown}">&nbsp; to exit the flow </div>
+          </div>
+        </div>
+        </div>
+       
+        
+      <!--  <div class="docsumo_crosshairs" :class="{ 'hidden' : isDragging }" :style="{ left: crossHairsLeft + 'px', top: crossHairsTop + 'px' }"></div>  -->
+        
+        <div class="docsumo_borderedBox" :class="{ 'hidden':!isDragging }" :style="{ left: boxLeft + 'px', top: boxTop + 'px', width: boxEndWidth + 'px', height: boxEndHeight + 'px' }"></div>
+        
+     <span class="docsumo_tooltipDocsumo" :class="{ 'hidden':!isDragging }" :style="{ left: toolTipLeft + 'px', top: toolTipTop + 'px'}">{{boxEndWidth}} x {{boxEndHeight}}px</span> 
+      </div>
+  
+    
+
+
+
+      <!-- popup for chrome extension-->
+      <div class="docsumo_form-popup" id="docsumo_myForm">
+        <div class="docsumo_popupHeader">
+           <div class="docsumo_btns" id="docsumo_newPage">
+            <span class="docsumo_tooltiptext">Open in tab</span>
+            <img title="Open in new tab" id="docsumo_nextTabIcon" src="images/nextTab.svg"/>  
+           </div>
+           <div title="Learn how to use this tool" class="docsumo_btns" id="docsumo_infoTab">
+            <span class="docsumo_tooltiptext1">Learn how to use this tool</span>
+            <a target="_blank" href="https://www.youtube.com/watch?v=uCu5sCsQ6qs&t=3s">
+              <img  id="docsumo_infoIcon" src='images/infoIcon.svg'/>
+            </a>
+            
+           </div>
+           <div title="Close" id="docsumo_closeBtn" class="docsumo_btns">
+            <img id="docsumo_closeIcon" src='images/closeIcon.svg'/>
+           </div>
+        </div>
+        <div class="docsumo_mainBody">
+            <div class="docsumo_innerBlocks">
+              <div id="docsumo_imageArea">
+                <img class='docsumo_cloudinary' src=''/>
+              </div>
+              <div id="docsumo_inputArea">
+                <div id="docsumo_docsumo_loader" class="docsumo_loader"></div>
+                <TextArea id="docsumo_myInput" class="docsumo_textArea"></TextArea>
+              </div>
+             
+            </div>
+            <div class="docsumo_buttonSection">
+              <div id='docsumo_errorMsg' style="color:red;width:300px;display:block;">
+          
+              </div>
+              <div title="Recapture" class="docsumo_btns"  id="docsumo_reCaptureBtn"><img id="docsumo_recaptureIcon" src="images/ic_refresh.svg"\>
+                <span class="docsumo_tooltiptext">Recapture</span>
+              </div> 
+              <div title="Google translate"  class="docsumo_btns" style="margin-right:12px" id="docsumo_googleTranslateBtn"><img id="docsumo_googleTranslateIcon" src='images/translate.svg'\>
+                <span class="docsumo_tooltiptext">Google translate</span>
+              </div>
+              <div title="Copy Text" id="docsumo_textInCpyBtn" class="docsumo_copyText">
+                <div style="margin-right:4px; margin-left:12px;" id="docsumo_copyToClipBoard" class="docsumo_btns">
+                <img id="docsumo_copyTextIcon" src='images/copytexticon.svg'/>
+               
+                </div>
+                <div  id="docsumo_textCopy"> 
+                  Copy Text
+                </div>
+               
+             
+            </div>
+            
+          </div>
+        </div>
+        
+       
+      </div>
+      </html>
+      <!-- end of popup  -->
+
+
+

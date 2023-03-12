@@ -1,0 +1,4 @@
+2023-03-06 02:16:51.993 [info] update#ctor - updates are disabled as there is no update URL
+2023-03-06 02:16:58.131 [info] Starting extension host with pid 1303 (fork() took 15 ms).
+2023-03-06 02:17:10.615 [info] Waiting for extension host with pid 1303 to exit.
+2023-03-06 02:17:10.629 [info] Extension host with pid 1303 exited with code: 0, signal: null.

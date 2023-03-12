@@ -1,0 +1,1 @@
+window._docs_annotate_canvas_by_ext="kohfgcgbkjodfcfkcackpagifgbcmimk";let script=document.createElement("script");script.id="nr-docs-annotated",(document.head||document.documentElement).appendChild(script);

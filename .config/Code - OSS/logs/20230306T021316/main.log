@@ -1,0 +1,6 @@
+2023-03-06 02:13:16.785 [info] update#ctor - updates are disabled as there is no update URL
+2023-03-06 02:13:18.919 [info] Starting extension host with pid 22342 (fork() took 19 ms).
+2023-03-06 02:13:31.401 [info] Starting extension host with pid 22575 (fork() took 10 ms).
+2023-03-06 02:13:33.719 [info] Extension host with pid 22575 exited with code: 0, signal: null.
+2023-03-06 02:13:34.131 [info] Waiting for extension host with pid 22342 to exit.
+2023-03-06 02:13:34.138 [info] Extension host with pid 22342 exited with code: 0, signal: null.

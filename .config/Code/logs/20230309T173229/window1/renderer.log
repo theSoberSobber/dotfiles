@@ -1,0 +1,9 @@
+2023-03-09 17:32:37.816 [error] [text file model] handleSaveError(0) - exit - resulted in a save error: Error: Unable to write file '/etc/hosts' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/etc/hosts') file:///etc/hosts
+2023-03-09 17:32:41.006 [info] [perf] Render performance baseline is 194ms
+2023-03-09 17:33:16.869 [error] Unable to read file '/etc/hosts' (Error: File not modified since): Error: Unable to read file '/etc/hosts' (Error: File not modified since)
+    at o.w (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:615:17128)
+    at o.v (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:615:16960)
+    at async m.H (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2314:34974)
+    at async m.readStream (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2314:34669)
+    at async Ns.Ab (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2305:54190)
+    at async vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2314:30714

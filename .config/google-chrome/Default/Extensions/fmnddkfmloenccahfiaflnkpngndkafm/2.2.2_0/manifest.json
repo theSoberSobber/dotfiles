@@ -1,0 +1,31 @@
+{
+   "action": {
+      "default_icon": "assets/icon32.png",
+      "default_popup": "popup.html",
+      "default_title": "Open WrapAPI"
+   },
+   "background": {
+      "service_worker": "js/background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "installed.js" ],
+      "matches": [ "*://*.wrapapi.com/*" ]
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+   },
+   "description": "Captures requests and sends them to the WrapAPI service to be turned into APIs. For more information, visit http://wrapapi.com",
+   "devtools_page": "devtools.html",
+   "host_permissions": [ "https://wrapapi.com/*" ],
+   "icons": {
+      "128": "assets/icon128.png",
+      "32": "assets/icon32.png",
+      "64": "assets/icon64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiYLsIYyYhhmCAGGx3C22dBATK9MSzpg/kYGH0HV+wqIsP4smLsNEWDmgd0pBy+aVcto83Jg/JC3EBzmkYTUSw4A+0s22zEVO6ZuTmy3J+3l5ZrKMW4EkTP6JnUxKzUS7QSNFK9nZtdvBzFwi1N0Jkdg7PeoNpWhF1tWJUfIKkhTDAIRzn269OgRdvHCaecai3xG5464AKIue34tEYDonU7u8vscHZkpsFAS8DoSUXMt38HNbBrPeSvKHIENdgYAEZkK5IHob1S3LbsbsLOcRfUzHVohrmGm/IfUhSzFAAh3cB5BvLo7xcTaRkOK8s058d8RPMPddgjJXSCZcIN4mxQIDAQAB",
+   "manifest_version": 3,
+   "name": "WrapAPI",
+   "permissions": [ "tabs", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.2.2"
+}

@@ -1,0 +1,32 @@
+{
+   "author": "steampunck",
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "assets/browser/icon16.png",
+         "24": "assets/browser/icon24.png",
+         "32": "assets/browser/icon32.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "homepage_url": "https://steampunck.github.io/swoosh-storage-specialist/",
+   "icons": {
+      "128": "assets/icon128.png",
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnoGSdzKH7Z7CHcmpcfM7soT6G449xu+uO104TlBknIO5J5ddZJLiZqm6IvZhe3VIv0N3EOEHngiWgvG3cv8WEnG+PWNHc6PILd3osMDgT+H/whRYvqFcX6crNwWFuvnIW2ix/DuUIX9g5BX8abGukOBxINBkpfkm5hSIaJzj8UQIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "permissions": [ "activeTab", "storage", "cookies", "contextMenus", "\u003Call_urls>" ],
+   "short_name": "__MSG_appShortName__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.2.0",
+   "web_accessible_resources": [ "popup.html", "installed.html", "club.html" ]
+}

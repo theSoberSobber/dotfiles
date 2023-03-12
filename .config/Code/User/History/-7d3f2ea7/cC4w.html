@@ -1,0 +1,1406 @@
+<html>
+<head>
+<style>
+:root{--background-color:#EEEEEE;--text:#444444;--link-color:teal;}
+@media(prefers-color-scheme:dark){
+:root{--background-color:#222222;--text:#CCCCCC;--link-color:cadetblue;}}
+body{background:var(--background-color);color:var(--text);}
+body{margin:30px auto;max-width:700px;line-height:1.6;font-size:18px;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--background-color);padding:0 10px;}
+h1{line-height:1.2;text-align:center;}
+h2,h3{line-height:1.2;}
+td,th{border:none!important;}
+table{width:100%!important;}
+a{color:var(--link-color);text-decoration:none;}
+</style>
+</head>
+<body>
+<h1 id="cp-snippets--">CP Snippets -</h1>
+<hr>
+<h2 id="bp">bp</h2>
+<ul>
+<li>bp</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L2">github</a></li>
+</ul>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+#ifndef ONLINE_JUDGE
+#include &quot;debug.h&quot;
+#pragma GCC optimize(&quot;O3,unroll-loops&quot;)
+#pragma GCC target(&quot;avx2,bmi,bmi2,lzcnt,popcnt&quot;)
+#else
+#define dbg(x...) &quot;11-111&quot;
+#endif
+
+using namespace std;
+
+#define ll long long
+#define int long long // because mai bevakoof hu
+#define logCont(arr,f,l)   { auto start=arr.begin(), end=arr.begin(); advance(start,(f)); advance(end,(l)); for(auto it=start; it!=end; it++) cout&lt;&lt;*it&lt;&lt;&quot; &quot;; cout&lt;&lt;&quot;\n&quot;; }
+#define uniq(x) x.erase(unique(all(x)),x.end());
+#define tr(s, args...) transform(s.begin(), s.end(), args)
+#define sz(x) (ll)x.size()
+
+// variadic lambda
+#define f(u, args...)     [&amp;](auto &amp;&amp;u) { return args; }
+#define g(u, v, args...)  [&amp;](auto &amp;&amp;u, auto &amp;&amp;v) { return args; }
+
+// precesion
+#define precise(n)        cout&lt;&lt;fixed&lt;&lt;setprecision((n))
+// bits
+#define bpc(n)            std::popcount((unsigned long long)(n))
+#define hsb(n)            std::has_single_bit((unsigned long long)(n))
+#define MSB(n)            std::bit_floor((unsigned long long)(n))
+#define ctz(n)            ((n) ? __builtin_ctzll((unsigned long long)(n)) : 0)
+#define clz(n)            ((n) ? __builtin_clzll((unsigned long long)(n)) : 64)
+#define LSB(n)            ((n)&amp;(-(n)))
+
+// general amax, amin for any ds, to be able to use swap in graphs and stuff
+template&lt;typename T,typename T1&gt; inline bool amax(T &amp;a,T1 b){ if(b&gt;a) { a=b; return true; } return false; }
+template&lt;typename T,typename T1&gt; inline bool amin(T &amp;a,T1 b){ if(b&lt;a) { a=b; return true; } return false; }
+
+// comparison struct for maps (or use decltype)
+template&lt;typename T&gt; struct Comp { bool operator()(const T&amp; l, const T&amp; r) const { return l &lt; r; } };
+
+constexpr ll Inf = 4e18;
+constexpr int mod = 1e9+7;
+// constexpr int mod = 998244353;
+constexpr int maxn = 1e6+5;
+
+// sasta mint
+ll inv(ll i) {if (i == 1) return 1; return (mod - ((mod / i) * inv(mod % i)) % mod) % mod;}
+ll mod_mul(ll a, ll b) {a = a % mod; b = b % mod; return (((a * b) % mod) + mod) % mod;}
+ll mod_add(ll a, ll b) {a = a % mod; b = b % mod; return (((a + b) % mod) + mod) % mod;}
+ll gcd(ll a, ll b) { if (b == 0) return a; return gcd(b, a % b);}
+ll ceil_div(ll a, ll b) {return a % b == 0 ? a / b : a / b + 1;}
+ll pwr(ll a, ll b) {a %= mod; ll res = 1; while (b &gt; 0) {if (b &amp; 1) res = res * a % mod; a = a * a % mod; b &gt;&gt;= 1;} return res;}
+
+// pows
+inline ll po(ll a, ll b) { ll res = 1; for (; b; b &gt;&gt;= 1) { if (b &amp; 1)res = res * a; a = a * a; }return res; }
+inline ll modpow(ll a, ll b, ll mod) { ll res = 1; for (; b; b &gt;&gt;= 1) { if (b &amp; 1)res = (res * a)%mod; a = (a * a)%mod; }return res; }
+
+void pre_process(){
+    
+}
+
+int solve(){
+    int n; cin&gt;&gt;n;
+    dbg(n);
+    return 2*n; 
+}
+int32_t main(){
+    ios_base::sync_with_stdio(0);
+    cin.tie(0); cout.tie(0);
+    pre_process();
+    int t; cin&gt;&gt;t;
+    while(t--) cout&lt;&lt;solve()&lt;&lt;&#39;\n&#39;;
+}
+</code></pre>
+<hr>
+<h2 id="gr-inp-wt">gr-inp-wt</h2>
+<ul>
+<li>graph input weight</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L80">github</a></li>
+</ul>
+<pre><code class="language-cpp">int e=f(n);
+vector&lt;vector&lt;pair&lt;int,int&gt;&gt;&gt; g(n+1);
+for(int i=1;i&lt;=e;i++){
+  int u,v,wt; cin&gt;&gt;u&gt;&gt;v&gt;&gt;wt;
+  g[u].push_back({v,wt});
+  g[v].push_back({u,wt});
+}
+</code></pre>
+<hr>
+<h2 id="gr-inp">gr-inp</h2>
+<ul>
+<li>graph input</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L93">github</a></li>
+</ul>
+<pre><code class="language-cpp">int e=f(n);
+vector&lt;vector&lt;int&gt;&gt; g(n+1);
+for(int i=1;i&lt;=e;i++){
+  int u,v; cin&gt;&gt;u&gt;&gt;v;
+  g[u].push_back(v);
+  g[v].push_back(u);
+}
+</code></pre>
+<hr>
+<h2 id="ip-overloads">ip-overloads</h2>
+<ul>
+<li>I/O Overloads that I don&#39;t use</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L106">github</a></li>
+</ul>
+<pre><code class="language-cpp">template&lt;typename T1, typename T2&gt; inline istream&amp; operator &gt;&gt; (istream&amp; in, pair&lt;T1,T2&gt;&amp; a) { in&gt;&gt;a.first&gt;&gt;a.second; return in; }
+template&lt;typename T1, typename T2&gt; inline ostream&amp; operator &lt;&lt; (ostream&amp; out, pair&lt;T1,T2&gt; a) { out&lt;&lt;a.first&lt;&lt;&quot; &quot;&lt;&lt;a.second; return out; }
+template&lt;typename T&gt; istream&amp; operator &gt;&gt; (istream&amp; in, vector&lt;T&gt;&amp; v) { rep(i,1,sz(v)) cin&gt;&gt;v[i]; return in; }
+
+void read(auto&amp;... args) { ((cin&gt;&gt;args), ...); }
+void put(auto&amp;&amp;... args) { ((cout&lt;&lt;args&lt;&lt;&quot; &quot;), ...);}
+
+#define get(T,args...)    T args; read(args);
+#define putn(args...)     { put(args); cout&lt;&lt;&quot;\n&quot;; }
+#define pute(args...)     { put(args); cout&lt;&lt;endl; }
+#define putr(args...)     { putn(args) return ;}
+</code></pre>
+<hr>
+<h2 id="file_io">file_io</h2>
+<ul>
+<li>for coding competetions</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L123">github</a></li>
+</ul>
+<pre><code class="language-cpp">void file_i_o(){
+    freopen(&quot;./tests/test01.txt&quot;, &quot;r&quot;, stdin);
+    freopen(&quot;./tests/output01.txt&quot;, &quot;w&quot;, stdout);
+}
+</code></pre>
+<hr>
+<h2 id="tokenizer">tokenizer</h2>
+<ul>
+<li>tokenizer that has no use</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L133">github</a></li>
+</ul>
+<pre><code class="language-cpp">vec(string) tokenizer(string str,char ch) {std::istringstream var((str)); vec(string) v; string t; while(getline((var), t, (ch))) {v.pb(t);} return v;}
+</code></pre>
+<hr>
+<h2 id="clock">clock</h2>
+<ul>
+<li>clock</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L140">github</a></li>
+</ul>
+<pre><code class="language-cpp">auto start = chrono::high_resolution_clock::now();
+// code goes here
+auto stop = chrono::high_resolution_clock::now();
+auto duration = chrono::duration_cast&lt;chrono::milliseconds&gt;(stop - start);
+cout &lt;&lt; duration.count() &lt;&lt; &quot; ms\n&quot;;
+</code></pre>
+<hr>
+<h2 id="sextree">sextree</h2>
+<ul>
+<li>sextree</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L152">github</a></li>
+</ul>
+<pre><code class="language-cpp">template&lt;class T, class U&gt;
+// T -&gt; node, U-&gt;update.
+struct Lsegtree{
+    vector&lt;T&gt;st;
+    vector&lt;U&gt;lazy;
+    ll n;
+    T identity_element;
+    U identity_update;
+
+    /*
+        Definition of identity_element: the element I such that combine(x,I) = x
+        for all x
+
+        Definition of identity_update: the element I such that apply(x,I) = x
+        for all x        
+    */
+
+    Lsegtree(ll n, T identity_element, U identity_update){
+        this-&gt;n = n;
+        this-&gt;identity_element = identity_element;
+        this-&gt;identity_update = identity_update;
+        st.assign(4*n,identity_element);
+        lazy.assign(4*n, identity_update);
+    }
+
+    T combine(T l, T r){
+        // change this function as required.
+        T ans = (l + r);
+        return ans;
+    }
+
+    void buildUtil(ll v, ll tl, ll tr, vector&lt;T&gt;&amp;a){
+        if(tl == tr){
+            st[v] = a[tl];
+            return;
+        }
+        ll tm = (tl + tr)&gt;&gt;1;
+        buildUtil(2*v + 1, tl, tm,a);
+        buildUtil(2*v + 2,tm+1,tr,a);
+        st[v] = combine(st[2*v + 1], st[2*v + 2]);
+    }
+
+    // change the following 2 functions, and you&#39;re more or less done.
+    T apply(T curr, U upd, ll tl, ll tr){
+        T ans = (tr-tl+1)*upd;
+        // increment range by upd:
+        // T ans = curr + (tr - tl + 1)*upd
+        return ans;
+    }
+
+    U combineUpdate(U old_upd, U new_upd, ll tl, ll tr){
+        U ans = old_upd;
+        ans=new_upd;
+        return ans;
+    }  
+
+    void push_down(ll v, ll tl, ll tr){
+        //for the below line to work, make sure the &quot;==&quot; operator is defined for U.
+        if(lazy[v] == identity_update)return;
+        st[v] = apply(st[v], lazy[v], tl, tr);
+        if(2*v + 1 &lt;= 4*n){
+            ll tm = (tl + tr)&gt;&gt;1;
+            lazy[2*v + 1] = combineUpdate(lazy[2*v+1], lazy[v], tl, tm);
+            lazy[2*v + 2] = combineUpdate(lazy[2*v+2], lazy[v], tm+1,tr);            
+        }
+        lazy[v] = identity_update;
+    }
+
+    T queryUtil(ll v, ll tl, ll tr, ll l, ll r){
+        push_down(v,tl,tr);
+        if(l &gt; r)return identity_element;
+        if(tr &lt; l or tl &gt; r){
+            return identity_element;
+        }
+        if(l &lt;= tl and r &gt;= tr){
+            return st[v];
+        }
+        ll tm = (tl + tr)&gt;&gt;1;
+        return combine(queryUtil(2*v+1,tl,tm,l,r), queryUtil(2*v+2,tm+1,tr,l,r));
+    }
+ 
+    void updateUtil(ll v, ll tl, ll tr, ll l, ll r, U upd){
+        push_down(v,tl,tr); 
+        if(tr &lt; l or tl &gt; r)return;
+        if(tl &gt;=l and tr &lt;=r){
+            lazy[v] = combineUpdate(lazy[v],upd,tl,tr);
+            push_down(v,tl,tr);
+        } else{
+            ll tm = (tl + tr)&gt;&gt;1;
+            updateUtil(2*v+1,tl,tm,l,r,upd);
+            updateUtil(2*v+2,tm+1,tr,l,r,upd);
+            st[v] = combine(st[2*v + 1], st[2*v+2]);
+        }
+    }
+
+    void build(vector&lt;T&gt;a){
+        assert( (ll)a.size() == n);
+        buildUtil(0,0,n-1,a);
+    }
+
+    T query(ll l, ll r){
+        return queryUtil(0,0,n-1,l,r);
+    }
+
+    void update(ll l,ll r, U upd){
+        updateUtil(0,0,n-1,l,r,upd);
+    }
+};
+</code></pre>
+<hr>
+<h2 id="binary-indexed-tree">binary indexed tree</h2>
+<ul>
+<li>binary indexed tree</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L266">github</a></li>
+</ul>
+<pre><code class="language-cpp">// 0-indexed BIT (binary indexed tree / Fenwick tree) (i : [0, len))
+template &lt;class T&gt;
+struct BIT{
+    int n;
+    vector&lt;T&gt; data;
+    BIT(int len = 0) : n(len), data(len) {}
+    void reset() { fill(data.begin(), data.end(), T(0)); }
+    void add(int pos, T v){ 
+        // a[pos] += v
+        pos++;
+        while (pos &gt; 0 and pos &lt;= n)
+            data[pos - 1] += v, pos += pos &amp; -pos;
+    }
+    T sum(int k) const{ 
+        // a[0] + ... + a[k - 1]
+        T res = 0;
+        while (k &gt; 0)
+            res += data[k - 1], k -= k &amp; -k;
+        return res;
+    }
+
+    T sum(int l, int r) const { return sum(r) - sum(l); } // a[l] + ... + a[r - 1]
+    // dbg functions
+    template &lt;class OStream&gt;
+    friend OStream &amp;operator&lt;&lt;(OStream &amp;os, const BIT &amp;bit){
+        T prv = 0;
+        os &lt;&lt; &#39;[&#39;;
+        for (int i = 1; i &lt;= bit.n; i++){
+            T now = bit.sum(i);
+            os &lt;&lt; now - prv &lt;&lt; &#39;,&#39;, prv = now;
+        }
+        return os &lt;&lt; &#39;]&#39;;
+    }
+};
+</code></pre>
+<hr>
+<h2 id="trie">trie</h2>
+<ul>
+<li>trie</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L306">github</a></li>
+</ul>
+<pre><code class="language-cpp">struct Trie{
+    struct node{
+        node* next[10];
+        node(){
+            for(int i=0;i&lt;10;i++) next[i]=NULL;
+        }
+    };
+ 
+    node root;
+ 
+    void add(vector&lt;int&gt;&amp;val){
+        node* temp=&amp;root;
+        for(auto ele : val){
+            if(temp-&gt;next[ele]==NULL) temp-&gt;next[ele]=new node();
+            temp=temp-&gt;next[ele];
+        }
+    }
+ 
+    int query(vector&lt;int&gt;&amp;val){
+        node* temp=&amp;root;
+        int ans=0;
+        for(auto ele : val){
+            if(temp-&gt;next[ele]==NULL) break;
+            ans++;
+            temp=temp-&gt;next[ele];
+        }
+        return ans;
+    }
+};
+</code></pre>
+<hr>
+<h2 id="pbds">pbds</h2>
+<ul>
+<li>pbds</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L342">github</a></li>
+</ul>
+<pre><code class="language-cpp">#include &lt;ext/pb_ds/assoc_container.hpp&gt;
+#include &lt;ext/pb_ds/tree_policy.hpp&gt;
+using namespace __gnu_pbds;
+// pbds = find_by_value(), order_of_key()
+// find_by_order(k)  returns iterator to kth element starting from 0;
+// order_of_key(k) returns count of elements strictly smaller than k;
+template&lt;class T&gt; using minheap = priority_queue&lt;T,vector&lt;T&gt;,greater&lt;T&gt; &gt;; 
+template&lt;class T&gt; using ordered_set = tree&lt;T, null_type,less&lt;T&gt;, rb_tree_tag, tree_order_statistics_node_update&gt; ;
+template&lt;class key, class value, class cmp = std::less&lt;key&gt;&gt; using ordered_map = tree&lt;key, value, cmp, rb_tree_tag, tree_order_statistics_node_update&gt;;
+</code></pre>
+<hr>
+<h2 id="xor-basis">xor-basis</h2>
+<ul>
+<li>xor-basis</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L357">github</a></li>
+</ul>
+<pre><code class="language-cpp">struct XorBasis{
+    private:
+    vector&lt;ll&gt; basis;
+    int lg;
+    int sz = 0;
+
+    public:
+    XorBasis(int lg) : lg(lg){
+        basis.resize(lg);
+    }
+    void add(ll x){
+        if(x &gt;= (1ll&lt;&lt;lg)) return;
+        for(int i=0;i&lt;lg;i++){
+            if(~x&amp;(1ll&lt;&lt;i)) continue;
+            if(!basis[i]){
+                basis[i] = x;
+                ++sz;
+            }
+            x^=basis[i];
+        }
+    }
+    bool contains(ll x){
+        for(int i=0;i&lt;lg;i++){
+            if(~x&amp;(1ll&lt;&lt;i)) continue;
+            if(!basis[i]){
+                return false;
+            }
+            x^=basis[i];
+        }
+        return true;
+    }
+    int size(){
+        return sz;
+    }
+    const vector&lt;ll&gt;::iterator begin(){
+        return basis.begin();
+    }
+    const vector&lt;ll&gt;::iterator end(){
+        return basis.end();
+    }
+};
+</code></pre>
+<hr>
+<h2 id="linear-diophantine">linear diophantine</h2>
+<ul>
+<li>linear diophantine</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L405">github</a></li>
+</ul>
+<pre><code class="language-cpp">long long gcd(long long a, long long b, long long &amp;x, long long &amp;y) {
+  if (a == 0) {
+    x = 0;
+    y = 1;
+    return b;
+  }
+  long long x1, y1;
+  long long d = gcd(b % a, a, x1, y1);
+  x = y1 - (b / a) * x1;
+  y = x1;
+  return d;
+}
+
+bool find_any_solution(long long a, long long b, long long c, long long &amp;x0,
+    long long &amp;y0, long long &amp;g) {
+  g = gcd(abs(a), abs(b), x0, y0);
+  if (c % g) {
+    return false;
+  }
+
+  x0 *= c / g;
+  y0 *= c / g;
+  if (a &lt; 0) x0 = -x0;
+  if (b &lt; 0) y0 = -y0;
+  return true;
+}
+
+void shift_solution(long long &amp;x, long long &amp;y, long long a, long long b,
+    long long cnt) {
+  x += cnt * b;
+  y -= cnt * a;
+}
+
+long long find_all_solutions(long long a, long long b, long long c,
+    long long minx, long long maxx, long long miny,
+    long long maxy) {
+  long long x, y, g;
+  if (!find_any_solution(a, b, c, x, y, g)) return 0;
+  a /= g;
+  b /= g;
+
+  long long sign_a = a &gt; 0 ? +1 : -1;
+  long long sign_b = b &gt; 0 ? +1 : -1;
+
+  shift_solution(x, y, a, b, (minx - x) / b);
+  if (x &lt; minx) shift_solution(x, y, a, b, sign_b);
+  if (x &gt; maxx) return 0;
+  long long lx1 = x;
+
+  shift_solution(x, y, a, b, (maxx - x) / b);
+  if (x &gt; maxx) shift_solution(x, y, a, b, -sign_b);
+  long long rx1 = x;
+
+  shift_solution(x, y, a, b, -(miny - y) / a);
+  if (y &lt; miny) shift_solution(x, y, a, b, -sign_a);
+  if (y &gt; maxy) return 0;
+  long long lx2 = x;
+
+  shift_solution(x, y, a, b, -(maxy - y) / a);
+  if (y &gt; maxy) shift_solution(x, y, a, b, sign_a);
+  long long rx2 = x;
+
+  if (lx2 &gt; rx2) swap(lx2, rx2);
+  long long lx = max(lx1, lx2);
+  long long rx = min(rx1, rx2);
+
+  if (lx &gt; rx) return 0;
+  return (rx - lx) / abs(b) + 1;
+}
+</code></pre>
+<hr>
+<h2 id="crt">crt</h2>
+<ul>
+<li>crt</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L481">github</a></li>
+</ul>
+<pre><code class="language-cpp">/**
+ * Chinese remainder theorem.
+ * Find z such that  z % x[i] = a[i] for all i.
+ * */
+long long crt(vector&lt;long long&gt; &amp;a, vector&lt;long long&gt; &amp;x) {
+  long long z = 0;
+  long long n = 1;
+  for (int i = 0; i &lt; x.size(); ++i)
+    n *= x[i];
+
+  for (int i = 0; i &lt; a.size(); ++i) {
+    long long tmp = (a[i] * (n / x[i])) % n;
+    tmp = (tmp * mod_inv(n / x[i], x[i])) % n;
+    z = (z + tmp) % n;
+  }
+
+  return (z + n) % n;
+}
+</code></pre>
+<hr>
+<h2 id="totient-seive">totient-seive</h2>
+<ul>
+<li>totient-seive</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L505">github</a></li>
+</ul>
+<pre><code class="language-cpp">  for (int i = 1; i &lt; MN; i++)
+    phi[i] = i;
+
+  for (int i = 1; i &lt; MN; i++)
+    if (!sieve[i]) // is prime
+      for (int j = i; j &lt; MN; j += i)
+        phi[j] -= phi[j] / i;
+</code></pre>
+<hr>
+<h2 id="totient">totient</h2>
+<ul>
+<li>totient</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L519">github</a></li>
+</ul>
+<pre><code class="language-cpp">long long totient(long long n) {
+  if (n == 1) return 0;
+  long long ans = n;
+  for (int i = 0; primes[i] * primes[i] &lt;= n; ++i) {
+    if ((n % primes[i]) == 0) {
+      while ((n % primes[i]) == 0) n /= primes[i];
+      ans -= ans / primes[i];
+    }
+  }
+  if (n &gt; 1) {
+    ans -= ans / n;
+  }
+  return ans;
+}
+</code></pre>
+<hr>
+<h2 id="log">log</h2>
+<ul>
+<li>log</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L539">github</a></li>
+</ul>
+<pre><code class="language-cpp">// Computes x which a ^ x = b mod n.
+
+long long d_log(long long a, long long b, long long n) {
+  long long m = ceil(sqrt(n));
+  long long aj = 1;
+  map&lt;long long, long long&gt; M;
+  for (int i = 0; i &lt; m; ++i) {
+    if (!M.count(aj))
+      M[aj] = i;
+    aj = (aj * a) % n;
+  }
+
+  long long coef = mod_pow(a, n - 2, n);
+  coef = mod_pow(coef, m, n);
+  // coef =  a ^ (-m)
+  long long gamma = b;
+  for (int i = 0; i &lt; m; ++i) {
+    if (M.count(gamma)) {
+      return i * m + M[gamma];
+    } else {
+      gamma = (gamma * coef) % n;
+    }
+  }
+  return -1;
+}
+</code></pre>
+<hr>
+<h2 id="matrix">matrix</h2>
+<ul>
+<li>matrix</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L570">github</a></li>
+</ul>
+<pre><code class="language-cpp">const int MN  = 111;
+const int mod = 10000;
+
+struct matrix {
+  int r, c;
+  int m[MN][MN];
+
+  matrix (int _r, int _c) : r (_r), c (_c) {
+    memset(m, 0, sizeof m);
+  }
+
+  void print() {
+    for (int i = 0; i &lt; r; ++i) {
+      for (int j = 0; j &lt; c; ++j)
+        cout &lt;&lt; m[i][j] &lt;&lt; &quot; &quot;;
+      cout &lt;&lt; endl;
+    }
+  }
+
+  int x[MN][MN];
+  matrix &amp; operator *= (const matrix &amp;o) {
+    memset(x, 0, sizeof x);
+    for (int i = 0; i &lt; r; ++i)
+      for (int k = 0; k &lt; c; ++k)
+        if (m[i][k] != 0)
+          for (int j = 0; j &lt; c; ++j) {
+            x[i][j] = (x[i][j] +  ((m[i][k] * o.m[k][j]) % mod) ) % mod;
+          }
+    memcpy(m, x, sizeof(m));
+    return *this;
+  }
+};
+
+void matrix_pow(matrix b, long long e, matrix &amp;res) {
+  memset(res.m, 0, sizeof res.m);
+  for (int i = 0; i &lt; b.r; ++i)
+    res.m[i][i] = 1;
+
+  if (e == 0) return;
+  while (true) {
+    if (e &amp; 1) res *= b;
+    if ((e &gt;&gt;= 1) == 0) break;
+    b *= b;
+  }
+}
+</code></pre>
+<hr>
+<h2 id="power_in_fac">power_in_fac</h2>
+<ul>
+<li>power_in_fac</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L621">github</a></li>
+</ul>
+<pre><code class="language-cpp">int highest_exponent(int p, const int &amp;n){
+  int ans = 0;
+  int t = p;
+  while(t &lt;= n){
+    ans += n/t;
+    t*=p;
+  }
+  return ans;
+}
+</code></pre>
+<hr>
+<h2 id="freq-map">freq-map</h2>
+<ul>
+<li>freq-map</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L636">github</a></li>
+</ul>
+<pre><code class="language-cpp">map&lt;int, int&gt; m;
+for(int i=0; i&lt;n;i++){
+  if(m.find(a[i])==m.end()) m[a[i]]=1;
+  else m[a[i]]++;
+}
+</code></pre>
+<hr>
+<h2 id="rng">rng</h2>
+<ul>
+<li>rng</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L647">github</a></li>
+</ul>
+<pre><code class="language-cpp">//random generator
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+ll rnd(ll a,ll b){if(a &gt; b){return -1;}return a + (ll)rng() % (b - a + 1);}
+</code></pre>
+<hr>
+<h2 id="two-sat-kosaraju">two-sat (kosaraju)</h2>
+<ul>
+<li>two-sat (kosaraju)</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L656">github</a></li>
+</ul>
+<pre><code class="language-cpp">/**
+ *  Given a set of clauses (a1 v a2)^(a2 v ¬a3)....
+ *  this algorithm find a solution to it set of clauses.
+ *  test: http://lightoj.com/volume_showproblem.php?problem=1251
+ **/
+
+#include&lt;bits/stdc++.h&gt;
+using namespace std;
+#define MAX 100000
+#define endl &#39;\n&#39;
+
+vector&lt;int&gt; G[MAX];
+vector&lt;int&gt; GT[MAX];
+vector&lt;int&gt; Ftime;
+vector&lt;vector&lt;int&gt; &gt; SCC;
+bool visited[MAX];
+int n;
+
+
+void dfs1(int n){
+  visited[n] = 1;
+
+  for (int i = 0; i &lt; G[n].size(); ++i) {
+    int curr = G[n][i];
+    if (visited[curr]) continue;
+    dfs1(curr);
+  }
+
+  Ftime.push_back(n);
+}
+
+void dfs2(int n, vector&lt;int&gt; &amp;scc) {
+  visited[n] = 1;
+  scc.push_back(n);
+
+  for (int i = 0;i &lt; GT[n].size(); ++i) {
+    int curr = GT[n][i];
+    if (visited[curr]) continue;
+    dfs2(curr, scc);
+  }
+}
+
+
+void kosaraju() {
+  memset(visited, 0, sizeof visited);
+
+  for (int i = 0; i &lt; 2 * n ; ++i) {
+    if (!visited[i]) dfs1(i);
+  }
+
+  memset(visited, 0, sizeof visited);
+  for (int i = Ftime.size() - 1; i &gt;= 0; i--) {
+    if (visited[Ftime[i]]) continue;
+    vector&lt;int&gt; _scc;
+    dfs2(Ftime[i],_scc);
+    SCC.push_back(_scc);
+  }
+}
+
+/**
+ * After having the SCC, we must  traverse each scc, if in one SCC are -b y b, there is not a solution.
+ * Otherwise we  build a solution, making the first &quot;node&quot; that we find truth and its complement false.
+ **/
+
+
+bool two_sat(vector&lt;int&gt; &amp;val) {
+  kosaraju();
+  for (int i = 0; i &lt; SCC.size(); ++i) {
+    vector&lt;bool&gt; tmpvisited(2 * n, false);
+    for (int j = 0; j &lt; SCC[i].size(); ++j) {
+      if (tmpvisited[SCC[i][j] ^ 1]) return 0;
+      if (val[SCC[i][j]] != -1) continue;
+      else {
+        val[SCC[i][j]] = 0;
+        val[SCC[i][j] ^ 1] = 1;
+      }
+      tmpvisited[SCC[i][j]] = 1;
+    }
+  }
+  return 1;
+}
+
+// Example of use
+
+int main() {
+
+  int m, u, v, nc = 0, t; cin &gt;&gt; t;
+  // n = &quot;nodes&quot; number, m = clauses number
+
+  while (t--) {
+    cin &gt;&gt; m &gt;&gt; n;
+    Ftime.clear();
+    SCC.clear();
+    for (int i = 0; i &lt; 2 * n; ++i) {
+      G[i].clear();
+      GT[i].clear();
+    }
+
+    // (a1 v a2) = (¬a1 -&gt; a2) = (¬a2 -&gt; a1)
+    for (int i = 0; i &lt; m ; ++i) {
+      cin &gt;&gt; u &gt;&gt; v;
+      int t1 = abs(u) - 1;
+      int t2 = abs(v) - 1;
+      int p = t1 * 2 + ((u &lt; 0)? 1 : 0);
+      int q = t2 * 2 + ((v &lt; 0)? 1 : 0);
+      G[p ^ 1].push_back(q);
+      G[q ^ 1].push_back(p);
+      GT[p].push_back(q ^ 1);
+      GT[q].push_back(p ^ 1);
+    }
+
+    vector&lt;int&gt; val(2 * n, -1);
+    cout &lt;&lt; &quot;Case &quot; &lt;&lt; ++nc &lt;&lt;&quot;: &quot;;
+    if (two_sat(val)) {
+      cout &lt;&lt; &quot;Yes&quot; &lt;&lt; endl;
+      vector&lt;int&gt; sol;
+      for (int i = 0; i &lt; 2 * n; ++i)
+        if (i % 2 == 0 and val[i] == 1)
+          sol.push_back(i / 2 + 1);
+      cout &lt;&lt; sol.size() ;
+
+      for (int i = 0; i &lt; sol.size(); ++i) {
+        cout &lt;&lt; &quot; &quot; &lt;&lt; sol[i];
+      }
+      cout &lt;&lt; endl;
+    } else {
+      cout &lt;&lt; &quot;No&quot; &lt;&lt; endl;
+    }
+  }
+  return 0;
+}
+</code></pre>
+<hr>
+<h2 id="pq">pq</h2>
+<ul>
+<li>pq</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L793">github</a></li>
+</ul>
+<pre><code class="language-cpp">priority_queue&lt;int&gt; pq;
+priority_queue&lt;int, vector&lt;int&gt;, greater&lt;&gt;&gt; pq;
+</code></pre>
+<hr>
+<h2 id="explanation_binsearch">explanation_binsearch</h2>
+<ul>
+<li>explanation_binsearch</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L801">github</a></li>
+</ul>
+<pre><code class="language-cpp">int lo = 0, hi = n-1; // see constraints for lo and hi, nahi mil rahe toh just take 0 and 1e18
+while(hi-lo&gt;1) {
+    int mid = lo + ((hi-lo) &gt;&gt; 1); // to avoid overflows
+    // lo will become the last index that satisfies X condition
+    // hi is the first element that doesn&#39;t satisfy X condition
+    // lower_bound = &lt; 
+    // upper_bound = &lt;=
+    // upper using lower = lo, &lt; + ek for loop to traverse the same till upper is obtained
+        
+    // essence -&gt; 
+    // remember, lo ke left mai condition always true, lo last one jispe true
+    // hi ke right mai condition always false, hi first one jispe false
+    // hi will probably be the answer in most cases
+    // hi+1, lo, lo-1 are also potential answers (maybe, mujhe toh bas lo and hi mile aaj tak)
+
+    // always make condition such that when it&#39;s true, left segment is eliminated as potential answer container
+    // if condition true toh bas right segment mai search hoga, left eliminated
+    auto check = [&amp;](ll mid) {
+        // this is where majority is what you wanna write happens
+      return (/*condition here*/);
+    };
+    if(check(mid)){
+        // do stuff here
+        lo = mid;
+    }
+    else {
+        hi = mid;
+    }
+}
+</code></pre>
+<hr>
+<h2 id="binsearch">binsearch</h2>
+<ul>
+<li>binsearch</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L836">github</a></li>
+</ul>
+<pre><code class="language-cpp">int lo = 0, hi = n-1;
+while(hi-lo&gt;1) {
+    int mid = lo + ((hi-lo) &gt;&gt; 1);
+    // if condition true toh bas right segment mai search hoga, left eliminated
+    auto check = [&amp;](ll mid) {
+      return (/*condition here*/);
+    };
+    if(check(mid)){
+        // do stuff here
+        lo = mid;
+    }
+    else {
+        hi = mid;
+    }
+}
+</code></pre>
+<hr>
+<h2 id="lambda_function">lambda_function</h2>
+<ul>
+<li>lambda_function</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L857">github</a></li>
+</ul>
+<pre><code class="language-cpp">auto check = [&amp;](ll mid) {
+  return mid - (mid / n) &gt;= k;
+};
+</code></pre>
+<hr>
+<h2 id="fac">fac</h2>
+<ul>
+<li>fac</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L866">github</a></li>
+</ul>
+<pre><code class="language-cpp">int fac[maxn];
+int inv[maxn];
+fac[1] = inv[1] = 1;
+for (int i=2; i&lt;maxn; i++){
+  fac[i] = (fac[i-1] * i)%mod;
+  inv[i] = power(fac[i], mod - 2);
+}
+</code></pre>
+<hr>
+<h2 id="combination">combination</h2>
+<ul>
+<li>combination</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L880">github</a></li>
+</ul>
+<pre><code class="language-cpp">int C(int n, int r){
+    int v = (fac[n] * inv[r])%mod;
+    v = (v * inv[n-r])%mod;
+    
+    return v;
+}
+</code></pre>
+<hr>
+<h2 id="combination-non-mod">combination-non-mod</h2>
+<ul>
+<li>combination-non-mod</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L893">github</a></li>
+</ul>
+<pre><code class="language-cpp">vector&lt;vector&lt;int&gt;&gt; dp(n+1, vector&lt;int&gt; (k+1));
+int binomalCoeff(int n, int k){
+    for (int i=0; i&lt;=n; i++){
+        for (int j=0; j&lt;=k; j++){
+             if (!j || j == i) dp[i][j] = 1;
+             // binomial coefficient approach
+             else dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j];
+         }
+     }
+     return dp[n][k];
+}
+</code></pre>
+<hr>
+<h2 id="factorization">factorization</h2>
+<ul>
+<li>factorization</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L910">github</a></li>
+</ul>
+<pre><code class="language-cpp">void printFactors(int n) { 
+    for (int i=1; i * i&lt;=n; i++){} 
+        if (n%i == 0) { 
+            if (n/i == i) cout &lt;&lt; i &lt;&lt; &quot; &quot;; 
+            else cout &lt;&lt; i &lt;&lt; &quot; &quot; &lt;&lt; n/i &lt;&lt; &quot; &quot;; 
+        } 
+    }
+    cout &lt;&lt; &quot;\n&quot;;
+} 
+
+void printPrimeFactors(int n){
+ set&lt;int&gt; f;
+ for (int i = 2; i*i &lt;= n; i++){
+     while (n % i == 0){
+         f.insert(i);
+         n /= i;
+      }
+ }
+ for (auto &amp;i : f){
+     cout &lt;&lt; i &lt;&lt; &quot; &quot;;
+ }
+ cout &lt;&lt; &quot;\n&quot;;
+}
+</code></pre>
+<hr>
+<h2 id="dsu">DSU</h2>
+<ul>
+<li>DSU</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L940">github</a></li>
+</ul>
+<pre><code class="language-cpp">class DSU {
+private:
+    vector&lt;int&gt; parent, size;
+public:
+    DSU(int n) {
+        parent = vector&lt;int&gt;(n);
+        size = vector&lt;int&gt;(n, 1);
+        iota(begin(parent), end(parent), 0);
+    }
+    
+    int getParent(int x) {
+        if (parent[x] == x) return x;
+        return parent[x] = getParent(parent[x]);
+    }
+
+    void join(int x, int y) {
+        x = getParent(x);
+        y = getParent(y);
+        if (size[x] &gt; size[y])
+            swap(x, y);
+        if (x == y) return;
+        parent[x] = y;
+        size[y] += size[x];
+    }
+
+    int getSize(int x) {
+        return size[x] = size[getParent(x)];
+    }
+};
+</code></pre>
+<hr>
+<h2 id="kruskal">kruskal</h2>
+<ul>
+<li>kruskal</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L975">github</a></li>
+</ul>
+<pre><code class="language-cpp">auto kruskalMST(vector&lt;Edge&gt; &amp;edges, int V){
+    int cost = 0;
+    DSU dsu(V);
+    sort(begin(edges), end(edges));
+    vector&lt;Edge&gt; tree;
+    for (const auto &amp;[u, v, w] : edges){
+        if (dsu.getParent(u) != dsu.getParent(v)) {
+            cost += w;
+            tree.emplace_back(u, v, w);
+            dsu.join(u, v);
+        }
+    }
+    return make_pair(tree, cost);
+}
+</code></pre>
+<hr>
+<h2 id="kosaraju">kosaraju</h2>
+<ul>
+<li>kosaraju</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L996">github</a></li>
+</ul>
+<pre><code class="language-cpp">class Graph {
+ int V;
+ vector&lt;int&gt; *adj;
+
+ void fillOrder(int v, bool visited[], stack&lt;int&gt; &amp;s);
+
+ void dfsUtil(int v, bool visited[]);
+
+public:
+ Graph(int V) : V(V)
+ {
+   adj = new vector&lt;int&gt;[V];
+ }
+ ~Graph()
+ {
+    delete[] adj;
+ }
+
+ void addEdge(int v, int w);
+
+ void printSCCs();
+
+ Graph getTranspose();
+};
+
+void Graph::dfsUtil(int v, bool visited[]) {
+ visited[v] = true;
+ cout &lt;&lt; v &lt;&lt;  &quot; &quot;;
+ for (auto &amp;it : adj[v])
+     if (!visited[it])
+        dfsUtil(it, visited);
+}
+
+Graph Graph::getTranspose() {
+ Graph g(V);
+ for (int i = 0; i &lt; V; i++) {
+     for (auto &amp;it : adj[i])
+         g.adj[it].push_back(i);
+ }
+ return g;
+}
+
+void Graph::addEdge(int v, int w) {
+ adj[v].push_back(w);
+}
+
+void Graph::fillOrder(int v, bool visited[], stack&lt;int&gt; &amp;s) {
+ visited[v] = true;
+ for (auto &amp;it : adj[v])
+     if (!visited[it])
+         fillOrder(it, visited, s);
+ s.push(v);
+}
+
+void Graph::printSCCs() {
+ stack&lt;int&gt; s;
+ bool visited[V] = {0};
+ for (int i = 0; i &lt; V; i++)
+      if (!visited[i])
+        fillOrder(i, visited, s);
+
+ Graph gr = getTranspose();
+ for (int i = 0; i &lt; V; i++)
+     visited[i] = false;
+
+ while (!s.empty()) {
+     int v = s.top();
+     s.pop();
+     if (!visited[v]){
+        gr.dfsUtil(v, visited);
+        cout &lt;&lt; &quot;\n&quot;;
+     }
+ }
+}
+</code></pre>
+<hr>
+<h2 id="lca-path-satisfying-some-condition">LCA path satisfying some condition</h2>
+<ul>
+<li>LCA path satisfying some condition</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L1076">github</a></li>
+</ul>
+<pre><code class="language-cpp">constexpr int N = 5; // No. of vertices
+constexpr int L = 4; // ceil(logN / log2) + 1
+
+// Vertices from 1 to N.
+vector&lt;int&gt; adj[N + 1];
+int up[N + 1][L];
+int level[N + 1];
+
+void dfs(int u, int prev = 0){
+ up[u][0] = prev;
+ for (auto &amp;v : adj[u]){
+     if (v == prev) continue;
+
+     level[v] = level[u] + 1;
+     dfs(v, u);
+ }
+}
+
+void binaryLift(){
+ dfs(1);
+ for (int i = 1; i &lt; L; i++)
+     for (int j = 1; j &lt;= N; j++)
+          up[j][i] = up[up[j][i - 1]][i - 1];
+}
+
+int LCA(int a, int b){
+ if (level[a] &gt; level[b])
+     swap(a, b);
+
+ int diff = level[b] - level[a];
+ for (int i = 0; i &lt; L; i++){
+     if ((diff &amp; (1 &lt;&lt; i)))
+         b = up[b][i];
+ }
+
+ if (a == b) return a;
+
+ for (int i = L - 1; i &gt;= 0; i--){
+     if (up[a][i] != up[b][i]){
+         a = up[a][i];
+         b = up[b][i];
+     }
+ }
+ return up[a][0];
+}
+
+void addEdge(int u, int v){
+ adj[u].push_back(v);
+ adj[v].push_back(u);
+}
+
+int dist(int a, int b){
+ return level[a] + level[b] - 2 * level[LCA(a, b)];
+}
+</code></pre>
+<hr>
+<h2 id="combination-small">combination-small</h2>
+<ul>
+<li>combination-small</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L1137">github</a></li>
+</ul>
+<pre><code class="language-cpp">int C(int n,int r){
+    r = min(r,n-r);
+    int ans = 1;
+    for(int i=1;i&lt;=r;i++,n--){
+        ans *=n;
+        ans/=i;
+    }
+    return ans;
+}
+</code></pre>
+<hr>
+<h2 id="arr-inp">arr-inp</h2>
+<ul>
+<li>arr-inp</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L1153">github</a></li>
+</ul>
+<pre><code class="language-cpp">vector&lt;int&gt; a(n, 0);
+for(int i=0;i&lt;n;i++) cin&gt;&gt;a[i];
+</code></pre>
+<hr>
+<h2 id="arr-pref">arr-pref</h2>
+<ul>
+<li>arr-pref</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L1161">github</a></li>
+</ul>
+<pre><code class="language-cpp">vector&lt;int&gt; pre(n, 0);
+for(int i=1;i&lt;n;i++) pre[i]=a[i]+pref[i-1]; 
+</code></pre>
+<hr>
+<h2 id="recur-modpow">recur-modpow</h2>
+<ul>
+<li>recur-modpow</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L1169">github</a></li>
+</ul>
+<pre><code class="language-cpp">int power(int x, int y){
+    if (y==0) return 1;
+    
+    int v = power(x, y/2);
+    v *= v;
+    v %= mod;
+    if (y&amp;1) return (v*x)%mod;
+    else return v;
+}
+</code></pre>
+<hr>
+<h2 id="binpow">binpow</h2>
+<ul>
+<li>binpow</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L1185">github</a></li>
+</ul>
+<pre><code class="language-cpp">ll binpow(ll x, ll y){
+    ll res = 1;
+    while (y&gt;0){
+        if (y&amp;1) res = (ll)(res*x);
+        y = y&gt;&gt;1;
+        x = (ll)(x*x);
+    }
+    return res;
+}
+</code></pre>
+<hr>
+<h2 id="modpow">modpow</h2>
+<ul>
+<li>modpow</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L1200">github</a></li>
+</ul>
+<pre><code class="language-cpp">ll modpow(ll a, ll b){
+    a %= m;
+    ll res = 1;
+    while (b &gt; 0) {
+        if (b &amp; 1) res = res * a % m;
+        a=a*a%m;
+        b&gt;&gt;=1;
+    }
+    return res;
+}
+</code></pre>
+<hr>
+<h2 id="mint">mint</h2>
+<ul>
+<li>modular integer</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L1216">github</a></li>
+</ul>
+<pre><code class="language-cpp">struct mi {
+    int64_t v; explicit operator int64_t() const { return v % mod; }
+    mi() { v = 0; }
+    mi(int64_t _v) {
+        v = (-mod &lt; _v &amp;&amp; _v &lt; mod) ? _v : _v % mod;
+        if (v &lt; 0) v += mod;
+    }
+    friend bool operator==(const mi&amp; a, const mi&amp; b) {
+        return a.v == b.v; }
+    friend bool operator!=(const mi&amp; a, const mi&amp; b) {
+        return !(a == b); }
+    friend bool operator&lt;(const mi&amp; a, const mi&amp; b) {
+        return a.v &lt; b.v; }
+
+    mi&amp; operator+=(const mi&amp; m) {
+        if ((v += m.v) &gt;= mod) v -= mod;
+        return *this; }
+    mi&amp; operator-=(const mi&amp; m) {
+        if ((v -= m.v) &lt; 0) v += mod;
+        return *this; }
+    mi&amp; operator*=(const mi&amp; m) {
+        v = v*m.v%mod; return *this; }
+    mi&amp; operator/=(const mi&amp; m) { return (*this) *= inv(m); }
+    friend mi pow(mi a, int64_t p) {
+        mi ans = 1; assert(p &gt;= 0);
+        for (; p; p /= 2, a *= a) if (p&amp;1) ans *= a;
+        return ans;
+    }
+    friend mi inv(const mi&amp; a) { assert(a.v != 0);
+        return pow(a,mod-2); }
+
+    mi operator-() const { return mi(-v); }
+    mi&amp; operator++() { return *this += 1; }
+    mi&amp; operator--() { return *this -= 1; }
+    mi operator++(int32_t) { mi temp; temp.v = v++; return temp; }
+    mi operator--(int32_t) { mi temp; temp.v = v--; return temp; }
+    friend mi operator+(mi a, const mi&amp; b) { return a += b; }
+    friend mi operator-(mi a, const mi&amp; b) { return a -= b; }
+    friend mi operator*(mi a, const mi&amp; b) { return a *= b; }
+    friend mi operator/(mi a, const mi&amp; b) { return a /= b; }
+    friend ostream&amp; operator&lt;&lt;(ostream&amp; os, const mi&amp; m) {
+        os &lt;&lt; m.v; return os;
+    }
+    friend istream&amp; operator&gt;&gt;(istream&amp; is, mi&amp; m) {
+        int64_t x; is &gt;&gt; x;
+        m.v = x;
+        return is;
+    }
+    friend void __print(const mi &amp;x) {
+        cerr &lt;&lt; x.v;
+    }
+};
+</code></pre>
+<hr>
+<h2 id="seive">seive</h2>
+<ul>
+<li>seive</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L1275">github</a></li>
+</ul>
+<pre><code class="language-cpp">vector&lt;bool&gt; Prime;
+vector&lt;int&gt; spf;
+void sieve(int s = maxn) {
+    Prime.resize(s + 1, 1);
+    spf.resize(s + 1, s + 1);
+    for(int i = 2 ; i &lt;= s ; i++)   if(Prime[i]) {
+        spf[i] = min(spf[i], i);
+        for(int j = i ; (ll)j * i &lt;= s ; j++)
+            Prime[j * i] = 0, spf[j * i] = min(i, spf[j * i]);
+    }
+}
+</code></pre>
+<hr>
+<h2 id="derangments">derangments</h2>
+<ul>
+<li>derangments</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L1293">github</a></li>
+</ul>
+<pre><code class="language-cpp">int countDerangements(int n){
+    int dp[n + 1];
+    if (n &lt; 3) return (dp[n]=(n % 2)?1:0);
+    dp[0] = 1, dp[1] = 0, dp[2] = 1;
+    for (int i=3; i&lt; n; i++) dp[i] = (i-1)*(dp[i-1]+dp[i-2]);
+    return dp[n];
+}
+</code></pre>
+<hr>
+<h2 id="euclid">euclid</h2>
+<ul>
+<li>euclid</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L1306">github</a></li>
+</ul>
+<pre><code class="language-cpp">int euclid_gcd(int a, int b){
+    if (b==0) return a;
+    return gcd(b, a % b);
+}
+
+int euclid_gcdExtended(int a, int b, int *x, int *y){
+    if (a == 0){
+        *x = 0;
+        *y = 1;
+        return b;
+    }
+    int x1, y1;
+    int gcd = gcdExtended(b % a, a, &amp;x1, &amp;y1);
+    *x = y1 - (b / a) * x1;
+    *y = x1;
+    return gcd;
+}
+
+</code></pre>
+<hr>
+<h2 id="easy_seive">easy_seive</h2>
+<ul>
+<li>easy_seive</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L1331">github</a></li>
+</ul>
+<pre><code class="language-cpp">void ez_seive(int n){
+     vector&lt;bool&gt; prime(n,1);
+     for (int p = 2; p*p &lt;= n; p++){
+         if (prime[p]){
+            for (int i = p * p; i &lt;= n; i += p) prime[i] = false;
+         }
+     }
+}
+for (int p = 2; p &lt;= n; p++){
+      // do whatever you want with those primes${1}
+      if (prime[p]) cout &lt;&lt; p &lt;&lt; &quot; &quot;;
+}
+</code></pre>
+<hr>
+<h2 id="troll">troll</h2>
+<ul>
+<li>troll</li>
+<li><a href="https://github.com/theSoberSobber/CP-Snippets/blob/main/snippets.json#L1350">github</a></li>
+</ul>
+<pre><code class="language-cpp">// Assembly Generator: gcc -S -o temp.s fileName.cpp
+// Executable: gcc -o temp.exe fileName.cpp
+#define assembler(x) __asm__(R&quot;(x)&quot;);
+// real source - 
+</code></pre>
+<hr>

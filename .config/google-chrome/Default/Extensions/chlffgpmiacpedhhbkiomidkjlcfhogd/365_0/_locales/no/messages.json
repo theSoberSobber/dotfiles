@@ -1,0 +1,347 @@
+{
+   "account": {
+      "message": "Bruker"
+   },
+   "add_a_friend": {
+      "message": "Legg til en venn"
+   },
+   "add_link_tooltip": {
+      "message": "Link for gjeldende side"
+   },
+   "advanced": {
+      "message": "Avansert"
+   },
+   "alert_desktop_app_notifications": {
+      "message": "Pushbullet-programmet for PC og Mac administrerer varsler."
+   },
+   "all_of_my_devices": {
+      "message": "Alle mine enheter"
+   },
+   "cancel": {
+      "message": "Avbryt"
+   },
+   "changelog_tab": {
+      "message": "Hva som er nytt"
+   },
+   "channels": {
+      "message": "Kanaler"
+   },
+   "clear": {
+      "message": "Tøm"
+   },
+   "darkmode_desc": {
+      "message": "Et alternativt fargevalg med mørk bakgrunn og lysere tekst."
+   },
+   "decryption_failed_body": {
+      "message": "Vennligst bekreft at passordet ditt stemmer på alle enheter"
+   },
+   "decryption_failed_title": {
+      "message": "Dekryptering feilet"
+   },
+   "devices": {
+      "message": "Enheter"
+   },
+   "devices_placeholder": {
+      "message": "Velg en enhet"
+   },
+   "dismiss": {
+      "message": "Avvis"
+   },
+   "done": {
+      "message": "Ferdig"
+   },
+   "encryption_password_needed_body": {
+      "message": "Klikk her for å skrive inn passord"
+   },
+   "encryption_password_needed_title": {
+      "message": "Kryptert data mottatt"
+   },
+   "end_to_end_encryption_desc": {
+      "message": "Legg til ekstra kryptering for å beskytte din personlige informasjon enda mer."
+   },
+   "end_to_end_encryption_label": {
+      "message": "Ende-til-ende kryptering"
+   },
+   "end_to_end_password_desc": {
+      "message": "Dersom du velger å skrive inn et passord, må passordet skrives inn på alle enhetene dine."
+   },
+   "end_to_end_password_label": {
+      "message": "Ende-til-ende krypteringspassord"
+   },
+   "explore_channels": {
+      "message": "Utforsk kanaler"
+   },
+   "faqs": {
+      "message": "Ofte stilte spørsmål"
+   },
+   "file_too_big": {
+      "message": "Filen er for stor"
+   },
+   "following": {
+      "message": "Følger"
+   },
+   "friends": {
+      "message": "Venner"
+   },
+   "from": {
+      "message": "Fra $1"
+   },
+   "general": {
+      "message": "Generelt"
+   },
+   "go_to_link": {
+      "message": "Gå til kobling"
+   },
+   "how_to_unmute_app": {
+      "message": "Jeg slo av beskjeder fra en app, hvordan slår jeg de på igjen?"
+   },
+   "how_to_unmute_app_answer": {
+      "message": "Åpne Pushbullet Android-appen og trykk på fanen 'Notification Mirroring'. Trykk her på \"Velg hvilke apper du vil aktivere\", og aktiver deretter appen på nytt."
+   },
+   "learn_more": {
+      "message": "Lær mer"
+   },
+   "me": {
+      "message": "Meg"
+   },
+   "message_placeholder": {
+      "message": "Skriv inn en melding og trykk enter for å sende"
+   },
+   "message_placeholder_files": {
+      "message": "Skriv inn en melding eller slipp en fil her"
+   },
+   "message_placeholder_link": {
+      "message": "Legg til en beskjed, trykk \"enter\" å sende"
+   },
+   "mirror_context_message": {
+      "message": "$1 via Pushbullet kl. $2"
+   },
+   "mute": {
+      "message": "Demp"
+   },
+   "mute_app": {
+      "message": "Demp $1-varsler"
+   },
+   "muted_app": {
+      "message": "Dempet $1"
+   },
+   "new_sms_thread": {
+      "message": "Ny tekstmelding"
+   },
+   "no_notifications": {
+      "message": "Ingen varsler akkurat nå"
+   },
+   "no_pushes": {
+      "message": "Ingen nyere historie"
+   },
+   "notifications": {
+      "message": "Varsler"
+   },
+   "now": {
+      "message": "Nå"
+   },
+   "num_new_messages": {
+      "message": "$1 nye beskjeder"
+   },
+   "option_allow_instant_push": {
+      "message": "Aktiver øyeblikkelig pushing for å"
+   },
+   "option_allow_instant_push_desc": {
+      "message": "Push den gjeldende fanen til den valgte enheten via tastatursnarvei."
+   },
+   "option_automatically_attach_link": {
+      "message": "Automatisk feste den gjeldende fanen til meldinger til en enhet"
+   },
+   "option_automatically_attach_link_desc": {
+      "message": "Dette gjør det å sende koblinger til andre enheter raskere."
+   },
+   "option_background_permission": {
+      "message": "Hold Pushbullet gående mens nettleseren min er lukket"
+   },
+   "option_background_permission_desc": {
+      "message": "Dette gir deg mulighet til å se varsler uten å ha et nettleservindu åpent."
+   },
+   "option_clipboard_permission": {
+      "message": "Universell klipp og lim"
+   },
+   "option_clipboard_permission_desc": {
+      "message": "Kopièr tekst på en enhet, og så lim det inn på en annen enhet som også har denne innstillingen aktivert."
+   },
+   "option_instant_push_shortcuts": {
+      "message": "Klikk her for å velge (Antall valgt $1)."
+   },
+   "option_instant_push_shortcuts_not_set": {
+      "message": "ikke angitt"
+   },
+   "option_notification_duration": {
+      "message": "Skjul varsler automatisk etter"
+   },
+   "option_only_show_titles": {
+      "message": "Vis bare tittel på varslene."
+   },
+   "option_only_show_titles_desc": {
+      "message": "Dette gjør at Pushbullet bare viser tittel på varsler mens innholdet i meldingen holdes privat."
+   },
+   "option_open_my_pushes_automatically": {
+      "message": "Åpne ting jeg pusher til denne nettleseren automatisk."
+   },
+   "option_open_my_pushes_automatically_desc": {
+      "message": "Dette vil gjøre at Pushbullet åpner hva som helst du pusher til nettleseren automatisk i en ny fane."
+   },
+   "option_play_sound": {
+      "message": "Varsle meg med lyd når jeg får varsler."
+   },
+   "option_play_sound_desc": {
+      "message": "Dette vil gjøre at Pushbullet spiller en kort lyd når det kommer varsler."
+   },
+   "option_show_context_menu": {
+      "message": "Vis Pushbullet i min nettlesers kontekstmeny"
+   },
+   "option_show_context_menu_desc": {
+      "message": "Vis Pushbullet i listen ved høyre-klikking som et menyvalg."
+   },
+   "option_show_mirrors": {
+      "message": "Vis varslinger på datamaskinen min."
+   },
+   "option_show_mirrors_desc": {
+      "message": "Ved å fjerne haken vil du stoppe oss fra å vise varslinger (du kan fortsatt se en telling i vårt verktøylinjeikon)."
+   },
+   "option_show_notification_count": {
+      "message": "Vis antall varsler på verktøylinjens ikon"
+   },
+   "option_show_notification_count_desc": {
+      "message": "Se raskt antall varsler i verktøylinjen."
+   },
+   "option_use_dark_icon": {
+      "message": "Bruk mørkt ikon"
+   },
+   "option_use_dark_icon_desc": {
+      "message": "Dette vil gjøre toolbar ikonet mørkegrått."
+   },
+   "options": {
+      "message": "Innstillinger"
+   },
+   "panel_cant_sign_in": {
+      "message": "Kan du ikke logge inn? Prøv å midlertidig deaktivere Adblock. Hvis det ikke hjelper, så krever Pushbullet at tredjeparts informasjonskapsler er aktivert for å logge inn. Du kan deaktivere dem etter du har logget inn."
+   },
+   "panel_sign_up": {
+      "message": "Registrer deg på Pushbullet.com →"
+   },
+   "panel_third_party_cookies": {
+      "message": "Klikk her for å se hvordan du endrer denne innstillingen."
+   },
+   "pending": {
+      "message": "Venter"
+   },
+   "people": {
+      "message": "Personer"
+   },
+   "phone": {
+      "message": "Telefon"
+   },
+   "push_context_message": {
+      "message": "$1 kl. $2"
+   },
+   "pushbullet_pro": {
+      "message": "Pushbullet Pro"
+   },
+   "pushbullet_pro_feature": {
+      "message": "Pushbullet Pro er påkrevd for å aktivere denne funksjonen."
+   },
+   "pushbullet_pro_required": {
+      "message": "Pushbullet Pro kreves"
+   },
+   "pushing": {
+      "message": "Pusher"
+   },
+   "recipient_placeholder": {
+      "message": "Til"
+   },
+   "remove_link_tooltip": {
+      "message": "Fjern link for gjeldende side"
+   },
+   "reply": {
+      "message": "Svar"
+   },
+   "reply_limit_reached": {
+      "message": "Du har nådd gratis meldingslagerstørrese for denne måneden."
+   },
+   "reply_limit_upgrade": {
+      "message": "Oppgrader til Pushbullet Pro for å sende ubegrenset antall meldinger."
+   },
+   "reply_limit_warning": {
+      "message": "Du er nær gratis meldingslagerstørrese for denne måneden."
+   },
+   "retry": {
+      "message": "Prøv på nytt"
+   },
+   "save": {
+      "message": "Lagre"
+   },
+   "see_full_history": {
+      "message": "Se hele historien"
+   },
+   "send_failed": {
+      "message": "Sendingen mislyktes"
+   },
+   "sending": {
+      "message": "Sender..."
+   },
+   "sign_in": {
+      "message": "Logg inn"
+   },
+   "sign_out": {
+      "message": "Logg ut"
+   },
+   "sms": {
+      "message": "SMS"
+   },
+   "sms_disclaimer": {
+      "message": "Telefonen må være slått på og ha Internett-tilkobling for at meldingene skal bli sendt."
+   },
+   "sms_no_devices_text": {
+      "message": "Ingen Android-enheter har SMS-synkronisering aktivert. For å aktivere SMS åpner du Pushbullet Android-appen og aktiverer det øverste alternativet på SMS-fanen."
+   },
+   "sms_recipient_placeholder": {
+      "message": "Kontakt eller telefonnummer"
+   },
+   "snooze": {
+      "message": "Slumre 1 time"
+   },
+   "stuck_pending": {
+      "message": "Fast i påvente?"
+   },
+   "thanks_for_installing_message": {
+      "message": "Klikk her for å bli logget inn"
+   },
+   "thanks_for_installing_title": {
+      "message": "Takk for at du installerte Pushbullet"
+   },
+   "title_placeholder": {
+      "message": "Tittel"
+   },
+   "undo": {
+      "message": "Angre"
+   },
+   "unmute_app": {
+      "message": "Slå på lyd fra $1"
+   },
+   "unsnooze": {
+      "message": "Fjern slumring"
+   },
+   "unsubscribe_from_channel": {
+      "message": "Meld av $1"
+   },
+   "unsubscribed_from_channel": {
+      "message": "Er ikke lenger påmeldt $1"
+   },
+   "updated_notif_message": {
+      "message": "Klikk her for å se hva som er nytt"
+   },
+   "updated_notif_title": {
+      "message": "Pushbullet har blitt oppdatert!"
+   },
+   "url_placeholder": {
+      "message": "Lenke"
+   }
+}

@@ -1,0 +1,11 @@
+{
+   "appDesc": {
+      "message": "集成了 Local Storage, Session Storage 和 Cookie 于一身，功能强大，简洁易用，助力您的 Web 开发想停都停不下来。"
+   },
+   "appName": {
+      "message": "速适 (Swoosh) 存储专家 - 专治 Cookie 和 Local Storage"
+   },
+   "appShortName": {
+      "message": "速适"
+   }
+}
