@@ -1,3 +1,6 @@
-2023/03/12-22:15:37.462 3 Reusing MANIFEST /home/cp/.config/google-chrome/Default/Session Storage/MANIFEST-000001
-2023/03/12-22:15:37.464 3 Recovering log #23
-2023/03/12-22:15:37.679 3 Reusing old log /home/cp/.config/google-chrome/Default/Session Storage/000023.log 
+2023/04/22-16:28:19.650 3 Reusing MANIFEST /home/cp/.config/google-chrome/Default/Session Storage/MANIFEST-000001
+2023/04/22-16:28:19.681 3 Recovering log #59
+2023/04/22-16:28:19.881 3 Reusing old log /home/cp/.config/google-chrome/Default/Session Storage/000059.log 
+2023/04/22-16:32:52.209 5 Level-0 table #63: started
+2023/04/22-16:32:52.262 5 Level-0 table #63: 15030 bytes OK
+2023/04/22-16:32:52.319 5 Delete type=0 #59

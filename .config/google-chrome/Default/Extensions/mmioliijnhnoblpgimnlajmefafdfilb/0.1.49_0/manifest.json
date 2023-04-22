@@ -1,0 +1,36 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "js/background.js", "thirdparty/musickit.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "icons/19.png",
+         "38": "icons/38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "__MSG_extName__"
+   },
+   "content_scripts": [ {
+      "js": [ "js/content-script.js" ],
+      "matches": [ "*://www.shazam.com/*" ],
+      "run_at": "document_idle"
+   } ],
+   "content_security_policy": "script-src 'self' 'wasm-eval'; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_extDesc__",
+   "homepage_url": "https://www.shazam.com/apps",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "48": "icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgZF5kkaSe9YRaEshk1NXz0FkztiyoZ+EVgb4jfSTvG34JIPpDDi2vB/f9DQmSMUIowAYEM2wD6Etwl4Fq28wUaAFbDUBiNqFQr8aUSNypc03i2VyFht/38k6f2fDtsJBCURYXm0NMz7bayJZPAMuYt2Tn6QaaItHLVmEY3vgLG7cl5a9zUau8YGX2T8w7g2KiHDcV1F8AxOalX4jlGNXpjZ/p7svxw8XNqgBe9B4PPkfExMP8yr/8TVJyXQ9w9zch/J/wFqxbt83FZ+M8wkttYpbYa1D3KxC3PQBEIRjYeuvotXcwwOxHS41H8gzrlQb28Gh0RcvVJUhmtxSHFkJGwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "85",
+   "name": "__MSG_extName__",
+   "permissions": [ "tabs", "tabCapture", "storage", "unlimitedStorage", "*://www.shazam.com/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.49",
+   "web_accessible_resources": [ "/src/assets/*.*" ]
+}

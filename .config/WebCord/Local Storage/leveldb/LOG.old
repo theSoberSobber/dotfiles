@@ -1,0 +1,12 @@
+2023/03/25-23:04:46.085 233a Reusing MANIFEST /home/cp/.config/WebCord/Local Storage/leveldb/MANIFEST-000001
+2023/03/25-23:04:46.173 233a Recovering log #29
+2023/03/25-23:04:46.251 233a Reusing old log /home/cp/.config/WebCord/Local Storage/leveldb/000029.log 
+2023/03/25-23:06:49.046 238b Level-0 table #34: started
+2023/03/25-23:06:49.181 238b Level-0 table #34: 1508687 bytes OK
+2023/03/25-23:06:49.245 238b Delete type=0 #29
+2023/03/26-00:22:49.065 308f Level-0 table #36: started
+2023/03/26-00:22:49.185 308f Level-0 table #36: 17734 bytes OK
+2023/03/26-00:22:49.266 308f Delete type=0 #33
+2023/03/26-01:44:49.078 308f Level-0 table #38: started
+2023/03/26-01:44:49.150 308f Level-0 table #38: 14960 bytes OK
+2023/03/26-01:44:49.240 308f Delete type=0 #35

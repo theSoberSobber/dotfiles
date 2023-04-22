@@ -1,3 +1,6 @@
-2023/03/12-22:15:39.101 425 Reusing MANIFEST /home/cp/.config/google-chrome/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn/MANIFEST-000001
-2023/03/12-22:15:39.101 425 Recovering log #216
-2023/03/12-22:15:39.223 425 Reusing old log /home/cp/.config/google-chrome/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn/000216.log 
+2023/04/22-16:28:39.608 f0d Reusing MANIFEST /home/cp/.config/google-chrome/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn/MANIFEST-000001
+2023/04/22-16:28:39.609 f0d Recovering log #561
+2023/04/22-16:28:39.655 f0d Reusing old log /home/cp/.config/google-chrome/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn/000561.log 
+2023/04/22-16:32:58.991 f2a Level-0 table #565: started
+2023/04/22-16:32:59.642 f2a Level-0 table #565: 2334986 bytes OK
+2023/04/22-16:33:00.515 f2a Delete type=0 #561

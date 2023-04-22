@@ -1,0 +1,32 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "src/js/eventPage.js" ]
+   },
+   "browser_action": {
+      "default_icon": "src/asset/icon16.png",
+      "default_popup": "src/popup.html",
+      "default_title": "CF Analytics"
+   },
+   "content_scripts": [ {
+      "css": [ "src/css/contentFriends.css" ],
+      "js": [ "src/lib/jquery-3.6.0.min.js", "src/js/contentFriends.js" ],
+      "matches": [ "https://codeforces.com/friends" ]
+   }, {
+      "css": [ "src/css/contentProfile.css" ],
+      "js": [ "src/lib/jquery-3.6.0.min.js", "src/lib/chart.min.js", "src/js/contentProfile.js" ],
+      "matches": [ "https://codeforces.com/profile/*" ]
+   } ],
+   "description": "Analyse Codeforces profiles",
+   "icons": {
+      "128": "src/asset/icon128.png",
+      "16": "src/asset/icon16.png",
+      "48": "src/asset/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjFBjwk1LZmGeS604YdIGzPy0HO+mn8uW/53btsRP85rBulQMYRs+TJSkhEHVxum4tvA6w869QCL+EeYdsDjxHwEPN7OZ+fWjVyG1maimSm/UUxLqIc6C1nLK9K6fGebM6cOJRQM06qbubcAN7HXUWe+n//H9rhNvoX6SxzgBiekFhrrLZ+7JGixpKefE1/IBUoKWQiHoAznG5T3vjDRZVqSmlfPXv87ExSfv3zuD/KaQKkoZdsQ/UqzDKzrUEsX+FeniA7i0TR7uIxFf8EegkJj5FwgHH8yqbIT/mPKXz6HlzJRjtZuQmLYObURMZ6WE4c7hmuhAYK4k2P7Jb9IFYQIDAQAB",
+   "manifest_version": 2,
+   "name": "CF Analytics",
+   "permissions": [ "https://codeforces.com/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.2"
+}

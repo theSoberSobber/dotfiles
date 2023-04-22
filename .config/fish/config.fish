@@ -24,7 +24,7 @@ if status is-interactive
     alias cl="clear"
 
     # Alias for lvim
-    alias lv="lvim"
+    alias vi="vim"
 
     # Finds file
     alias ff="find ~/ -name $1"
@@ -50,8 +50,8 @@ if status is-interactive
     alias trash='mv --force -t ~/.local/share/Trash '
 
     # Open diffrent config files in lunarvim
-    alias hl='lvim ~/.config/hypr/hyprland.conf'
-    alias fic='lvim ~/.config/fish/config.fish'
+    alias hl='vim ~/.config/hypr/hyprland.conf'
+    alias fic='vim ~/.config/fish/config.fish'
 
     # Browser
     alias edge='/var/lib/flatpak/exports/bin/com.microsoft.Edge'

@@ -1,0 +1,232 @@
+01:43:01.396: Platform: Wayland
+01:43:01.396: CPU Name: AMD Ryzen 5 4600H with Radeon Graphics
+01:43:01.396: CPU Speed: 1397.042MHz
+01:43:01.397: Physical Cores: 6, Logical Cores: 12
+01:43:01.397: Physical Memory: 7301MB Total, 3861MB Free
+01:43:01.397: Kernel Version: Linux 6.2.9-arch1-1
+01:43:01.397: Distribution: "Arch Linux" Unknown
+01:43:01.397: Session Type: wayland
+01:43:01.398: Qt Version: 6.4.3 (runtime), 6.4.2 (compiled)
+01:43:01.398: Portable mode: false
+01:43:01.534: OBS 29.0.2-2 (linux)
+01:43:01.534: ---------------------------------
+01:43:01.534: ---------------------------------
+01:43:01.534: audio settings reset:
+01:43:01.534: 	samples per sec: 48000
+01:43:01.534: 	speakers:        2
+01:43:01.534: 	max buffering:   960 milliseconds
+01:43:01.534: 	buffering type:  dynamically increasing
+01:43:01.577: ---------------------------------
+01:43:01.577: Initializing OpenGL...
+01:43:01.577: Using EGL/Wayland
+01:43:02.010: Initialized EGL 1.5
+01:43:02.036: Loading up OpenGL on adapter AMD AMD Radeon Graphics (renoir, LLVM 15.0.7, DRM 3.49, 6.2.9-arch1-1)
+01:43:02.036: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 23.0.1, shading language 4.60
+01:43:02.330: ---------------------------------
+01:43:02.330: video settings reset:
+01:43:02.330: 	base resolution:   1920x1080
+01:43:02.330: 	output resolution: 1280x720
+01:43:02.330: 	downscale filter:  Bicubic
+01:43:02.330: 	fps:               30/1
+01:43:02.330: 	format:            NV12
+01:43:02.330: 	YUV mode:          Rec. 709/Partial
+01:43:02.331: NV12 texture support not available
+01:43:02.331: P010 texture support not available
+01:43:02.340: Audio monitoring device:
+01:43:02.340: 	name: Default
+01:43:02.340: 	id: default
+01:43:02.340: ---------------------------------
+01:43:02.372: Failed to load 'en-US' text for module: 'decklink-captions.so'
+01:43:02.412: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+01:43:02.438: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+01:43:02.438: Failed to initialize module 'decklink.so'
+01:43:02.887: [pipewire] Available captures:
+01:43:02.887: [pipewire]     - Desktop capture
+01:43:02.932: v4l2loopback not installed, virtual camera disabled
+01:43:03.456: NVENC supported
+01:43:03.457: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+01:43:03.457: FFmpeg VAAPI H264 encoding not supported
+01:43:03.807: ---------------------------------
+01:43:03.807:   Loaded Modules:
+01:43:03.807:     text-freetype2.so
+01:43:03.807:     rtmp-services.so
+01:43:03.807:     obs-x264.so
+01:43:03.807:     obs-vst.so
+01:43:03.807:     obs-transitions.so
+01:43:03.807:     obs-outputs.so
+01:43:03.807:     obs-libfdk.so
+01:43:03.807:     obs-filters.so
+01:43:03.807:     obs-ffmpeg.so
+01:43:03.807:     linux-v4l2.so
+01:43:03.807:     linux-pulseaudio.so
+01:43:03.807:     linux-pipewire.so
+01:43:03.807:     linux-jack.so
+01:43:03.807:     linux-capture.so
+01:43:03.807:     linux-alsa.so
+01:43:03.807:     image-source.so
+01:43:03.807:     frontend-tools.so
+01:43:03.807:     decklink-output-ui.so
+01:43:03.807:     decklink-captions.so
+01:43:03.807: ---------------------------------
+01:43:03.807: ==== Startup complete ===============================================
+01:43:03.924: All scene data cleared
+01:43:03.924: ------------------------------------------------
+01:43:03.938: pulse-input: Server name: 'pulseaudio 16.1'
+01:43:03.938: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+01:43:03.938: pulse-input: Started recording from 'alsa_output.pci-0000_05_00.6.analog-stereo.monitor' (default)
+01:43:03.938: [Loaded global audio device]: 'Desktop Audio'
+01:43:04.025: pulse-input: Server name: 'pulseaudio 16.1'
+01:43:04.026: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+01:43:04.026: pulse-input: Started recording from 'alsa_input.pci-0000_05_00.6.analog-stereo' (default)
+01:43:04.026: [Loaded global audio device]: 'Mic/Aux'
+01:43:04.026: PipeWire initialized
+01:43:04.029: Switched to scene 'Scene'
+01:43:04.029: ------------------------------------------------
+01:43:04.029: Loaded scenes:
+01:43:04.029: - scene 'Scene':
+01:43:04.029:     - source: 'Screen Capture (PipeWire)' (pipewire-desktop-capture-source)
+01:43:04.029: ------------------------------------------------
+01:43:04.274: [pipewire] Screencast session created
+01:43:04.586: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Mic/Aux)
+01:43:04.586: 
+01:43:04.607: adding 21 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+01:43:04.607: 
+01:43:04.628: adding 21 milliseconds of audio buffering, total audio buffering is now 64 milliseconds (source: Mic/Aux)
+01:43:04.628: 
+01:43:04.650: adding 21 milliseconds of audio buffering, total audio buffering is now 85 milliseconds (source: Mic/Aux)
+01:43:04.650: 
+01:43:04.671: adding 21 milliseconds of audio buffering, total audio buffering is now 106 milliseconds (source: Mic/Aux)
+01:43:04.671: 
+01:43:04.692: adding 21 milliseconds of audio buffering, total audio buffering is now 128 milliseconds (source: Mic/Aux)
+01:43:04.692: 
+01:43:04.714: adding 21 milliseconds of audio buffering, total audio buffering is now 149 milliseconds (source: Mic/Aux)
+01:43:04.714: 
+01:43:04.735: adding 21 milliseconds of audio buffering, total audio buffering is now 170 milliseconds (source: Mic/Aux)
+01:43:04.735: 
+01:43:04.756: adding 21 milliseconds of audio buffering, total audio buffering is now 192 milliseconds (source: Mic/Aux)
+01:43:04.756: 
+01:43:04.778: adding 21 milliseconds of audio buffering, total audio buffering is now 213 milliseconds (source: Mic/Aux)
+01:43:04.778: 
+01:43:04.799: adding 21 milliseconds of audio buffering, total audio buffering is now 234 milliseconds (source: Mic/Aux)
+01:43:04.799: 
+01:43:04.820: adding 21 milliseconds of audio buffering, total audio buffering is now 256 milliseconds (source: Mic/Aux)
+01:43:04.820: 
+01:43:04.841: adding 21 milliseconds of audio buffering, total audio buffering is now 277 milliseconds (source: Mic/Aux)
+01:43:04.841: 
+01:43:04.863: adding 21 milliseconds of audio buffering, total audio buffering is now 298 milliseconds (source: Mic/Aux)
+01:43:04.863: 
+01:43:04.884: adding 21 milliseconds of audio buffering, total audio buffering is now 320 milliseconds (source: Mic/Aux)
+01:43:04.884: 
+01:43:04.906: adding 21 milliseconds of audio buffering, total audio buffering is now 341 milliseconds (source: Mic/Aux)
+01:43:04.906: 
+01:43:04.927: adding 21 milliseconds of audio buffering, total audio buffering is now 362 milliseconds (source: Mic/Aux)
+01:43:04.927: 
+01:43:04.948: adding 21 milliseconds of audio buffering, total audio buffering is now 384 milliseconds (source: Mic/Aux)
+01:43:04.948: 
+01:43:04.969: adding 21 milliseconds of audio buffering, total audio buffering is now 405 milliseconds (source: Mic/Aux)
+01:43:04.969: 
+01:43:04.991: adding 21 milliseconds of audio buffering, total audio buffering is now 426 milliseconds (source: Mic/Aux)
+01:43:04.991: 
+01:43:05.012: adding 21 milliseconds of audio buffering, total audio buffering is now 448 milliseconds (source: Mic/Aux)
+01:43:05.012: 
+01:43:05.034: adding 21 milliseconds of audio buffering, total audio buffering is now 469 milliseconds (source: Mic/Aux)
+01:43:05.034: 
+01:43:05.055: adding 21 milliseconds of audio buffering, total audio buffering is now 490 milliseconds (source: Mic/Aux)
+01:43:05.055: 
+01:43:05.076: adding 21 milliseconds of audio buffering, total audio buffering is now 512 milliseconds (source: Mic/Aux)
+01:43:05.076: 
+01:43:05.097: adding 21 milliseconds of audio buffering, total audio buffering is now 533 milliseconds (source: Mic/Aux)
+01:43:05.097: 
+01:43:05.119: adding 21 milliseconds of audio buffering, total audio buffering is now 554 milliseconds (source: Mic/Aux)
+01:43:05.119: 
+01:43:05.140: adding 21 milliseconds of audio buffering, total audio buffering is now 576 milliseconds (source: Mic/Aux)
+01:43:05.140: 
+01:43:05.161: adding 21 milliseconds of audio buffering, total audio buffering is now 597 milliseconds (source: Mic/Aux)
+01:43:05.161: 
+01:43:05.183: adding 21 milliseconds of audio buffering, total audio buffering is now 618 milliseconds (source: Mic/Aux)
+01:43:05.183: 
+01:43:05.204: adding 21 milliseconds of audio buffering, total audio buffering is now 640 milliseconds (source: Mic/Aux)
+01:43:05.204: 
+01:43:05.225: adding 21 milliseconds of audio buffering, total audio buffering is now 661 milliseconds (source: Mic/Aux)
+01:43:05.225: 
+01:43:05.524: Last log entry repeated for 13 more lines
+01:43:05.524: Max audio buffering reached!
+01:43:05.524: adding 21 milliseconds of audio buffering, total audio buffering is now 960 milliseconds (source: Mic/Aux)
+01:43:05.524: 
+01:43:07.139: [pipewire] Asking for desktop
+01:43:07.143: [pipewire] desktop selected, setting up screencast
+01:43:07.151: [pipewire] Server version: 0.3.67
+01:43:07.151: [pipewire] Library version: 0.3.67
+01:43:07.151: [pipewire] Header version: 0.3.66
+01:43:07.151: [pipewire] Created stream 0x56068b3cba50
+01:43:07.151: [pipewire] Stream 0x56068b3cba50 state: "connecting" (error: none)
+01:43:07.152: [pipewire] Playing stream 0x56068b3cba50
+01:43:07.152: [pipewire] Stream 0x56068b3cba50 state: "paused" (error: none)
+01:43:07.157: [pipewire] Negotiated format:
+01:43:07.157: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+01:43:07.157: [pipewire]     Modifier: 0
+01:43:07.157: [pipewire]     Size: 1920x1080
+01:43:07.157: [pipewire]     Framerate: 0/1
+01:43:07.158: [pipewire] Negotiated format:
+01:43:07.159: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+01:43:07.159: [pipewire]     Modifier: 144115206334822913
+01:43:07.159: [pipewire]     Size: 1920x1080
+01:43:07.159: [pipewire]     Framerate: 0/1
+01:43:07.160: [pipewire] Stream 0x56068b3cba50 state: "streaming" (error: none)
+01:43:07.176: Cannot create EGLImage: EGL failed to allocate resources for the requested operation.
+01:43:07.176: [pipewire] Renegotiating stream
+01:43:07.177: [pipewire] Negotiated format:
+01:43:07.177: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+01:43:07.177: [pipewire]     Modifier: 144115206334822913
+01:43:07.177: [pipewire]     Size: 1920x1080
+01:43:07.177: [pipewire]     Framerate: 0/1
+01:43:07.177: [pipewire] Negotiated format:
+01:43:07.177: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+01:43:07.177: [pipewire]     Modifier: 144115206334822657
+01:43:07.177: [pipewire]     Size: 1920x1080
+01:43:07.177: [pipewire]     Framerate: 0/1
+01:43:07.204: Cannot create EGLImage: EGL failed to allocate resources for the requested operation.
+01:43:07.204: [pipewire] Renegotiating stream
+01:43:07.234: [pipewire] Stream 0x56068b3cba50 state: "paused" (error: none)
+01:43:07.235: [pipewire] Stream 0x56068b3cba50 state: "streaming" (error: none)
+01:43:07.235: [pipewire] Negotiated format:
+01:43:07.235: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+01:43:07.235: [pipewire]     Modifier: 144115206334822657
+01:43:07.235: [pipewire]     Size: 1920x1080
+01:43:07.235: [pipewire]     Framerate: 0/1
+01:43:07.235: [pipewire] Negotiated format:
+01:43:07.235: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+01:43:07.235: [pipewire]     Modifier: 144115206334806273
+01:43:07.235: [pipewire]     Size: 1920x1080
+01:43:07.235: [pipewire]     Framerate: 0/1
+01:43:07.293: Cannot create EGLImage: EGL failed to allocate resources for the requested operation.
+01:43:07.293: [pipewire] Renegotiating stream
+01:43:07.294: [pipewire] Stream 0x56068b3cba50 state: "paused" (error: none)
+01:43:07.294: [pipewire] Stream 0x56068b3cba50 state: "streaming" (error: none)
+01:43:07.294: [pipewire] Negotiated format:
+01:43:07.294: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+01:43:07.294: [pipewire]     Modifier: 144115206334806273
+01:43:07.294: [pipewire]     Size: 1920x1080
+01:43:07.294: [pipewire]     Framerate: 0/1
+01:43:07.295: [pipewire] Negotiated format:
+01:43:07.295: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+01:43:07.295: [pipewire]     Modifier: 144115188080056833
+01:43:07.295: [pipewire]     Size: 1920x1080
+01:43:07.295: [pipewire]     Framerate: 0/1
+01:43:12.340: ---------------------------------
+01:43:12.340: [FFmpeg NVENC encoder: 'simple_video_recording'] settings:
+01:43:12.340: 	encoder:      NVIDIA NVENC H.264 (FFmpeg)
+01:43:12.340: 	rate_control: CQP
+01:43:12.340: 	bitrate:      0
+01:43:12.340: 	cqp:          21
+01:43:12.340: 	keyint:       250
+01:43:12.340: 	preset:       p5
+01:43:12.340: 	tuning:       hq
+01:43:12.340: 	multipass:    qres
+01:43:12.340: 	profile:      high
+01:43:12.340: 	width:        1280
+01:43:12.340: 	height:       720
+01:43:12.340: 	b-frames:     2
+01:43:12.340: 	psycho-aq:    1
+01:43:12.340: 	GPU:          0
+01:43:12.340: 

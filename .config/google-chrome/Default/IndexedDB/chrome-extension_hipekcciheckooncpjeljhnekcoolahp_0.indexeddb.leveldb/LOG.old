@@ -1,3 +1,15 @@
-2023/03/11-18:35:16.736 6afb Reusing MANIFEST /home/cp/.config/google-chrome/Default/IndexedDB/chrome-extension_hipekcciheckooncpjeljhnekcoolahp_0.indexeddb.leveldb/MANIFEST-000001
-2023/03/11-18:35:16.736 6afb Recovering log #7
-2023/03/11-18:35:16.783 6afb Reusing old log /home/cp/.config/google-chrome/Default/IndexedDB/chrome-extension_hipekcciheckooncpjeljhnekcoolahp_0.indexeddb.leveldb/000007.log 
+2023/04/03-18:07:23.239 1529 Reusing MANIFEST /home/cp/.config/google-chrome/Default/IndexedDB/chrome-extension_hipekcciheckooncpjeljhnekcoolahp_0.indexeddb.leveldb/MANIFEST-000001
+2023/04/03-18:07:23.239 1529 Recovering log #27
+2023/04/03-18:07:23.239 1529 Reusing old log /home/cp/.config/google-chrome/Default/IndexedDB/chrome-extension_hipekcciheckooncpjeljhnekcoolahp_0.indexeddb.leveldb/000027.log 
+2023/04/03-18:07:27.205 152a Level-0 table #32: started
+2023/04/03-18:07:27.242 152a Level-0 table #32: 209 bytes OK
+2023/04/03-18:07:27.298 152a Delete type=0 #27
+2023/04/03-18:07:27.299 152a Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2023/04/03-18:07:27.299 152a Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x06' @ 69 : 1
+2023/04/03-18:07:27.299 152a Compacting 1@1 + 1@2 files
+2023/04/03-18:07:27.336 152a Generated table #33@1: 21 keys, 1716 bytes
+2023/04/03-18:07:27.336 152a Compacted 1@1 + 1@2 files => 1716 bytes
+2023/04/03-18:07:27.392 152a compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/04/03-18:07:27.392 152a Delete type=2 #29
+2023/04/03-18:07:27.392 152a Delete type=2 #32
+2023/04/03-18:07:27.392 152a Manual compaction at level-1 from '\x00\x00\x00\x00\x06' @ 69 : 1 .. (end); will stop at (end)

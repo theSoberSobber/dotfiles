@@ -1,27 +1,6 @@
-2023/03/11-14:58:19.891 3eb Reusing MANIFEST /home/cp/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/03/11-14:58:19.891 3eb Recovering log #15
-2023/03/11-14:58:19.988 3eb Reusing old log /home/cp/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000015.log 
-2023/03/11-14:58:20.774 3dc Compacting 1@1 + 1@2 files
-2023/03/11-14:58:20.845 3dc Generated table #18@1: 371 keys, 37215 bytes
-2023/03/11-14:58:20.845 3dc Compacted 1@1 + 1@2 files => 37215 bytes
-2023/03/11-14:58:21.013 3dc compacted to: files[ 0 0 1 0 0 0 0 ]
-2023/03/11-14:58:21.014 3dc Delete type=2 #13
-2023/03/11-14:58:21.014 3dc Delete type=2 #16
-2023/03/11-16:10:07.771 3dd Level-0 table #20: started
-2023/03/11-16:10:07.869 3dd Level-0 table #20: 1048623 bytes OK
-2023/03/11-16:10:07.964 3dd Delete type=0 #15
-2023/03/11-16:16:43.164 457b Compacting 1@1 + 1@2 files
-2023/03/11-16:16:43.218 457b Generated table #21@1: 400 keys, 31745 bytes
-2023/03/11-16:16:43.218 457b Compacted 1@1 + 1@2 files => 31745 bytes
-2023/03/11-16:16:43.273 457b compacted to: files[ 0 0 1 0 0 0 0 ]
-2023/03/11-16:16:43.274 457b Delete type=2 #18
-2023/03/11-16:16:43.274 457b Delete type=2 #20
-2023/03/11-17:58:08.735 3dc Level-0 table #23: started
-2023/03/11-17:58:08.845 3dc Level-0 table #23: 1028196 bytes OK
-2023/03/11-17:58:08.941 3dc Delete type=0 #19
-2023/03/11-18:01:32.420 3dc Compacting 1@1 + 1@2 files
-2023/03/11-18:01:32.501 3dc Generated table #24@1: 404 keys, 29979 bytes
-2023/03/11-18:01:32.501 3dc Compacted 1@1 + 1@2 files => 29979 bytes
-2023/03/11-18:01:32.557 3dc compacted to: files[ 0 0 1 0 0 0 0 ]
-2023/03/11-18:01:32.557 3dc Delete type=2 #23
-2023/03/11-18:01:32.558 3dc Delete type=2 #21
+2023/04/22-16:37:37.430 f0f Reusing MANIFEST /home/cp/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/04/22-16:37:37.430 f0f Recovering log #61
+2023/04/22-16:37:37.443 f0f Reusing old log /home/cp/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000061.log 
+2023/04/22-16:38:48.269 efd Level-0 table #66: started
+2023/04/22-16:38:48.433 efd Level-0 table #66: 1184428 bytes OK
+2023/04/22-16:38:48.569 efd Delete type=0 #61

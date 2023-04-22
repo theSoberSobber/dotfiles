@@ -1,3 +1,28 @@
-2023/03/11-14:56:47.529 3dd Reusing MANIFEST /home/cp/.config/google-chrome/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/MANIFEST-000001
-2023/03/11-14:56:47.558 3dd Recovering log #23
-2023/03/11-14:56:48.048 3dd Reusing old log /home/cp/.config/google-chrome/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/000023.log 
+2023/04/12-14:47:46.050 159c Reusing MANIFEST /home/cp/.config/google-chrome/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/MANIFEST-000001
+2023/04/12-14:47:46.051 159c Recovering log #132
+2023/04/12-14:47:46.614 159c Reusing old log /home/cp/.config/google-chrome/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/000132.log 
+2023/04/12-14:51:38.687 159d Level-0 table #136: started
+2023/04/12-14:51:38.804 159d Level-0 table #136: 2502175 bytes OK
+2023/04/12-14:51:38.860 159d Delete type=0 #132
+2023/04/12-14:53:39.050 159d Level-0 table #138: started
+2023/04/12-14:53:39.149 159d Level-0 table #138: 1785308 bytes OK
+2023/04/12-14:53:39.223 159d Delete type=0 #135
+2023/04/12-14:53:39.225 159d Compacting 4@0 + 3@1 files
+2023/04/12-14:53:39.320 159d Generated table #139@0: 14 keys, 2343227 bytes
+2023/04/12-14:53:39.435 159d Generated table #140@0: 20 keys, 2138748 bytes
+2023/04/12-14:53:39.480 159d Generated table #141@0: 7 keys, 166413 bytes
+2023/04/12-14:53:39.480 159d Compacted 4@0 + 3@1 files => 4648388 bytes
+2023/04/12-14:53:39.536 159d compacted to: files[ 0 3 1 0 0 0 0 ]
+2023/04/12-14:53:39.537 159d Delete type=2 #129
+2023/04/12-14:53:39.537 159d Delete type=2 #130
+2023/04/12-14:53:39.537 159d Delete type=2 #133
+2023/04/12-14:53:39.537 159d Delete type=2 #128
+2023/04/12-14:53:39.537 159d Delete type=2 #138
+2023/04/12-14:53:39.537 159d Delete type=2 #136
+2023/04/12-14:53:39.537 159d Delete type=2 #127
+2023/04/12-14:55:39.999 159d Level-0 table #143: started
+2023/04/12-14:55:40.127 159d Level-0 table #143: 1478458 bytes OK
+2023/04/12-14:55:40.184 159d Delete type=0 #137
+2023/04/12-15:00:41.712 159d Level-0 table #145: started
+2023/04/12-15:00:41.888 159d Level-0 table #145: 2788606 bytes OK
+2023/04/12-15:00:41.945 159d Delete type=0 #142

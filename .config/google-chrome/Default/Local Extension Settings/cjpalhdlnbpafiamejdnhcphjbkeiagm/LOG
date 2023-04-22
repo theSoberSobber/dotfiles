@@ -1,26 +1,28 @@
-2023/03/12-22:15:34.900 465 Reusing MANIFEST /home/cp/.config/google-chrome/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/MANIFEST-000001
-2023/03/12-22:15:34.939 465 Recovering log #23
-2023/03/12-22:15:35.282 465 Reusing old log /home/cp/.config/google-chrome/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/000023.log 
-2023/03/12-22:18:24.768 426 Level-0 table #27: started
-2023/03/12-22:18:24.921 426 Level-0 table #27: 2512707 bytes OK
-2023/03/12-22:18:25.305 426 Delete type=0 #23
-2023/03/12-22:24:27.788 7d7 Level-0 table #29: started
-2023/03/12-22:24:27.893 7d7 Level-0 table #29: 1904334 bytes OK
-2023/03/12-22:24:27.912 425 Current memtable full; waiting...
-2023/03/12-22:24:27.950 7d7 Delete type=0 #26
-2023/03/12-22:24:27.952 7d7 Compacting 4@0 + 3@1 files
-2023/03/12-22:24:27.952 7d7 Level-0 table #32: started
-2023/03/12-22:24:28.072 7d7 Level-0 table #32: 3022253 bytes OK
-2023/03/12-22:24:28.130 7d7 Delete type=0 #28
-2023/03/12-22:24:28.251 7d7 Generated table #31@0: 13 keys, 2186568 bytes
-2023/03/12-22:24:28.374 7d7 Generated table #33@0: 10 keys, 2330497 bytes
-2023/03/12-22:24:28.471 7d7 Generated table #34@0: 15 keys, 826360 bytes
-2023/03/12-22:24:28.471 7d7 Compacted 4@0 + 3@1 files => 5343425 bytes
-2023/03/12-22:24:28.526 7d7 compacted to: files[ 1 3 1 0 0 0 0 ]
-2023/03/12-22:24:28.527 7d7 Delete type=2 #29
-2023/03/12-22:24:28.527 7d7 Delete type=2 #24
-2023/03/12-22:24:28.527 7d7 Delete type=2 #18
-2023/03/12-22:24:28.527 7d7 Delete type=2 #20
-2023/03/12-22:24:28.527 7d7 Delete type=2 #19
-2023/03/12-22:24:28.527 7d7 Delete type=2 #27
-2023/03/12-22:24:28.527 7d7 Delete type=2 #21
+2023/04/22-16:28:37.489 103b Reusing MANIFEST /home/cp/.config/google-chrome/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/MANIFEST-000001
+2023/04/22-16:28:37.489 103b Recovering log #144
+2023/04/22-16:28:38.269 103b Reusing old log /home/cp/.config/google-chrome/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/000144.log 
+2023/04/22-16:33:34.710 efd Level-0 table #148: started
+2023/04/22-16:33:34.822 efd Level-0 table #148: 2788942 bytes OK
+2023/04/22-16:33:34.879 efd Delete type=0 #144
+2023/04/22-16:35:36.429 efd Level-0 table #150: started
+2023/04/22-16:35:36.561 efd Level-0 table #150: 1802668 bytes OK
+2023/04/22-16:35:36.617 efd Delete type=0 #147
+2023/04/22-16:35:36.619 efd Compacting 4@0 + 3@1 files
+2023/04/22-16:35:36.719 efd Generated table #151@0: 14 keys, 2359113 bytes
+2023/04/22-16:35:36.829 efd Generated table #152@0: 20 keys, 2155106 bytes
+2023/04/22-16:35:36.866 efd Generated table #153@0: 7 keys, 167937 bytes
+2023/04/22-16:35:36.866 efd Compacted 4@0 + 3@1 files => 4682156 bytes
+2023/04/22-16:35:36.922 efd compacted to: files[ 0 3 1 0 0 0 0 ]
+2023/04/22-16:35:36.922 efd Delete type=2 #145
+2023/04/22-16:35:36.922 efd Delete type=2 #143
+2023/04/22-16:35:36.922 efd Delete type=2 #141
+2023/04/22-16:35:36.922 efd Delete type=2 #139
+2023/04/22-16:35:36.922 efd Delete type=2 #150
+2023/04/22-16:35:36.922 efd Delete type=2 #148
+2023/04/22-16:35:36.923 efd Delete type=2 #140
+2023/04/22-16:37:48.717 f0c Level-0 table #155: started
+2023/04/22-16:37:48.888 f0c Level-0 table #155: 1492693 bytes OK
+2023/04/22-16:37:49.301 f0c Delete type=0 #149
+2023/04/22-16:42:50.590 efd Level-0 table #157: started
+2023/04/22-16:42:50.827 efd Level-0 table #157: 2796494 bytes OK
+2023/04/22-16:42:50.967 efd Delete type=0 #154

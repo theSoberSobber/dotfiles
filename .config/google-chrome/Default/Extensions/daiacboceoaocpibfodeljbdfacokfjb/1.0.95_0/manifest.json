@@ -1,0 +1,31 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "assets/icons/icon128.png",
+         "16": "assets/icons/icon16.png",
+         "32": "assets/icons/icon32.png",
+         "48": "assets/icons/icon48.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Login to ShareGPT"
+   },
+   "content_scripts": [ {
+      "js": [ "index.js" ],
+      "matches": [ "https://chat.openai.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "ShareGPT is a Chrome extension that lets you your wildest ChatGPT conversations with one click.",
+   "differential_fingerprint": "1.5a0f53303fc811d40012a4ab4f12ae147b1ba54e9b5da81180b159045a08f44e",
+   "host_permissions": [ "https://sharegpt.com/*" ],
+   "icons": {
+      "128": "assets/icons/icon128.png",
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png",
+      "48": "assets/icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqbbQGRrFw3hXUL/ZJPnZo9Qv/U5T4H+u0Mz37rtoqlF8hKSyjh9zpcRMKTLusNT09PlUwzT9koqu0tL+HSp/nng3XJh8z0soENuh8cJ9Q/VKe4SJebbkaOmSQoXK70wilLtp9a0FdcOi04AQwnjyPK6kqB0xs+dE1RRG77U5huvLmQPXSAmhM5a4aq41/KXo25Ip2n8CAasVhnByDYPXdZgADTyFTczbSqFpEhGNJU2eYePEn06JHpEWEv6YIXpKFExc/JuiNh3dyI3vHAWi/uyZBvhRKzg1arWXzpBw6dsxRYYhBCYIYL837i/lRiI05heU4mWeACEX0L+BcrvUtQIDAQAB",
+   "manifest_version": 3,
+   "name": "ShareGPT: Share your ChatGPT conversations",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.95"
+}
